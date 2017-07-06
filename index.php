@@ -31,7 +31,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         echo "count is 1";
 
-        header('location: Landing.php');
+        header('location: landing.php');
 
     }else {
 

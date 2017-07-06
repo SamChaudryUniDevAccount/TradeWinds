@@ -1,7 +1,6 @@
 <?php
 
 
-include('session_manager/session.php');
 session_start();
 
 ?>

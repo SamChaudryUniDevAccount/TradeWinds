@@ -49,24 +49,26 @@ else{
     <head>
         <meta charset="UTF-8">
         <title>Trade Winds Login </title>
+        <!-- CSS-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
         <body>
+            <form class="form-horizontal" action="/" method="post">
 
-        <form class="form-horizontal" action="/" method="post">
+                <input class="" type="text" placeholder="Enter Username" name="username" required>
 
-            <input class="" type="text" placeholder="Enter Username" name="username" required>
+                <input class="" type="password" placeholder="Enter Password" name="password" required>
 
-            <input class="" type="password" placeholder="Enter Password" name="password" required>
-
-            <button id="loginButton" type="submit" class="">Log in</button>
-
-        </form>
-
+                <button id="loginButton" type="submit" class="">Log in</button>
+            </form>
         </body>
     </html>
-
-
-
+    <!-- JavaScript-->
+    <script src="javascript/jquery.js"></script>
+    <script src="javascript/login.js"></script>
+    <script src="bootstrap/bootstrap.js"></script>
     <?php
 }
 ?>

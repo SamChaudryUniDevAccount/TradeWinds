@@ -1,7 +1,9 @@
 <?php
 
-include("config/dbconfig.php");
+include("dbconfig.php");
+
 session_start();
+
 global $error;
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {

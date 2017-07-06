@@ -1,6 +1,6 @@
 <?php
 
-include("dbconfig.php");
+include("config/dbconfig.php");
 
 session_start();
 
@@ -12,9 +12,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $myusername = mysqli_real_escape_string($link,$_POST['username']);
     $mypassword = mysqli_real_escape_string($link,$_POST['password']);
 
-       echo "unsecured username is {$_POST['username']} and password is {$_POST['password']}";
 
-    $sql = "SELECT * FROM user WHERE username = '$myusername' and passcode = '$mypassword'";
+    $sql = "SELECT * FROM user WHERE username = '$myusername' and password = '$mypassword'";
 
     if ($result = mysqli_query($link,$sql))
     {

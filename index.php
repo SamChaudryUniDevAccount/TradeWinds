@@ -68,7 +68,7 @@ else{
     <!-- JavaScript-->
     <script src="javascript/jquery.js"></script>
     <script src="javascript/login.js"></script>
-    <script src="bootstrap/bootstrap.js"></script>
+    <script src="javascript/bootstrap.js"></script>
     <?php
 }
 ?>

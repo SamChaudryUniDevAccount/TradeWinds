@@ -50,11 +50,7 @@ session_start();
                        <div class="card ">
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
                            <div class="card-block">
-
-
                                <div class="card-block">
-                                   <h6 class="card-title">Commodities</h6>
-                                       <p class="card-text ">Chose commodity to analyse.</p>
                                        <label>Select Commodity</label>
                                        <br/>
                                        <div class="btn-group">

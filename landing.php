@@ -27,17 +27,14 @@ session_start();
                    <span class="navbar-toggler-icon"></span>
                </button>
                <a class="navbar-brand" href="#">Trade Winds: Landing </a>
-
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav">
-                       <li class="nav-item">
-                           <a class="nav-link" href="£">Login</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#">Register</a>
-                       </li>
-                   </ul>
-               </div>
+                   <div class="collapse navbar-collapse" id="main_navbar">
+                       <ul class="nav navbar-nav mr-auto"></ul>
+                       <ul class="nav navbar-nav">
+                           <li class="nav-item">
+                               <a class="nav-link" href="#">home</a>
+                           </li>
+                       </ul>
+                   </div>
            </nav>
            <!-- End-->
 

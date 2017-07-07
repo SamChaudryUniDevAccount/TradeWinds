@@ -67,16 +67,21 @@ session_start();
                                     <br/>
                                    <p class="card-text ">Select Date range</p>
                                     <br/>
-                                   <form class="row">
+                                <div class="row">
+                                   <form>
                                        <div class="form-group">
                                            <label for="forDate">From</label>
                                            <input type="text" class="form-control" id="from" placeholder="">
                                        </div>
+                                   </form>
+                                    <br/>
+                                   <form>
                                        <div class="form-group">
                                            <label for="toDate">To</label>
                                            <input type="text" class="form-control" id="to" placeholder="">
                                        </div>
                                    </form>
+                                </div>
                                <!-- End of card body -->
                            </div>
 

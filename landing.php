@@ -55,15 +55,18 @@ session_start();
                                 <br/>
                                <div class="btn-group">
                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                       This dropdown's menu is right-aligned
+                                       Select Commodity
                                    </button>
-                                   <div class="dropdown-menu dropdown-menu-right">
+                                   <div class="dropdown-menu ">
                                        <ul class="dropdown-item">Oil</ul>
                                        <ul class="dropdown-item">Cotton </ul>
                                        <ul class="dropdown-item">Gas</ul>
                                    </div>
                                </div>
                            </div>
+
+
+
                            <div class="card-footer card-primary">
                                //Footer
                            </div>

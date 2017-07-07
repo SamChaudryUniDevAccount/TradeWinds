@@ -20,9 +20,9 @@ session_start();
 <body>
        <div class="container-fluid">
            <nav  class="navbar sticky-top navbar-light">
-               <ul class="nav navbar-nav pull-right">
-                   <li><a href="#">Link</a></li>
-                   <li><a href="#">Link</a></li>
+               <ul class="nav navbar-nav ">
+                   <li class="pull-right"><a href="#">Link</a></li>
+                   <li class="pull-right"><a href="#">Link</a></li>
                </ul>
            </nav>
        </div>

@@ -26,7 +26,7 @@ session_start();
                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                    <span class="navbar-toggler-icon"></span>
                </button>
-               <a class="navbar-brand" href="#">Trade Winds </a>
+               <a id="navBarBrand" class="navbar-brand" href="#">Trade Winds </a>
                    <div class="collapse navbar-collapse" id="main_navbar">
                        <ul class="nav navbar-nav mr-auto"></ul>
                        <ul class="nav navbar-nav">

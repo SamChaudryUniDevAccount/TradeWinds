@@ -51,7 +51,7 @@ session_start();
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
                            <div class="card-block">
 
-                            <div class="row">
+
                                <div class="card-block">
                                    <h6 class="card-title">Commodities</h6>
                                        <p class="card-text ">Chose commodity to analyse.</p>
@@ -81,14 +81,8 @@ session_start();
                                </div>
 
 
-                               <div class="card-block">
-                                   <h4 class="card-title">Finacial Models</h4>
-                                   <p class="card-text">Here are the top resources for all things related to the Sun.</p>
-                                   <!-- Links -->
-                                   <a href="#" class="card-link">Sun Gone</a>
-                                   <a href="#" class="card-link">Still Gone</a>
-                               </div>
-                           </div>
+
+
 
 
 

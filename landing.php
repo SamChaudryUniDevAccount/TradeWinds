@@ -64,7 +64,11 @@ session_start();
                                    </div>
                                </div>
                            </div>
-
+                           <p class="card-text ">Date input.</p>
+                                <div class="row">
+                                    <p>From</p>
+                                    <p>To</p>
+                                </div>
 
 
                            <div class="card-footer card-primary">

@@ -22,12 +22,12 @@ session_start();
 <body>
        <div class="container-fluid">
            <!-- Navbar start-->
-           <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+           <nav id="navBar" class="navbar navbar-toggleable-md navbar-light bg-faded">
+               <a class="navbar-brand mr-0 ml-lg-auto hidden-xs-down" href="#" target="_blank">Trade Winds</a>
                <div class="nav navbar-nav">
-                   <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                   <a class="nav-item nav-link" href="#">Settings <span class="sr-only">(current)</span></a>
                    <a class="nav-item nav-link" href="#">About</a>
                </div>
-               <a class="navbar-brand mr-0 ml-lg-auto hidden-xs-down" href="#" target="_blank">Trade Winds</a>
            </nav>
            <!-- End-->
 

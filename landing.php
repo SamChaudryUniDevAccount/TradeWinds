@@ -55,7 +55,7 @@ session_start();
                            <div class="card-block">
                                    <div class="card-block">
                                        <select class="form-control">
-                                           <option>Default select</option>
+                                           <option>Select Commodity</option>
                                            <option>Oil</option>
                                        </select>
                                        <br/>
@@ -112,8 +112,24 @@ session_start();
                        <div class="card ">
                            <div class=" pannelHeaderTitleStyles card-header card-success">News</div>
                            <div class="card-block">
-                               <p class="card-text pannelHeaderTitleStyles">//News pannel</p>
+                               <p class="card-text ">Enter topics of interest</p>
+                               <div class="form-group">
+                                   <input type="text" class="form-control" id="to" placeholder="Enter news topics of interest">
+                               </div>
+                               <br/>
+                               <p>Select News type</p>
+                               <div class="btn-group" data-toggle="buttons">
+                                   <label class="btn btn-primary active">
+                                       <input type="radio" name="options" id="option1" autocomplete="off" checked> News
+                                   </label>
+                                   <label class="btn btn-primary">
+                                       <input type="radio" name="options" id="option2" autocomplete="off"> Social Media
+                                   </label>
+                               </div>
                            </div>
+
+                           //News Data goes here
+
                        </div>
 
                        <!-- End of card decks -->

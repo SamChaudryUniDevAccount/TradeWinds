@@ -19,12 +19,9 @@ session_start();
 </head>
 <body>
        <div class="container-fluid">
-               <div id="navBar" class="navbar-nav">
-                   <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                   <a class="nav-item nav-link" href="#">Features</a>
-                   <a class="nav-item nav-link" href="#">Pricing</a>
-                   <a class="nav-item nav-link disabled" href="#">Disabled</a>
-               </div>
+           <nav class="navbar sticky-top navbar-light bg-faded">
+               <a class="navbar-brand" href="#">Sticky top</a>
+           </nav>
        </div>
 </body>
 <!-- JavaScript-->

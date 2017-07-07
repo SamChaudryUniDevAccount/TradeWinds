@@ -55,6 +55,8 @@ else{
         <link rel="stylesheet" href="css/styles.css">
     </head>
         <body class="img img-responsive">
+
+        <div class="background">
             <form class="form-horizontal" action="/" method="post">
 
                 <input class="" type="text" placeholder="Enter Username" name="username" required>
@@ -63,6 +65,7 @@ else{
 
                 <button id="loginButton" type="submit" class="">Log in</button>
             </form>
+        </div>
         </body>
     </html>
     <!-- JavaScript-->

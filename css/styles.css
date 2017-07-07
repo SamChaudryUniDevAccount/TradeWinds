@@ -95,6 +95,8 @@
 
     /* W3C Markup */
     background-image: linear-gradient(to right, #5893B7 0%, #3366FF 100%);
+
+    text-align: center;
 }
 
 #navBarBrand{
@@ -112,3 +114,31 @@
     font-size: 16px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+
+.pannelSection{
+
+    /* cssportal.com */
+    /* IE10+ */
+    background-image: -ms-linear-gradient(left, #5893B7 0%, #3366FF 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(left, #5893B7 0%, #3366FF 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(left, #5893B7 0%, #3366FF 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #5893B7), color-stop(100, #3366FF));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(left, #5893B7 0%, #3366FF 100%);
+
+    /* W3C Markup */
+    background-image: linear-gradient(to right, #5893B7 0%, #3366FF 100%);
+
+
+
+}
+
+

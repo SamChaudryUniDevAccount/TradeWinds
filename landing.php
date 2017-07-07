@@ -39,14 +39,14 @@ session_start();
                        </ul>
                    </div>
            </nav>
-           <!-- End-->
+           <!-- End of navbar-->
+            <div class="pannelSection">
 
 
 
 
-
-
-
+            <div>
+           <!-- End of main page container-->
        </div>
 </body>
 <!-- JavaScript-->

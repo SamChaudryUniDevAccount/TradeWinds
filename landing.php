@@ -51,8 +51,18 @@ session_start();
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
                            <div class="card-block">
                                <p class="card-text ">Chose commodity to analyse.</p>
-                               <a href="#" class="card-link">Links</a>
-                               <a href="#" class="card-link">Links</a>
+                                 <label>Select Commodity</label>
+                                <br/>
+                               <div class="btn-group">
+                                   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       This dropdown's menu is right-aligned
+                                   </button>
+                                   <div class="dropdown-menu dropdown-menu-right">
+                                       <ul class="dropdown-item">Oil</ul>
+                                       <ul class="dropdown-item">Cotton </ul>
+                                       <ul class="dropdown-item">Gas</ul>
+                                   </div>
+                               </div>
                            </div>
                            <div class="card-footer card-primary">
                                //Footer

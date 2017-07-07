@@ -51,7 +51,7 @@ session_start();
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
                            <div class="card-block">
 
-
+                            <div class="row">
                                <div class="card-block">
                                    <h6 class="card-title">Commodities</h6>
                                        <p class="card-text ">Chose commodity to analyse.</p>
@@ -88,7 +88,7 @@ session_start();
                                    <a href="#" class="card-link">Sun Gone</a>
                                    <a href="#" class="card-link">Still Gone</a>
                                </div>
-
+                           </div>
 
 
 

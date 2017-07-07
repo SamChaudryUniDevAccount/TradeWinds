@@ -63,6 +63,7 @@ session_start();
                                        <ul class="dropdown-item">Gas</ul>
                                    </div>
                                </div>
+                                    <br/>
                                    <p class="card-text ">Select Date range</p>
                                     <br/>
                                    <form class="row">
@@ -78,9 +79,7 @@ session_start();
                                    </form>
                                <!-- End of card body -->
                            </div>
-                           <div class="card-footer card-primary">
-                               //Footer
-                           </div>
+
                        </div>
 
                        <!-- Card 2 -->
@@ -89,9 +88,6 @@ session_start();
                            <div class="card-block">
                                <p class="card-text ">//Weather analyisis panael.</p>
                            </div>
-                           <div class="card-footer card-warning">
-                               //Footer
-                           </div>
                        </div>
 
                        <!-- Card 3 -->
@@ -99,9 +95,6 @@ session_start();
                            <div class=" pannelHeaderTitleStyles card-header card-success">News</div>
                            <div class="card-block">
                                <p class="card-text pannelHeaderTitleStyles">//News pannel</p>
-                           </div>
-                           <div class="card-footer card-success">
-                               //Footer
                            </div>
                        </div>
 

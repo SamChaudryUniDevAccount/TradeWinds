@@ -22,19 +22,20 @@ session_start();
 <body>
        <div class="container-fluid">
            <!-- Navbar start-->
-           <nav id="navBar" class="navbar navbar-toggleable-md navbar-light bg-faded">
-               <div class="navbar-header">
-                   <a href="#" class="navbar-brand">Brand</a>
-               </div>
-               <!-- Collection of nav links and other content for toggling -->
-               <div id="navbarCollapse" class="collapse navbar-collapse">
-                   <ul class="nav navbar-nav">
-                       <li class="active"><a href="#">Home</a></li>
-                       <li><a href="#">Profile</a></li>
-                       <li><a href="#">Messages</a></li>
-                   </ul>
-                   <ul class="nav navbar-nav navbar-right">
-                       <li><a href="#">Login</a></li>
+           <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <a class="navbar-brand" href="#">Trade Winds</a>
+
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav mr-auto">
+                       <li class="nav-item active">
+                           <a class="nav-link" href="#">Settings <span class="sr-only">(current)</span></a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link" href="#">Log out</a>
+                       </li>
                    </ul>
                </div>
            </nav>

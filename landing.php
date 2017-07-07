@@ -72,8 +72,6 @@ session_start();
                                            <label for="forDate">From</label>
                                            <input type="text" class="form-control" id="from" placeholder="">
                                        </div>
-                                       <br/>
-                                       <br/>
                                        <div class="form-group">
                                            <label for="toDate">To</label>
                                            <input type="text" class="form-control" id="to" placeholder="">

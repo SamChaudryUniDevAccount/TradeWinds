@@ -82,7 +82,7 @@ else{
                             <div class="form-group">
                                 <div class="col-sm-offset-5 col-lg-12">
                                     <p id="disclaimerText">Disclaimer: By logging in users are agreeing to use this application at their own risk.</p>
-                                    <button id="loginButton" type="submit" class="btn btn-success   btn-block">Sign in</button>
+                                    <button id="signInButton" type="submit" class="btn btn-success   btn-block">Sign in</button>
                                     <p><?php echo $error?></p>
                                 </div>
                             </div>

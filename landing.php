@@ -30,10 +30,10 @@ session_start();
                <div class="  collapse navbar-collapse" id="navbarSupportedContent">
                    <ul class="  navbar-nav">
                        <li class="nav-item active ">
-                           <a class="nav-link float-lg-right" href="#">Settings </a>
+                           <a class=" navBarMenuLinks nav-link float-lg-right" href="#">Settings </a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link float-lg-right " href="#">Log out</a>
+                           <a class=" navBarMenuLinks nav-link float-lg-right " href="#">Log out</a>
                        </li>
 
                    </ul>

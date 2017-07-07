@@ -65,7 +65,7 @@ session_start();
                                                <ul class="dropdown-item">Gas</ul>
                                            </div>
                                        </div>
-
+                                       <br/>
                                        <br/>
                                        <p class="card-text ">Select Date range</p>
                                        <form class="row">
@@ -79,12 +79,16 @@ session_start();
                                        </form>
                                    </div>
                                    <div class="card-block">
-
+                                       <form class="row">
+                                           <div class="form-group">
+                                               <input type="text" class="form-control" id="from" placeholder="Start Date">
+                                           </div>
+                                           <br/>
+                                           <div class="form-group">
+                                               <input type="text" class="form-control" id="to" placeholder="End Date">
+                                           </div>
+                                       </form>
                                    </div>
-
-
-
-
 
                                </div>
 

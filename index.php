@@ -63,7 +63,7 @@ else{
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Trade Winds</h5>
+                        <h6 class="modal-title">Trade Winds</h6>
                     </div>
                     <div class="modal-body">
                         <form class="form-horizontal" action="/" method="post">

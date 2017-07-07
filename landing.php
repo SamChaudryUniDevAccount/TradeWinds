@@ -29,15 +29,16 @@ session_start();
                <a class="navbar-brand" href="#">Trade Winds: Landing </a>
 
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul id="navBarMenu" class="navbar-nav mr-auto">
+                   <ul  class="navbar-nav mr-auto">
                        <li class="nav-item active">
                            <a class="nav-link" href="#">Settings <span class="sr-only">(current)</span></a>
                        </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#">Log out</a>
+                       <li class="">
+                           <a class="nav-link" href="#"></a>
                        </li>
                    </ul>
                </div>
+               <a id="logOutLink" href="#">Log out</a>
            </nav>
            <!-- End-->
 

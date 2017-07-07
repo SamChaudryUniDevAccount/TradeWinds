@@ -65,7 +65,6 @@ session_start();
                                </div>
                                     <br/>
                                    <p class="card-text ">Select Date range</p>
-                                    <br/>
                                     <form class="row">
                                         <div class="form-group">
                                             <label for="formGroupExampleInput">Example label</label>

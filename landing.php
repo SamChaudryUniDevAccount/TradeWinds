@@ -22,7 +22,7 @@ session_start();
 <body>
        <div class="container-fluid">
            <!-- Navbar start-->
-           <nav class="navbar navbar-default">
+           <nav id="navBar" class="navbar navbar-default">
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">

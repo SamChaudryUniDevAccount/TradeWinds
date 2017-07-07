@@ -1,5 +1,8 @@
 $( document ).ready(function() {
 
-//Working
+    $("#loginModal").modal({
+        show: true,
+        backdrop: 'static'
+    });
 
 });

@@ -56,14 +56,47 @@ else{
     </head>
         <body class="container-fluid background">
 
-            <form class="form-horizontal" action="/" method="post">
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" role="dialog">
+            <div class="modal-dialog">
 
-                <input class="" type="text" placeholder="Enter Username" name="username" required>
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-horizontal" action="/" method="post">
+                            <div class="form-group">
+                                <label  class="col-lg-12 control-label labels">Username</label>
+                                <div class="col-lg-12">
+                                    <input class="col-lg-12" type="text" placeholder="Enter Username" name="username" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label  class="col-lg-2 control-label labels">Password</label>
+                                <div class="col-lg-12">
+                                    <input class="col-lg-12" type="password" placeholder="Enter Password" name="password" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-5 col-lg-12">
+                                    <button id="loginButton" type="submit" class="btn btn-default btn-lg  btn-block">Log in</button>
+                                    <br/>
+                                    <p><?php echo $error?></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
 
-                <input class="" type="password" placeholder="Enter Password" name="password" required>
+            </div>
+        </div>
 
-                <button id="loginButton" type="submit" class="">Log in</button>
-            </form>
         </body>
     </html>
     <!-- JavaScript-->

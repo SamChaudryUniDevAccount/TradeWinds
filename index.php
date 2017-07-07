@@ -83,13 +83,11 @@ else{
                                 <div class="col-sm-offset-5 col-lg-12">
                                     <button id="loginButton" type="submit" class="btn btn-success   btn-block">Sign in</button>
                                     <br/>
+                                    <p>Disclaimer: By logging in users are agreeing to use this application at their own risk.</p>
                                     <p><?php echo $error?></p>
                                 </div>
                             </div>
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <p>Disclaimer: By logging in users are agreeing to use this application at their own risk.</p>
                     </div>
                 </div>
 

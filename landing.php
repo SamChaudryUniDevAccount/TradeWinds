@@ -29,7 +29,7 @@ session_start();
                <a class="navbar-brand" href="#">Trade Winds: Landing </a>
 
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul  class="navbar-nav mr-auto float-lg-right">
+                   <ul  class="nav navbar-nav float-xs-right">
                        <li class="nav-item active">
                            <a class="nav-link" href="#">Settings <span class="sr-only">(current)</span></a>
                        </li>

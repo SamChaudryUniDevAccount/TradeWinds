@@ -27,9 +27,8 @@ session_start();
                    <span class="navbar-toggler-icon"></span>
                </button>
                <a class="navbar-brand" href="#">Navbar</a>
-
                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav">
+                   <ul class=" .float-xs-right navbar-nav">
                        <li class="nav-item active">
                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                        </li>

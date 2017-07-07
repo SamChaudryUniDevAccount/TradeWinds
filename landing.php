@@ -76,18 +76,6 @@ session_start();
                                            </div>
                                        </form>
                                    </div>
-                                   <div class="card-block">
-                                       <form class="row">
-                                           <div class="form-group">
-                                               <input type="text" class="form-control" id="from" placeholder="Start Date">
-                                           </div>
-                                           <br/>
-                                           <div class="form-group">
-                                               <input type="text" class="form-control" id="to" placeholder="End Date">
-                                           </div>
-                                       </form>
-                                   </div>
-
                                </div>
 
 

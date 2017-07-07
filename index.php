@@ -54,7 +54,7 @@ else{
         <link rel="stylesheet" href="css/bootstrap-grid.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-        <body>
+        <body class="img img-responsive">
             <form class="form-horizontal" action="/" method="post">
 
                 <input class="" type="text" placeholder="Enter Username" name="username" required>

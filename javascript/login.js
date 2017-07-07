@@ -5,5 +5,4 @@ $( document ).ready(function() {
         backdrop: 'static'
     });
 
-    $('.loginModal').remove();
 });

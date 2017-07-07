@@ -1,7 +1,7 @@
 .background {
 
     background: url("/images/tradewindsship.jpg") ;
-    no-repeat: center center fixed;
+    no-repeat: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

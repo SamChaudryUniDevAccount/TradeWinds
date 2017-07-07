@@ -64,7 +64,6 @@ else{
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Trade Winds</h5>
-                        <br/>
                     </div>
                     <div class="modal-body">
                         <form class="form-horizontal" action="/" method="post">

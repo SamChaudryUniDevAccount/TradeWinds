@@ -30,10 +30,10 @@ session_start();
                 <ul class="nav navbar-nav mr-auto"></ul>
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Settings</a>
+                        <a class="nav-link" href="#">Financial Modelling</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Financial Modelling</a>
+                        <a class="nav-link" href="#">Settings</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Log out</a>

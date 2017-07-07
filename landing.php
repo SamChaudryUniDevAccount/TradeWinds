@@ -64,11 +64,18 @@ session_start();
                                    </div>
                                </div>
                            </div>
-                           <p class="card-text ">Date input.</p>
-                                <div class="row">
-                                    <p>From</p>
-                                    <p>To</p>
-                                </div>
+                           <p class="card-text ">Select Date range</p>
+
+                               <form class="row">
+                                   <div class="form-group">
+                                       <label for="formGroupExampleInput">From</label>
+                                       <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="formGroupExampleInput2">To</label>
+                                       <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                                   </div>
+                               </form>
 
 
                            <div class="card-footer card-primary">

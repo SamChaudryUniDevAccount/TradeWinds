@@ -50,9 +50,11 @@ session_start();
                        <div class="card ">
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
                            <div class="card-block">
-                               <div class="card-block">
+                               <div class="row">
+
+                                   <div class="card-block">
                                        <label>Select Commodity</label>
-                                       <br/>
+
                                        <div class="btn-group">
                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                Select Commodity
@@ -63,6 +65,7 @@ session_start();
                                                <ul class="dropdown-item">Gas</ul>
                                            </div>
                                        </div>
+
                                        <br/>
                                        <p class="card-text ">Select Date range</p>
                                        <form class="row">
@@ -74,6 +77,15 @@ session_start();
                                                <input type="text" class="form-control" id="to" placeholder="End Date">
                                            </div>
                                        </form>
+                                   </div>
+                                   <div class="card-block">
+
+                                   </div>
+
+
+
+
+
                                </div>
 
 

@@ -64,23 +64,20 @@ session_start();
                                    </div>
                                </div>
                                     <br/>
-                                    <br/>
                                    <p class="card-text ">Select Date range</p>
                                     <br/>
                                 <div class="row">
-                                   <form>
-                                       <div class="form-group">
-                                           <label for="forDate">From</label>
-                                           <input type="text" class="form-control" id="from" placeholder="">
-                                       </div>
-                                   </form>
-                                    <br/>
-                                   <form>
-                                       <div class="form-group">
-                                           <label for="toDate">To</label>
-                                           <input type="text" class="form-control" id="to" placeholder="">
-                                       </div>
-                                   </form>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput">Example label</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                        </div>
+                                        <br/>
+                                        <div class="form-group">
+                                            <label for="formGroupExampleInput2">Another label</label>
+                                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                                        </div>
+                                    </form>
                                 </div>
                                <!-- End of card body -->
                            </div>

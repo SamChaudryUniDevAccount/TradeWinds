@@ -68,22 +68,22 @@ else{
                     <div class="modal-body">
                         <form class="form-horizontal" action="/" method="post">
                             <div class="form-group">
-                                <label  class="col-lg-12 control-label labels">Username</label>
+                                <label  class=" loginLabelText col-lg-12 control-label labels">Username</label>
                                 <div class="col-lg-12">
                                     <input class="col-lg-12" type="text" placeholder="Enter Username" name="username" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label  class="col-lg-2 control-label labels">Password</label>
+                                <label  class=" loginLabelText col-lg-2 control-label labels">Password</label>
                                 <div class="col-lg-12">
                                     <input class="col-lg-12" type="password" placeholder="Enter Password" name="password" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-5 col-lg-12">
+                                    <p id="disclaimerText">Disclaimer: By logging in users are agreeing to use this application at their own risk.</p>
                                     <button id="loginButton" type="submit" class="btn btn-success   btn-block">Sign in</button>
                                     <br/>
-                                    <p>Disclaimer: By logging in users are agreeing to use this application at their own risk.</p>
                                     <p><?php echo $error?></p>
                                 </div>
                             </div>

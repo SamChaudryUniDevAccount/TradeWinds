@@ -57,16 +57,16 @@ session_start();
                        </div>
 
                        <!-- Card 2 -->
-                       <div class="card card-warning">
-                           <div class="card-header">Weather</div>
+                       <div class="card ">
+                           <div class="card-header card-warning">Weather</div>
                            <div class="card-block">
                                <p class="card-text">//Weather analyisis panael.</p>
                            </div>
                        </div>
 
                        <!-- Card 3 -->
-                       <div class="card card-success">
-                           <div class="card-header">News</div>
+                       <div class="card ">
+                           <div class="card-header card-success">News</div>
                            <div class="card-block">
                                <p class="card-text">//News pannel</p>
                            </div>

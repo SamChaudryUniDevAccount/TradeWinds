@@ -87,9 +87,7 @@ session_start();
                            <div class=" pannelHeaderTitleStyles card-header card-warning">Weather</div>
                            <div class="card-block">
                                <label>Enter location</label>>
-                               <div class="col-4">
-                                   <input type="text" class="form-control" placeholder="Location">
-                               </div>
+                               <input type="text" class="form-control" id="to" placeholder="Enter location">
                                <br/>
                                <p class="card-text ">Select Date range</p>
                                <form class="row">
@@ -120,10 +118,10 @@ session_start();
                                <p>Select News type</p>
                                <div class="btn-group" data-toggle="buttons">
                                    <label class="btn btn-primary active">
-                                       <input type="radio" name="options" id="option1" autocomplete="off" checked> News
+                                       <input type="radio" name="options" id="news" autocomplete="off" checked> News
                                    </label>
                                    <label class="btn btn-primary">
-                                       <input type="radio" name="options" id="option2" autocomplete="off"> Social Media
+                                       <input type="radio" name="options" id="socialMedia" autocomplete="off"> Social Media
                                    </label>
                                </div>
                            </div>

@@ -50,30 +50,50 @@ session_start();
                        <div class="card ">
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
                            <div class="card-block">
-                               <p class="card-text ">Chose commodity to analyse.</p>
-                                 <label>Select Commodity</label>
-                                <br/>
-                               <div class="btn-group">
-                                   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                       Select Commodity
-                                   </button>
-                                   <div class="dropdown-menu ">
-                                       <ul class="dropdown-item">Oil</ul>
-                                       <ul class="dropdown-item">Cotton </ul>
-                                       <ul class="dropdown-item">Gas</ul>
-                                   </div>
+
+
+                               <div class="card-block">
+                                   <h6 class="card-title">Commodities</h6>
+                                       <p class="card-text ">Chose commodity to analyse.</p>
+                                       <label>Select Commodity</label>
+                                       <br/>
+                                       <div class="btn-group">
+                                           <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                               Select Commodity
+                                           </button>
+                                           <div class="dropdown-menu ">
+                                               <ul class="dropdown-item">Oil</ul>
+                                               <ul class="dropdown-item">Cotton </ul>
+                                               <ul class="dropdown-item">Gas</ul>
+                                           </div>
+                                       </div>
+                                       <br/>
+                                       <p class="card-text ">Select Date range</p>
+                                       <form class="row">
+                                           <div class="form-group">
+                                               <input type="text" class="form-control" id="from" placeholder="Start Date">
+                                           </div>
+                                           <br/>
+                                           <div class="form-group">
+                                               <input type="text" class="form-control" id="to" placeholder="End Date">
+                                           </div>
+                                       </form>
                                </div>
-                                    <br/>
-                                   <p class="card-text ">Select Date range</p>
-                                    <form class="row">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="from" placeholder="Start Date">
-                                        </div>
-                                        <br/>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="to" placeholder="End Date">
-                                        </div>
-                                    </form>
+
+
+                               <div class="card-block">
+                                   <h4 class="card-title">Finacial Models</h4>
+                                   <p class="card-text">Here are the top resources for all things related to the Sun.</p>
+                                   <!-- Links -->
+                                   <a href="#" class="card-link">Sun Gone</a>
+                                   <a href="#" class="card-link">Still Gone</a>
+                               </div>
+
+
+
+
+
+
                                <!-- End of card body -->
                            </div>
 

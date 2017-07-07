@@ -19,7 +19,7 @@ session_start();
 </head>
 <body>
        <div class="container-fluid">
-           <nav id="navBar" class="navbar sticky-top navbar-light">
+           <nav  class="navbar sticky-top navbar-light">
                <ul class="nav navbar-nav pull-right">
                    <li><a href="#">Link</a></li>
                    <li><a href="#">Link</a></li>

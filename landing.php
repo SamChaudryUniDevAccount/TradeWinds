@@ -18,9 +18,9 @@ session_start();
 
 </head>
 <body>
-       <div class="container-fluid">
+       <div id="navBar" class="container-fluid">
            <nav class="navbar sticky-top navbar-light bg-faded">
-               <a class="navbar-brand" href="#">Sticky top</a>
+               <a class="  navbar-brand" href="#">Sticky top</a>
            </nav>
        </div>
 </body>

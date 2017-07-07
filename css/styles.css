@@ -1,3 +1,6 @@
+
+/* <-------- Login page styles ---------------------------------------> */
+
 .background {
 
     background: url("/images/tradewindsship.jpg") ;
@@ -62,6 +65,8 @@
 }
 
 
+/* <-------- Landing page styles ---------------------------------------> */
+
 #navBar{
 
     width: 100%;
@@ -103,6 +108,8 @@
 
 .navbar-light .navbar-nav .nav-link{
 
-    font-weight: bold;
     color: #ffffff;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#5893b7;
 }

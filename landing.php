@@ -40,41 +40,35 @@ session_start();
                    </div>
            </nav>
            <!-- End of navbar-->
-            <div class="pannelSection">
-                <div class="card-deck-wrapper">
-                    <div class="card-deck">
-
-                        <!-- Card 1 -->
-                        <div class="card">
-                            <div class="card-header">Sun Gone</div>
-                            <div class="card-block">
-                                <p class="card-text">The top resources for all things related to the Sun.</p>
-                                <a href="#" class="card-link">Sun Gone</a>
-                                <a href="#" class="card-link">Still Gone</a>
-                            </div>
-                        </div>
-
-                        <!-- Card 2 -->
-                        <div class="card">
-                            <div class="card-header">Sun Up</div>
-                            <div class="card-block">
-                                <p class="card-text">Looks like the Sun has returned. Here's <a href="#" class="card-link">why</a>.</p>
-                            </div>
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="card">
-                            <div class="card-header">Sun Up</div>
-                            <div class="card-block">
-                                <p class="card-text">Looks like the Sun has returned. Here's <a href="#" class="card-link">why</a>.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <div>
            <!-- End of main page container-->
+
+
+           <div class="card-deck-wrapper">
+               <div class="card-deck">
+
+                   <!-- Card 1 -->
+                   <div class="card">
+                       <div class="card-header">Sun Gone</div>
+                       <div class="card-block">
+                           <p class="card-text">The top resources for all things related to the Sun.</p>
+                           <a href="#" class="card-link">Sun Gone</a>
+                           <a href="#" class="card-link">Still Gone</a>
+                       </div>
+                   </div>
+
+                   <!-- Card 2 -->
+                   <div class="card">
+                       <div class="card-header">Sun Up</div>
+                       <div class="card-block">
+                           <p class="card-text">Looks like the Sun has returned. Here's <a href="#" class="card-link">why</a>.</p>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+
+
+
        </div>
 </body>
 <!-- JavaScript-->

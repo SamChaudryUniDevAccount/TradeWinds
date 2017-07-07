@@ -38,13 +38,14 @@ session_start();
                 </ul>
             </div>
         </nav>
-        <!-- End of navbar-->
+        <br/>
+        <br/>
+    <!-- End of navbar-->
        <div class="container-fluid">
            <div class="pannelSection">
                <!-- Card Deck-->
                <div class="card-deck-wrapper">
                    <div class="card-deck">
-
                        <!-- Card 1 -->
                        <div class="card">
                            <div class="card-header">Commodity</div>

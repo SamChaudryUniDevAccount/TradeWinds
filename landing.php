@@ -50,8 +50,6 @@ session_start();
                        <div class="card ">
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
                            <div class="card-block">
-                               <div class="row">
-
                                    <div class="card-block">
                                        <div class="btn-group">
                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -76,7 +74,6 @@ session_start();
                                            </div>
                                        </form>
                                    </div>
-                               </div>
 
 
 

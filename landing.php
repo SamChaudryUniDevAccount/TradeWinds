@@ -19,14 +19,12 @@ session_start();
 </head>
 <body>
        <div class="container-fluid">
-           <div id="navBar">
-               <div class="navbar-nav">
+               <div id="navBar" class="navbar-nav">
                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                    <a class="nav-item nav-link" href="#">Features</a>
                    <a class="nav-item nav-link" href="#">Pricing</a>
                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
                </div>
-           </div>
        </div>
 </body>
 <!-- JavaScript-->

@@ -28,11 +28,11 @@ session_start();
                </button>
                <a class="navbar-brand" href="#">Trade Winds</a>
                <div class="  collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class=" navBarMenuLinks  navbar-nav">
+                   <ul class="   navbar-nav">
                        <li class="nav-item active ">
                            <a class="  nav-link float-lg-right" href="#">Settings </a>
                        </li>
-                       <li class=" navBarMenuLinks nav-item">
+                       <li class="  nav-item">
                            <a class="  nav-link float-lg-right " href="#">Log out</a>
                        </li>
 

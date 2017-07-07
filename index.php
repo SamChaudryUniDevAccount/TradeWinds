@@ -54,7 +54,7 @@ else{
         <link rel="stylesheet" href="css/bootstrap-grid.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-        <body class="background">
+        <body class="container-fluid background">
 
             <form class="form-horizontal" action="/" method="post">
 

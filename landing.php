@@ -47,8 +47,8 @@ session_start();
                <div class="card-deck-wrapper">
                    <div class="card-deck">
                        <!-- Card 1 -->
-                       <div class="card card-primary">
-                           <div class="card-header">Commodity</div>
+                       <div class="card ">
+                           <div class="card-header card-primary">Commodity</div>
                            <div class="card-block">
                                <p class="card-text">Chose commodity to analyse.</p>
                                <a href="#" class="card-link">Links</a>

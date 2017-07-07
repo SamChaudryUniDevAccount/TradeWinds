@@ -48,9 +48,9 @@ session_start();
                    <div class="card-deck">
                        <!-- Card 1 -->
                        <div class="card ">
-                           <div class="card-header card-primary">Commodity</div>
+                           <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
                            <div class="card-block">
-                               <p class="card-text pannelHeaderTitleStyles">Chose commodity to analyse.</p>
+                               <p class="card-text ">Chose commodity to analyse.</p>
                                <a href="#" class="card-link">Links</a>
                                <a href="#" class="card-link">Links</a>
                            </div>
@@ -61,9 +61,9 @@ session_start();
 
                        <!-- Card 2 -->
                        <div class="card ">
-                           <div class="card-header card-warning">Weather</div>
+                           <div class=" pannelHeaderTitleStyles card-header card-warning">Weather</div>
                            <div class="card-block">
-                               <p class="card-text pannelHeaderTitleStyles">//Weather analyisis panael.</p>
+                               <p class="card-text ">//Weather analyisis panael.</p>
                            </div>
                            <div class="card-footer card-warning">
                                //Footer
@@ -72,7 +72,7 @@ session_start();
 
                        <!-- Card 3 -->
                        <div class="card ">
-                           <div class="card-header card-success">News</div>
+                           <div class=" pannelHeaderTitleStyles card-header card-success">News</div>
                            <div class="card-block">
                                <p class="card-text pannelHeaderTitleStyles">//News pannel</p>
                            </div>

@@ -29,10 +29,10 @@ session_start();
                <a class="navbar-brand" href="#">Trade Winds</a>
                <div class="  collapse navbar-collapse" id="navbarSupportedContent">
                    <ul class="   navbar-nav">
-                       <li class="nav-item active ">
+                       <li class=" ml-lg-auto nav-item active ">
                            <a class="  nav-link float-lg-right" href="#">Settings </a>
                        </li>
-                       <li class="  nav-item">
+                       <li class=" ml-lg-auto nav-item">
                            <a class="  nav-link float-lg-right " href="#">Log out</a>
                        </li>
 

@@ -63,8 +63,7 @@ else{
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
+                        <h5 class="modal-title">Trade Winds</h5>
                     </div>
                     <div class="modal-body">
                         <form class="form-horizontal" action="/" method="post">
@@ -82,7 +81,7 @@ else{
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-offset-5 col-lg-12">
-                                    <button id="loginButton" type="submit" class="btn btn-default btn-lg  btn-block">Log in</button>
+                                    <button id="loginButton" type="submit" class="btn btn-success   btn-block">Sign in</button>
                                     <br/>
                                     <p><?php echo $error?></p>
                                 </div>
@@ -90,7 +89,7 @@ else{
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <p>Disclaimer: By logging in users are agreeing to use this application at their own risk.</p>
                     </div>
                 </div>
 

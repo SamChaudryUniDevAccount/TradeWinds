@@ -19,7 +19,11 @@ session_start();
 </head>
 
 <body>
-        Welcome to Trade Winds
+       <div class="container-fluid">
+           <div id="navBar">
+
+           </div>
+       </div>
 </body>
 <!-- JavaScript-->
 <script src="javascript/jquery.js"></script>

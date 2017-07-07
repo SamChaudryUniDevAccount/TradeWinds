@@ -47,21 +47,31 @@ session_start();
 
                        <!-- Card 1 -->
                        <div class="card">
-                           <div class="card-header">Sun Gone</div>
+                           <div class="card-header">Commodity</div>
                            <div class="card-block">
-                               <p class="card-text">The top resources for all things related to the Sun.</p>
-                               <a href="#" class="card-link">Sun Gone</a>
-                               <a href="#" class="card-link">Still Gone</a>
+                               <p class="card-text">Chose commodity to analyse.</p>
+                               <a href="#" class="card-link">Links</a>
+                               <a href="#" class="card-link">Links</a>
                            </div>
                        </div>
 
                        <!-- Card 2 -->
                        <div class="card">
-                           <div class="card-header">Sun Up</div>
+                           <div class="card-header">Weather</div>
                            <div class="card-block">
-                               <p class="card-text">Looks like the Sun has returned. Here's <a href="#" class="card-link">why</a>.</p>
+                               <p class="card-text">//Weather analyisis panael.</p>
                            </div>
                        </div>
+
+                       <!-- Card 3 -->
+                       <div class="card">
+                           <div class="card-header">News</div>
+                           <div class="card-block">
+                               <p class="card-text">//News pannel</p>
+                           </div>
+                       </div>
+
+                       <!-- End of card decks -->
                    </div>
                </div>
            </div>

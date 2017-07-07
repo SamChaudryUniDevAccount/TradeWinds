@@ -18,8 +18,8 @@ session_start();
 
 </head>
 <body>
-       <div id="navBar" class="container-fluid">
-           <nav class="navbar sticky-top navbar-light">
+       <div class="container-fluid">
+           <nav id="navBar" class="navbar sticky-top navbar-light">
                <a class="  navbar-brand" href="#">Sticky top</a>
            </nav>
        </div>

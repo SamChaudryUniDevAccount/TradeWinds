@@ -54,16 +54,10 @@ session_start();
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
                            <div class="card-block">
                                    <div class="card-block">
-                                       <div class="btn-group">
-                                           <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                               Select Commodity
-                                           </button>
-                                           <div class="dropdown-menu ">
-                                               <ul class="dropdown-item">Oil</ul>
-                                               <ul class="dropdown-item">Cotton </ul>
-                                               <ul class="dropdown-item">Gas</ul>
-                                           </div>
-                                       </div>
+                                       <select class="form-control">
+                                           <option>Default select</option>
+                                           <option>Oil</option>
+                                       </select>
                                        <br/>
                                        <br/>
                                        <p class="card-text ">Select Date range</p>
@@ -77,15 +71,12 @@ session_start();
                                            </div>
                                        </form>
                                    </div>
-
-
-
-
-
-
-
-
-
+                                    <br/>
+                                    <button type="button" class="btn btn-success">Get Data</button>
+                                    <br/>
+                                    <div id="commoditiesGraph">
+                                        //Graph goes here
+                                    </div>
                                <!-- End of card body -->
                            </div>
 
@@ -95,7 +86,25 @@ session_start();
                        <div class="card ">
                            <div class=" pannelHeaderTitleStyles card-header card-warning">Weather</div>
                            <div class="card-block">
-                               <p class="card-text ">//Weather analyisis panael.</p>
+                               <label>Enter location</label>>
+                               <div class="col-4">
+                                   <input type="text" class="form-control" placeholder="Location">
+                               </div>
+                               <br/>
+                               <p class="card-text ">Select Date range</p>
+                               <form class="row">
+                                   <div class="form-group">
+                                       <input type="text" class="form-control" id="from" placeholder="Start Date">
+                                   </div>
+                                   <br/>
+                                   <div class="form-group">
+                                       <input type="text" class="form-control" id="to" placeholder="End Date">
+                                   </div>
+                               </form>
+                               <br/>
+                               <button type="button" class="btn btn-success">Get Data</button>
+                               <br>
+                               <div id="weatherDataGraph">//Graph goes here... </div>
                            </div>
                        </div>
 

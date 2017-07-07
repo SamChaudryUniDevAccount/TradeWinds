@@ -20,7 +20,7 @@ session_start();
 <body>
        <div class="container-fluid">
            <nav id="navBar" class="navbar sticky-top navbar-light">
-               <a class="  navbar-brand" href="#">Sticky top</a>
+               <a class=" .pull-right  navbar-brand" href="#">Log out</a>
            </nav>
        </div>
 </body>

@@ -70,13 +70,13 @@ else{
                             <div class="form-group">
                                 <label  class=" loginLabelText col-lg-12 control-label labels">Username</label>
                                 <div class="col-lg-12">
-                                    <input class="modelInputLabels col-lg-12" type="text" placeholder="Enter Username" name="username" required>
+                                    <input class=" col-lg-12" type="text" placeholder="Enter Username" name="username" required>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label  class=" loginLabelText col-lg-2 control-label labels">Password</label>
                                 <div class="col-lg-12">
-                                    <input class=" modelInputLabels col-lg-12" type="password" placeholder="Enter Password" name="password" required>
+                                    <input class="  col-lg-12" type="password" placeholder="Enter Password" name="password" required>
                                 </div>
                             </div>
                             <div class="form-group">

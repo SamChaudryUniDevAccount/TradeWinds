@@ -114,5 +114,13 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* Analysis styles for pannels */
+.pannelHeaderTitleStyles{
 
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
 

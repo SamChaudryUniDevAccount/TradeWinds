@@ -50,9 +50,12 @@ session_start();
                        <div class="card ">
                            <div class="card-header card-primary">Commodity</div>
                            <div class="card-block">
-                               <p class="card-text">Chose commodity to analyse.</p>
+                               <p class="card-text pannelHeaderTitleStyles">Chose commodity to analyse.</p>
                                <a href="#" class="card-link">Links</a>
                                <a href="#" class="card-link">Links</a>
+                           </div>
+                           <div class="card-footer card-primary">
+                               //Footer
                            </div>
                        </div>
 
@@ -60,7 +63,10 @@ session_start();
                        <div class="card ">
                            <div class="card-header card-warning">Weather</div>
                            <div class="card-block">
-                               <p class="card-text">//Weather analyisis panael.</p>
+                               <p class="card-text pannelHeaderTitleStyles">//Weather analyisis panael.</p>
+                           </div>
+                           <div class="card-footer card-warning">
+                               //Footer
                            </div>
                        </div>
 
@@ -68,7 +74,10 @@ session_start();
                        <div class="card ">
                            <div class="card-header card-success">News</div>
                            <div class="card-block">
-                               <p class="card-text">//News pannel</p>
+                               <p class="card-text pannelHeaderTitleStyles">//News pannel</p>
+                           </div>
+                           <div class="card-footer card-success">
+                               //Footer
                            </div>
                        </div>
 

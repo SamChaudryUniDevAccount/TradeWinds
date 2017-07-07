@@ -53,8 +53,6 @@ session_start();
                                <div class="row">
 
                                    <div class="card-block">
-                                       <label>Select Commodity</label>
-
                                        <div class="btn-group">
                                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                Select Commodity

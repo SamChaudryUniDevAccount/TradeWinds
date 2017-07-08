@@ -1,10 +1,22 @@
 //Working
 $( document ).ready(function() {
 
-    loadGraph();
+    testTypeScript();
+
 });
 
+//Type Script test
 
+function testTypeScript() {
+
+ var x = new Student("Jane", "M.", "User");
+
+ alert(x.fullname);
+
+}
+
+
+//Plotting
 function loadGraph() {
 
     $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function (data)    {
@@ -41,7 +53,4 @@ function loadGraph() {
 
 
 
-
-
-//Graph commodities id is: commoditiesGraph
 }

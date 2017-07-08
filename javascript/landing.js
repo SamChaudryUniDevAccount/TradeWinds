@@ -11,7 +11,7 @@ function testTypeScript() {
 
  var x = new Student("Jane", "M.", "User");
 
- alert(x.fullname);
+ alert("Full name is:....." + x.fullname);
 
 }
 

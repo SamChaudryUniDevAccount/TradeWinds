@@ -7,14 +7,13 @@ $( document ).ready(function() {
 
 function loadGraph() {
 
-        //Sample from test project integrated in for hard coded data
     $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function (data)    {
+        // Create the chart
 
-        var CommoditiesDataObject = {
-
+        var dataObject = {
             rangeSelector: {
                 selected: 1,
-
+                inputEnabled: $('#container').width() > 480
             },
 
             title: {
@@ -34,9 +33,9 @@ function loadGraph() {
             }
         };
 
-        var chart = new Highcharts.StockChart(CommoditiesDataObject);
+        var chart = new Highcharts.StockChart(dataObject);
 
-        //var plot = $('#container').highcharts('commoditiesGraph', CommoditiesDataObject);
+        //var chart = $('#container').highcharts('StockChart', dataObject);
     });
 
 

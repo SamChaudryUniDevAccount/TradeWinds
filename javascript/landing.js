@@ -1,19 +1,10 @@
 //Working
 $( document ).ready(function() {
 
-    testTypeScript();
 
 });
 
-//Type Script test
 
-function testTypeScript() {
-
- var x = new Student("Jane", "M.", "User");
-
- alert("Full name is:....." + x.fullname);
-
-}
 
 
 //Plotting

@@ -36,7 +36,7 @@ function loadGraph() {
 
         //var chart = new Highcharts.StockChart(dataObject);
 
-        var plot = $('#container').highcharts('commoditiesGraph', dataObject);
+        var plot = $('#container').highcharts('commoditiesGraph', CommoditiesDataObject);
     });
 
 

@@ -142,9 +142,10 @@ session_start();
 </body>
 <!-- JavaScript-->
 <script src="javascript/jquery.js"></script>
-<script src="javascript/landing.js"></script>
-<script src="javascript/bootstrap.js"></script>
 <script src="charts/exporting.js"></script>
 <script src="charts/highstock.js"></script>
+<script src="javascript/landing.js"></script>
+<script src="javascript/bootstrap.js"></script>
+
 
 </html>

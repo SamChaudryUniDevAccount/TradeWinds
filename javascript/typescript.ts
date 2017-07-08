@@ -1,5 +1,6 @@
 
 
-var user ="sam"
+let user ="sam this came from sam who is using typescript"
 
-document.getElementById(user);
+document.getElementById("demo").innerHTML = user;
+

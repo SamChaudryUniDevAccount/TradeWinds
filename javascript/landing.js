@@ -30,13 +30,13 @@ function loadGraph() {
             }],
 
             chart: {
-                renderTo: 'container'
+                renderTo: 'commoditiesGraph'
             }
         };
 
-        //var chart = new Highcharts.StockChart(dataObject);
+        var chart = new Highcharts.StockChart(CommoditiesDataObject);
 
-        var plot = $('#container').highcharts('commoditiesGraph', CommoditiesDataObject);
+        //var plot = $('#container').highcharts('commoditiesGraph', CommoditiesDataObject);
     });
 
 

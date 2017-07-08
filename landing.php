@@ -142,8 +142,8 @@ session_start();
 </body>
 <!-- JavaScript-->
 <script src="javascript/jquery.js"></script>
-<script src="charts/exporting.js"></script>
-<script src="charts/highstock.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="javascript/landing.js"></script>
 <script src="javascript/bootstrap.js"></script>
 

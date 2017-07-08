@@ -128,7 +128,7 @@ session_start();
                                </div>
                            </div>
 
-                           //News Data goes here
+                           <div id="test"></div>
 
                        </div>
 
@@ -146,6 +146,7 @@ session_start();
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="javascript/landing.js"></script>
 <script src="javascript/bootstrap.js"></script>
+<script src="javascript/typescript.ts"></script>
 
 
 </html>

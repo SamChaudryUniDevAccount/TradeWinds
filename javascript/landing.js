@@ -5,8 +5,6 @@ $( document ).ready(function() {
 });
 
 
-
-
 //Plotting
 function loadGraph() {
 

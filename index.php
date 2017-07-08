@@ -13,7 +13,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $mypassword = mysqli_real_escape_string($link,$_POST['password']);
 
 
-    $sql = "SELECT * FROM user WHERE username = '$myusername' and password = '$mypassword'";
+    //$sql = "SELECT * FROM user WHERE username = '$myusername' and password = '$mypassword'";
+
+    $sql = "SELECT * FROM users.user WHERE username = '$myusername' and password = '$mypassword'";
 
     if ($result = mysqli_query($link,$sql))
     {

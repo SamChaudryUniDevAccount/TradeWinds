@@ -1,8 +1,10 @@
 //Working
 $( document ).ready(function() {
 
+loadGraph();
 
 });
+
 
 
 //Plotting

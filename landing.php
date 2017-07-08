@@ -146,7 +146,7 @@ session_start();
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="javascript/landing.js"></script>
 <script src="javascript/bootstrap.js"></script>
-<script src="javascript/typescript.ts/typescript.js"></script>
+<script src="javascript/typescript.ts"></script>
 
 
 </html>

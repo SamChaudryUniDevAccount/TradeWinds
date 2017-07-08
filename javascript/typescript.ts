@@ -1,3 +1,4 @@
+/*
 $( document ).ready(function() {
 
     alert("This came from typescript.js document.ready function")
@@ -28,3 +29,4 @@ function getSuccessOutput() {
     });
     return false;
 }
+ */

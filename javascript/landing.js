@@ -31,7 +31,7 @@ function loadGraph() {
             }],
 
             chart: {
-                renderTo: 'x'
+                renderTo: 'commoditiesGraph'
             }
         };
 

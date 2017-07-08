@@ -2,5 +2,5 @@
 
 let user ="sam this came from sam who is using typescript"
 
-document.getElementById("demo").innerHTML = user;
+document.getElementById("test").innerHTML = user;
 

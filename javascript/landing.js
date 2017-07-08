@@ -33,9 +33,9 @@ function loadGraph() {
             }
         };
 
-        var chart = new Highcharts.StockChart(dataObject);
+       // var chart = new Highcharts.StockChart(dataObject);
 
-        //var chart = $('#container').highcharts('StockChart', dataObject);
+        var chart = $('#commoditiesGraph').highcharts(dataObject);
     });
 
 

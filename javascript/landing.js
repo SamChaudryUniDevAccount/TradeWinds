@@ -1,3 +1,6 @@
-/**
- * Created by samchaudry on 07/07/2017.
- */
+
+$( document ).ready(function() {
+
+   alert("Working...")
+
+});

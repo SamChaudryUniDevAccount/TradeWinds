@@ -75,7 +75,9 @@ session_start();
                                     <button type="button" class="btn btn-success">Get Data</button>
                                     <br/>
                                     <div id="commoditiesGraph">
-                                        //Graph goes here
+
+
+
                                     </div>
                                <!-- End of card body -->
                            </div>
@@ -142,4 +144,7 @@ session_start();
 <script src="javascript/jquery.js"></script>
 <script src="javascript/landing.js"></script>
 <script src="javascript/bootstrap.js"></script>
+<script src="charts/exporting.js"></script>
+<script src="charts/highstock.js"></script>
+
 </html>

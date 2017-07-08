@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     else{
 
-        echo "ERROR Something not working!";
+        echo "ERROR !";
     }
 
     if($count == 1) {

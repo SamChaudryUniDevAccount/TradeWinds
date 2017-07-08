@@ -8,12 +8,14 @@ $( document ).ready(function() {
 function loadGraph() {
 
     $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function (data)    {
+
         // Create the chart
 
         var dataObject = {
+
             rangeSelector: {
                 selected: 1,
-                inputEnabled: $('#container').width() > 480
+                inputEnabled: $('#commoditiesGraph').width() > 480
             },
 
             title: {
@@ -29,11 +31,9 @@ function loadGraph() {
             }],
 
             chart: {
-                renderTo: 'commoditiesGraph'
+                renderTo: 'x'
             }
         };
-
-       // var chart = new Highcharts.StockChart(dataObject);
 
         var chart = $('#commoditiesGraph').highcharts(dataObject);
     });

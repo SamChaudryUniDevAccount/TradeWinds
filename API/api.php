@@ -22,8 +22,6 @@ function getAssetClassList(){
 
     $result = mysqli_query($link,"SELECT * FROM commodities_markets.coal");
 
-    echo "result is->>".$result;
-
     $jsonData = array();
 
     while($row = mysqli_fetch_assoc($result)) {

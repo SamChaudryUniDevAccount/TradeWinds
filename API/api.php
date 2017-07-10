@@ -1,7 +1,7 @@
 <?php
 
 
-include_once("./config/dbconfig.php");
+include_once("../config/dbconfig.php");
 
 //Working
 if(isset($_GET['getAssetClassList'])){

@@ -29,7 +29,7 @@ function loadAssetTypes() {
 }
 
 
-$('#assetType').on('click',function() {
+$('#assetClassloader').on('click',function() {
 
 
     var option;

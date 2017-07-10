@@ -1,8 +1,8 @@
 <?php
 
-include("config/dbconfig.php");
+include("/config/dbconfig.php");
 
-
+//Working
 if(isset($_GET['getAssetClassList'])){
 
     global $link;

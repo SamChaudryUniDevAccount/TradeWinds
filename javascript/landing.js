@@ -20,7 +20,7 @@ function loadAssetTypes() {
 
                 $.each(apiData, function(k, v) {
 
-                    $('#assetClass').append($('<option>', { value : v }).text(value));
+                    $('#assetClass').append($('<option>', { value : v }).text(v));
 
                    // alert(k + ' is ' + v);
 

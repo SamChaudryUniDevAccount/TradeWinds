@@ -26,7 +26,7 @@ function getAssetClassList(){
 
     if(count($jsonData) > 0){
 
-        echo count($jsonData);
+        echo $jsonData;
 
     }else{
 

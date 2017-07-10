@@ -56,7 +56,7 @@ $('#assetClassloader').on('click',function() {
 
 });
 
-function loadData() {
+function loadData(data) {
 
     var apiData = $.parseJSON(data);
 

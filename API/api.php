@@ -19,9 +19,10 @@ function getAssetClassList(){
 
     $sql= "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA= 'commodities_markets'";
 
-    echo $sql;
 
     $result = mysqli_query($link,$sql);
+
+    echo $result;
 
     $jsonData = array();
 

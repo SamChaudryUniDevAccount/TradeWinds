@@ -32,19 +32,11 @@ function loadAssetTypes() {
 $('#assetClass').change(function() {
 
     var assetClass;
-
     assetClass = $('#assetClass').val();
 
-
-    var assetClass = {
-
-        commodityAssetClass: assetClass
-
-    }
+    var assetClass = { commodityAssetClass: assetClass }
 
     var jsonDataToPost = JSON.stringify( assetClass);
-
-    //Object created
 
     $.ajax(
         {
@@ -54,13 +46,17 @@ $('#assetClass').change(function() {
             data:{"getCommodityByAssetClass": jsonDataToPost},
             success: function(data){
 
-                 alert(data);
+                var apiData = $.parseJSON(data);
+
+                $.each(apiData, function(k, v) {
+
+                    $('#assetType').append($("<option></option>").attr("Commodity_name",k).text(v["Commodity_name"]));
+
+                });
+
 
             }
         });
-
-
-
 
 });
 

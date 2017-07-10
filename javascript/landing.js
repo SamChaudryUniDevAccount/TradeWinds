@@ -59,8 +59,6 @@ $('#assetClassloader').on('click',function() {
 
 function  loadDropDown(data) {
 
-    $('#assetType').empty();
-
     var apiData = $.parseJSON(data);
 
     $.each(apiData, function(k, v) {

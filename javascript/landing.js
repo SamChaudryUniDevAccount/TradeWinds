@@ -58,6 +58,8 @@ $('#assetClassloader').on('click',function() {
 
 function loadData (data) {
 
+    $('#assetType option').remove();
+
     var apiData = $.parseJSON(data);
 
     $.each(apiData, function(k, v) {
@@ -66,13 +68,7 @@ function loadData (data) {
 
     });
 
-
-
 }
-
-
-
-
 
 
 //Plotting

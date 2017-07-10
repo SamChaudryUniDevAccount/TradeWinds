@@ -34,8 +34,6 @@ function getCommodityByAssetClass(){
 
     $sql = "SELECT Commodity_name FROM commodities_markets.".$commodityType;
 
-    echo $sql;
-
     if(mysqli_query($link, $sql)){
 
         $result = mysqli_query($link,$sql);

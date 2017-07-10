@@ -1,9 +1,29 @@
 //Working
 $( document ).ready(function() {
 
-loadGraph();
+loadAssetTypes();
 
 });
+
+
+function loadAssetTypes() {
+
+    $.ajax(
+        {
+
+            type:'GET',
+            url:'/API/api.php',
+            data:"test",
+            success: function(data){
+
+                alert(data);
+
+            }
+
+        });
+
+
+}
 
 
 

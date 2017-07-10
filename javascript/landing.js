@@ -48,22 +48,29 @@ $('#assetClass').on('click',function() {
             data:{"getCommodityByAssetClass": jsonDataToPost},
             success: function(data){
 
-                var apiData = $.parseJSON(data);
-
-                option = $(' <option/>');
-
-                for (var x = 0; x < apiData.length; x++) {
-
-                    option.append("<option> " + apiData[x].Commodity_name + "</option>");
-
-                }
-
-                $('#assetType ').append(option);
+              loadDropDown(data);
 
             }
         });
 
 });
+
+
+function  loadDropDown(data) {
+
+    var apiData = $.parseJSON(data);
+
+    $.each(apiData, function(k, v) {
+
+        $('#assetType').append($("<option></option>").attr("Commodity_name",k).text(v["Commodity_name"]));
+
+    });
+
+}
+
+
+
+
 
 
 //Plotting

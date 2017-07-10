@@ -16,25 +16,18 @@ function loadAssetTypes() {
             data:"getAssetClassList",
             success: function(data){
 
-              parse(data);
+                var apiData = $.parseJSON(data);
+
+                $.each(apiData, function(k, v) {
+
+                    $('#assetClass').append($("<option></option>").attr("TABLE_NAME",k).text(v));
+
+                });
             }
         });
 
 }
 
-function parse(data){
-
-    var apiData = $.parseJSON(data);
-
-    var option = "<option>"
-
-    for (var x = 0; apiData.length < 10; x++) {
-
-        option += "<option>" + apiData[x] + "</option>";
-    }
-
-    $('#assetClass').html(option);
-}
 
 //Plotting
 function loadGraph() {

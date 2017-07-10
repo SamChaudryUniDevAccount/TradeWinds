@@ -31,7 +31,7 @@ function loadAssetTypes() {
 
 $('#assetClassloader').on('click',function() {
 
-    $("#assetClass").empty();
+    $("#assetType").empty();
 
     var option;
 

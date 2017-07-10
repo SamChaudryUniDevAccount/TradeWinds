@@ -4,7 +4,7 @@ include("config/dbconfig.php");
 
 if (isset($_POST["getCommodityByAssetClass"])) {
 
-    getAssetClassList();
+    getCommodityByAssetClass();
 
 }
 

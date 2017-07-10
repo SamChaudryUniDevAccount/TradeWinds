@@ -35,7 +35,6 @@ $('#assetClass').change(function() {
 
     assetClass = $('#assetClass').val();
 
-    alert(assetClass);
 
     var assetClass = {
 
@@ -45,7 +44,7 @@ $('#assetClass').change(function() {
 
     var jsonDataToPost = JSON.stringify( assetClass);
 
-    alert(jsonDataToPost);
+    //Object created
 
     $.ajax(
         {

@@ -1,14 +1,18 @@
 <?php
 
-
 include("config/dbconfig.php");
 
-//Working
 if(isset($_GET['getAssetClassList'])){
+
+    getAssetClassList();
+
+}
+
+function getAssetClassList(){
 
     global $link;
 
-    $sql= "SELECT *  FROM user";
+    $sql= "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA='commodities_markets'";
 
     $result = mysqli_query($link,$sql);
 
@@ -30,5 +34,6 @@ if(isset($_GET['getAssetClassList'])){
 
         echo $dataNotFound;
     }
+
 
 }

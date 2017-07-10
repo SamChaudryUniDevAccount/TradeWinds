@@ -31,6 +31,17 @@ function loadAssetTypes() {
 }
 
 
+$('#assetClass').change(function() {
+
+    var value = $option.val();//to get content of "value" attrib
+    var text = $option.text();//to get <option>Text</option> content
+
+    alert(value,text);
+
+
+});
+
+
 //Plotting
 function loadGraph() {
 

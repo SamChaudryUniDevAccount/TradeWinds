@@ -18,6 +18,8 @@ function getCommodityByAssetClass(){
 
     //commodityAssetClass
 
+    echo $data;
+
     foreach ($data as $key=>$value){
 
         if($key == "commodityAssetClass"){

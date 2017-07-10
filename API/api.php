@@ -1,6 +1,6 @@
 <?php
 
-include("/config/dbconfig.php");
+include("config/dbconfig.php");
 
 
 if(isset($_GET['getAssetClassList'])){

@@ -22,7 +22,7 @@ function loadAssetTypes() {
 
                     alert(k,v);
 
-                    $('#assetClass').append($("<option></option>").attr("TABLE_NAME",k).text(v));
+                    $('#assetClass').append($("<option></option>").attr("TABLE_NAME",k).text(v["TABLE_NAME"]));
 
                 });
             }

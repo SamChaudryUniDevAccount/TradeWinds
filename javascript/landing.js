@@ -31,6 +31,7 @@ function loadAssetTypes() {
 
 $('#assetClassloader').on('click',function() {
 
+    $('#assetType <option>').remove();
 
     var option;
 
@@ -57,8 +58,6 @@ $('#assetClassloader').on('click',function() {
 });
 
 function loadData(data) {
-
-    $('#assetType <option>').remove();
 
     var apiData = $.parseJSON(data);
 

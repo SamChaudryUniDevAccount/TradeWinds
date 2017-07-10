@@ -29,7 +29,7 @@ function loadAssetTypes() {
 }
 
 
-$('#assetClass').on('change',function() {
+$('#assetClass').on('click',function() {
 
     var assetClass;
     assetClass = $('#assetClass').val();

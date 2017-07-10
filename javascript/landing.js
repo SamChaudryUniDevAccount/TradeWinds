@@ -31,7 +31,7 @@ function loadAssetTypes() {
 
 $('#assetClass').change(function() {
 
-    var assetClass = $('assetClass').val();
+    var assetClass = $('#assetClass').val();
 
     alert(assetClass);
 

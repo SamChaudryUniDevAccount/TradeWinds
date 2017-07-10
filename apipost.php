@@ -24,8 +24,6 @@ function getCommodityByAssetClass(){
 
             $commodityType = $value;
 
-                echo($commodityType);
-
         }else{
 
              echo "Sorry asset Class unknown";
@@ -35,8 +33,6 @@ function getCommodityByAssetClass(){
     }
 
     $sql = "SELECT Commodity_name FROM commodities_markets.".$commodityType;
-
-    echo $sql;
 
     if(mysqli_query($link, $sql)){
 

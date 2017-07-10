@@ -22,7 +22,7 @@ function getAssetClassList(){
 
     $result = mysqli_query($link,$sql);
 
-    echo var_dump($result);
+    echo "Result from user is...".var_dump($result);
 
     $jsonData = array();
 

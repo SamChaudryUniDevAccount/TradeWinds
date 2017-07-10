@@ -41,6 +41,8 @@ $('#assetClass').change(function() {
 
     var jsonDataToPost = JSON.stringify( assetClass);
 
+    alert(jsonDataToPost);
+
     $.ajax(
         {
 

@@ -29,7 +29,7 @@ function loadAssetTypes() {
 }
 
 
-$('#assetClassloader').on('click',function() {
+$('#assetType').on('click',function() {
 
 
     var option;
@@ -58,7 +58,6 @@ $('#assetClassloader').on('click',function() {
 
 function loadData (data) {
 
-    $('#assetType option').remove();
 
     var apiData = $.parseJSON(data);
 
@@ -67,6 +66,7 @@ function loadData (data) {
         $('#assetType').append($("<option></option>").attr("Commodity_name",k).text(v["Commodity_name"]));
 
     });
+
 
 }
 

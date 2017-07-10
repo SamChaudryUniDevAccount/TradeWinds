@@ -22,7 +22,7 @@ function getAssetClassList(){
 
     $result = mysqli_query($link,$sql);
 
-    echo $result;
+    echo "result is->>".$result;
 
     $jsonData = array();
 

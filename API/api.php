@@ -14,6 +14,7 @@ if(isset($_GET['getAssetClassList'])){
 function getAssetClassList(){
 
     $queryError = 204;
+
     global $link;
 
 
@@ -21,6 +22,8 @@ function getAssetClassList(){
 
 
     $result = mysqli_query($link,$sql);
+
+    echo $result;
 
     $jsonData = array();
 

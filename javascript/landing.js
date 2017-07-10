@@ -26,13 +26,14 @@ function parse(data){
 
     var apiData = $.parseJSON(data);
 
+    var option = "<option>"
+
     for (var x = 0; apiData.length < 10; x++) {
 
-        selectList += "<option>" + apiData[x] + "</option>";
+        option += "<option>" + apiData[x] + "</option>";
     }
-    selectList += "</select>";
 
-    $('#assetClass').html(selectList);
+    $('#assetClass').html(option);
 }
 
 //Plotting

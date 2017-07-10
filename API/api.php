@@ -17,10 +17,10 @@ function getAssetClassList(){
     global $link;
 
 
-    //$sql= "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA= 'commodities_markets'";
+    $sql= "SELECT * FROM user ";
 
 
-    $result = mysqli_query($link,"SELECT * FROM users");
+    $result = mysqli_query($link,$sql);
 
     $jsonData = array();
 

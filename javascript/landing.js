@@ -50,8 +50,7 @@ $('#assetClassloader').on('click',function() {
             data:{"getCommodityByAssetClass": jsonDataToPost},
             success: function(data){
 
-                loadDropDown(data);
-
+                alert(data);
             }
         });
 

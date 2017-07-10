@@ -31,8 +31,6 @@ function loadAssetTypes() {
 
 $('#assetClassloader').on('click',function() {
 
-    $('#assetType <option>').remove();
-
     var option;
 
     var assetClass;

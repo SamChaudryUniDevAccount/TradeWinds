@@ -31,17 +31,15 @@ function loadAssetTypes() {
 
 $('#assetClass').change(function() {
 
-    var $items = $('assetClass').val();
+    var assetClass = $('assetClass').val();
 
-    var obj = {}
+    var assetClass = {
 
-    $items.each(function() {
+        commodityAssetClass: assetClass
 
-        obj[this.id] = $(this).val();
+    }
 
-    })
-
-    var jsonDataToPost = JSON.stringify( obj);
+    var jsonDataToPost = JSON.stringify( assetClass);
 
     $.ajax(
         {

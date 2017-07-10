@@ -16,10 +16,12 @@ function loadAssetTypes() {
             data:"getAssetClassList",
             success: function(data){
 
+                var apiData = $.parseJSON(data);
 
-                var dataObjectParsed = $.parseJSON(data);
+                $.each(apiData, function(k, v) {
+                    alert(k + ' is ' + v);
 
-                alert(dataObjectParsed);
+                });
 
             }
 

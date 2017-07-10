@@ -59,8 +59,11 @@ session_start();
                                        </select>
                                        <br>
                                         <p>Select Commodity</p>
-                                       <select id="assetType" class="form-control">
-                                       </select>
+                                       <div class="row">
+                                            <select id="assetType" class="form-control">
+                                            </select>
+                                           <button id="assetClassloader"> Go</button>
+                                       </div>
                                        <br/>
                                        <br/>
                                        <p class="card-text ">Select Date range</p>

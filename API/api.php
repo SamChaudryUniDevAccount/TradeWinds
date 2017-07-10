@@ -17,10 +17,10 @@ function getAssetClassList(){
     global $link;
 
 
-    $sql= "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA= 'commodities_markets'";
+   // $sql= "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA= 'commodities_markets'";
 
 
-    $result = mysqli_query($link,$sql);
+    $result = mysqli_query($link,"SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_SCHEMA= 'commodities_markets'");
 
     echo "result is->>".$result;
 

@@ -31,6 +31,8 @@ function loadAssetTypes() {
 
 $('#assetClass').on('click',function() {
 
+    var option;
+
     var assetClass;
     assetClass = $('#assetClass').val();
 
@@ -48,12 +50,15 @@ $('#assetClass').on('click',function() {
 
                 var apiData = $.parseJSON(data);
 
-                $.each(apiData, function(k, v) {
+                option = $(' <option/>');
 
-                    $('#assetType').append($("<option></option>").attr("Commodity_name",k).text(v["Commodity_name"]));
+                for (var x = 0; x < apiData.length; x++) {
 
-                });
+                    option.append("<option> " + apiData[x].Commodity_name + "</option>");
 
+                }
+
+                $('#assetType ').append(option);
 
             }
         });

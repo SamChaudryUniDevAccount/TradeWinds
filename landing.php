@@ -58,9 +58,8 @@ session_start();
                                        <select id="assetClass"class="form-control">
                                        </select>
                                        <br>
+                                        <p>Select Commodity</p>
                                        <select id="assetType" class="form-control">
-                                           <option>Select Commodity</option>
-                                           <option>Oil</option>
                                        </select>
                                        <br/>
                                        <br/>

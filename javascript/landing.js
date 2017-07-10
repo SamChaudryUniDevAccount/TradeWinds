@@ -12,7 +12,7 @@ function loadAssetTypes() {
         {
 
             type:'GET',
-            url:'/API/api.php',
+            url:'api.php',
             data:"getAssetClassList",
             success: function(data){
 

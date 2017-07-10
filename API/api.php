@@ -1,6 +1,6 @@
 <?php
 
-include("config/dbconfig.php");
+include("/config/dbconfig.php");
 
 //baseURL for Quandl
 
@@ -17,8 +17,7 @@ function getAssetClassList(){
 
     global $link;
 
-
-    $sql = "SELECT * FROM user WHERE username = 'admin' and password = 'admin'";
+    $sql = "SELECT * FROM user";
 
 
     //$sql = " SELECT * FROM users.user";

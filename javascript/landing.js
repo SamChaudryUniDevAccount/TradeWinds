@@ -1,7 +1,7 @@
 //Working
 $( document ).ready(function() {
 
-loadAssetTypes();
+    loadAssetTypes();
 
 });
 
@@ -13,7 +13,7 @@ function loadAssetTypes() {
 
             type:'GET',
             url:'/API/api.php',
-            data:"test",
+            data:"getAssetClassList",
             success: function(data){
 
                 alert(data);

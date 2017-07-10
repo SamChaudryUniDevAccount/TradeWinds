@@ -12,10 +12,6 @@ function getAssetClassList(){
 
     global $link;
 
-    $sql = "SELECT * FROM user";
-
-    $result = mysqli_query($link,$sql);
-
-    echo "Result from user table  is...".var_dump($result);
+    echo "Result from user table  is...";
 
 }

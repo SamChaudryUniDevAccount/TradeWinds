@@ -17,9 +17,6 @@ function getCommodityByAssetClass(){
 
     $data = json_decode($_POST["getCommodityByAssetClass"],true);
 
-    //commodityAssetClass
-
-    echo $data;
 
     foreach ($data as $key=>$value){
 

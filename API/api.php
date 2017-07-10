@@ -18,11 +18,14 @@ function getAssetClassList(){
     global $link;
 
 
-    $sql = " SELECT * FROM users.user";
+    $sql = "SELECT * FROM user WHERE username = 'admin' and password = 'admin'";
+
+
+    //$sql = " SELECT * FROM users.user";
 
     $result = mysqli_query($link,$sql);
 
-    echo "Result from user is...".var_dump($result);
+    echo "Result from user table  is...".var_dump($result);
 
     $jsonData = array();
 

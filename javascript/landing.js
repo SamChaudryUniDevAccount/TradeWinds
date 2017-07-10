@@ -33,6 +33,8 @@ $('#assetClass').change(function() {
 
     var assetClass = $('assetClass').val();
 
+    alert(assetClass);
+
     var assetClass = {
 
         commodityAssetClass: assetClass

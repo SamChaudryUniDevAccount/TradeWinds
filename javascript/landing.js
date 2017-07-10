@@ -31,10 +31,10 @@ function loadAssetTypes() {
 
 $('#assetClass').change(function() {
 
-    var value = $option.val();//to get content of "value" attrib
-    var text = $option.text();//to get <option>Text</option> content
+    var value = $('#assetClass').val();
 
-    alert(value,text);
+
+    alert(value);
 
 
 });

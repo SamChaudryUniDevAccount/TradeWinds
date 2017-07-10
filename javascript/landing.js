@@ -12,11 +12,14 @@ function loadAssetTypes() {
         {
 
             type:'GET',
-            url:'api.php',
+            url:'apiget.php',
             data:"getAssetClassList",
             success: function(data){
 
-                alert(data);
+
+                var dataObjectParsed = $.parseJSON(data);
+
+                alert(dataObjectParsed);
 
             }
 

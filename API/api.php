@@ -18,8 +18,7 @@ function getAssetClassList(){
     global $link;
 
 
-    $sql= "SELECT Exchange_id FROM exchanges ";
-
+    $sql = " SELECT * FROM users.user";
 
     $result = mysqli_query($link,$sql);
 

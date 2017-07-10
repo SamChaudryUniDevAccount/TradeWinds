@@ -55,8 +55,6 @@ session_start();
                            <div class="card-block">
                                    <div class="card-block">
                                        <select id="assetClass"class="form-control">
-                                           <option >Select Asset Class</option>
-                                           <option></option>
                                        </select>
                                        <br>
                                        <select id="assetType" class="form-control">

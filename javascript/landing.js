@@ -19,14 +19,14 @@ function loadAssetTypes() {
                 var apiData = $.parseJSON(data);
 
                 $.each(apiData, function(k, v) {
-                    alert(k + ' is ' + v);
+
+                    $('#assetClass').append($('<option>', { value : v }).text(value));
+
+                   // alert(k + ' is ' + v);
 
                 });
-
             }
-
         });
-
 
 }
 

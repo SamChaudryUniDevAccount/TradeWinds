@@ -31,7 +31,7 @@ function loadAssetTypes() {
 
 $('#assetClassloader').on('click',function() {
 
-    $("assetClass").empty();
+    $("#assetClass").empty();
 
     var option;
 
@@ -50,7 +50,7 @@ $('#assetClassloader').on('click',function() {
             data:{"getCommodityByAssetClass": jsonDataToPost},
             success: function(data){
 
-              loadDropDown(data);
+                alert(data);
 
             }
         });

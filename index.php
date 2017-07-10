@@ -8,10 +8,8 @@ global $error;
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-
     $myusername = mysqli_real_escape_string($link,$_POST['username']);
     $mypassword = mysqli_real_escape_string($link,$_POST['password']);
-
 
     $sql = "SELECT * FROM user WHERE username = '$myusername' and password = '$mypassword'";
 
@@ -25,14 +23,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     else{
 
-        echo "ERROR !";
+        echo "Sorry your crendetials need checking !";
     }
 
     if($count == 1) {
 
         $_SESSION['login_user'] = $myusername;
-
-        echo "count is 1";
 
         header('location: landing.php');
 

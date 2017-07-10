@@ -31,10 +31,32 @@ function loadAssetTypes() {
 
 $('#assetClass').change(function() {
 
-    var value = $('#assetClass').val();
+    var $items = $('assetClass').val();
+
+    var obj = {}
+
+    $items.each(function() {
+
+        obj[this.id] = $(this).val();
+
+    })
+
+    var jsonDataToPost = JSON.stringify( obj);
+
+    $.ajax(
+        {
+
+            type:'POST',
+            url:'apipost.php',
+            data:{"getCommodityByAssetClass": jsonDataToPost},
+            success: function(data){
+
+                 alert(data);
+
+            }
+        });
 
 
-    alert(value);
 
 
 });

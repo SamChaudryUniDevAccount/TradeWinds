@@ -54,6 +54,7 @@ session_start();
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
                            <div class="card-block">
                                    <div class="card-block">
+                                       <p>Select Asset Class</p>
                                        <select id="assetClass"class="form-control">
                                        </select>
                                        <br>

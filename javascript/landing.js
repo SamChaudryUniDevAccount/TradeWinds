@@ -31,6 +31,7 @@ function loadAssetTypes() {
 
 $('#assetClassloader').on('click',function() {
 
+
     var option;
 
     var assetClass;
@@ -55,7 +56,7 @@ $('#assetClassloader').on('click',function() {
 
 });
 
-function loadData(data) {
+function loadData (data) {
 
     var apiData = $.parseJSON(data);
 

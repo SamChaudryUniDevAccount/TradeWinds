@@ -25,23 +25,6 @@ function getAssetClassList(){
 
     echo $result;
 
-    $jsonData = array();
-
-    while($row = mysqli_fetch_assoc($result)) {
-
-        $jsonData[] = $row;
-
-    }
-
-    if(count($jsonData) > 0){
-
-        echo json_encode($jsonData);
-
-    }else{
-
-
-        echo $queryError;
-    }
 
 
 }

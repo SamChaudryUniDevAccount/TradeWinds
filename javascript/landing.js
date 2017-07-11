@@ -28,8 +28,9 @@ function loadAssetTypes() {
 
 }
 
+//assetClassloader
 
-$('#assetClassloader').on('click',function() {
+$('#assetClass').on('change',function() {
 
 
     var option;

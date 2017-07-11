@@ -25,7 +25,7 @@ if (isset($_POST["getCommodityByAssetClass"])) {
     }
 
     //SQL
-    $sql = "SELECT Commodity_name FROM commodities_markets." . $commodityType;
+    $sql = "SELECT Commodity_name FROM commodities_markets.".$commodityType;
 
     echo $sql;
 

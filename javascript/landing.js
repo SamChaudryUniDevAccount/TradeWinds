@@ -58,6 +58,9 @@ $('#assetClassloader').on('click',function() {
 
 function loadData (data) {
 
+    //Removal of old options from assetType
+
+    $('#assetType').find('option').remove()
 
     var apiData = $.parseJSON(data);
 

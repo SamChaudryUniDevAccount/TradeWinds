@@ -78,7 +78,6 @@ session_start();
                                        </form>
                                    </div>
                                     <br/>
-                                    <button type="button" class="btn btn-success">Get Data</button>
                                     <br/>
                                     <div id="commoditiesGraph">
 

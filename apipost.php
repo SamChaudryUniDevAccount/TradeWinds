@@ -7,8 +7,7 @@ if (isset($_POST["getCommodityByAssetClass"])) {
     global $link;
     $commodityType = "";
 
-    $data = json_decode($_POST["getCommodityByAssetClass"], true);
-
+    $data = json_decode($_POST["getCommodityByAssetClass"]);
 
     foreach ($data as $key => $value) {
 
@@ -22,36 +21,35 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 
         }
 
-    }
+        //SQL
+        $sql = "SELECT Commodity_name FROM commodities_markets.".$commodityType;
 
-    echo $commodityType;
+        echo $sql;
 
-    //SQL
-    $sql = "SELECT Commodity_name FROM commodities_markets.".$commodityType;
+        if (mysqli_query($link, $sql)) {
 
-    echo $sql;
+            $result = mysqli_query($link, $sql);
 
-    if (mysqli_query($link, $sql)) {
+            echo $result;
 
-        $result = mysqli_query($link, $sql);
+            $jsonData = array();
 
-        echo $result;
+            while ($row = mysqli_fetch_assoc($result)) {
 
-        $jsonData = array();
+                $jsonData[] = $row;
 
-        while ($row = mysqli_fetch_assoc($result)) {
+            }
 
-            $jsonData[] = $row;
+            echo json_encode($jsonData);
+
+
+        } else {
+
+            echo "Error";
+
 
         }
 
-        echo json_encode($jsonData);
-
-
-    } else {
-
-        echo "Error";
-
-
     }
+
 }

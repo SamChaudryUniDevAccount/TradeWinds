@@ -29,10 +29,7 @@ function loadAssetTypes() {
 }
 
 
-$('#assetClassloader').on('click', loadCommodityNames());
-
-
-function loadCommodityNames() {
+$('#assetClassloader').on('click',function() {
 
 
     var option;
@@ -53,19 +50,27 @@ function loadCommodityNames() {
             data:{"getCommodityByAssetClass": jsonDataToPost},
             success: function(data){
 
-
-                $('#assetType').find('option').remove()
-
-                var apiData = $.parseJSON(data);
-
-                $.each(apiData, function(k, v) {
-
-                    $('#assetType').append($("<option></option>").attr("Commodity_name",k).text(v["Commodity_name"]));
-
-                });
+              loadData(data)
 
             }
         });
+
+});
+
+function loadCommodityNames(data) {
+
+
+
+    $('#assetType').find('option').remove()
+
+    var apiData = $.parseJSON(data);
+
+    $.each(apiData, function(k, v) {
+
+        $('#assetType').append($("<option></option>").attr("Commodity_name",k).text(v["Commodity_name"]));
+
+    });
+
 
 }
 

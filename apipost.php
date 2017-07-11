@@ -11,6 +11,7 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 
 function getCommodityByAssetClass(){
 
+    echo "Hi";
 
     global $link;
     $commodityType= "";

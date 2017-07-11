@@ -16,6 +16,8 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 
             $commodityType = $value;
 
+            echo $commodityType;
+
         }else{
 
             echo "Sorry asset Class unknown";

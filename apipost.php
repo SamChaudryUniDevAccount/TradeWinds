@@ -4,13 +4,6 @@ include("config/dbconfig.php");
 
 if (isset($_POST["getCommodityByAssetClass"])) {
 
-    getCommodityByAssetClass();
-
-}
-
-
-function getCommodityByAssetClass(){
-
     global $link;
     $commodityType= "";
 
@@ -25,7 +18,7 @@ function getCommodityByAssetClass(){
 
         }else{
 
-             echo "Sorry asset Class unknown";
+            echo "Sorry asset Class unknown";
 
         }
 
@@ -33,7 +26,7 @@ function getCommodityByAssetClass(){
 
     $sql = "SELECT Commodity_name FROM commodities_markets.".$commodityType;
 
-        echo $sql;
+    echo $sql;
 
     if(mysqli_query($link, $sql)){
 
@@ -54,8 +47,17 @@ function getCommodityByAssetClass(){
 
     } else{
 
-            echo "Error";
+        echo "Error";
 
     }
+
+}
+
+
+function getCommodityByAssetClass(){
+
+
+
+
 
 }

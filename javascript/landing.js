@@ -29,7 +29,10 @@ function loadAssetTypes() {
 }
 
 
-$('#assetClassloader').on('click',function() {
+$('#assetClassloader').on('click', loadCommodityNames());
+
+
+function loadCommodityNames() {
 
 
     var option;
@@ -50,27 +53,19 @@ $('#assetClassloader').on('click',function() {
             data:{"getCommodityByAssetClass": jsonDataToPost},
             success: function(data){
 
-              loadData(data)
+
+                $('#assetType').find('option').remove()
+
+                var apiData = $.parseJSON(data);
+
+                $.each(apiData, function(k, v) {
+
+                    $('#assetType').append($("<option></option>").attr("Commodity_name",k).text(v["Commodity_name"]));
+
+                });
 
             }
         });
-
-});
-
-function loadData (data) {
-
-    //Removal of old options from assetType
-
-    $('#assetType').find('option').remove()
-
-    var apiData = $.parseJSON(data);
-
-    $.each(apiData, function(k, v) {
-
-        $('#assetType').append($("<option></option>").attr("Commodity_name",k).text(v["Commodity_name"]));
-
-    });
-
 
 }
 
@@ -111,5 +106,5 @@ function loadGraph() {
 
 
 
-
 }
+

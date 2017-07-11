@@ -4,6 +4,16 @@ include("config/dbconfig.php");
 
 if (isset($_POST["getCommodityByAssetClass"])) {
 
+
+//End of if statement
+    getCommodityByAssetClass();
+
+}
+
+
+//Get subclass of commodities.
+function getCommodityByAssetClass(){
+
     global $link;
     $commodityType = "";
 
@@ -47,5 +57,4 @@ if (isset($_POST["getCommodityByAssetClass"])) {
         }
 
     }
-
 }

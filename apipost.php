@@ -22,7 +22,7 @@ if (isset($_POST["getCommodityByAssetClass"])) {
         }
 
         //SQL
-        $sql = "SELECT Commodity_name FROM commodities_markets."."agriculture";
+        $sql = "SELECT Commodity_name FROM commodities_markets.".$commodityType;
 
         if (mysqli_query($link, $sql)) {
 

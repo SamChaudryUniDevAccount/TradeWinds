@@ -5,20 +5,18 @@ include("config/dbconfig.php");
 if (isset($_POST["getCommodityByAssetClass"])) {
 
     global $link;
-    $commodityType= "";
+    $commodityType = "";
 
-    $data = json_decode($_POST["getCommodityByAssetClass"],true);
+    $data = json_decode($_POST["getCommodityByAssetClass"], true);
 
 
-    foreach ($data as $key=>$value){
+    foreach ($data as $key => $value) {
 
-        if($key == "commodityAssetClass"){
+        if ($key == "commodityAssetClass") {
 
             $commodityType = $value;
 
-            echo $commodityType;
-
-        }else{
+        } else {
 
             echo "Sorry asset Class unknown";
 
@@ -26,13 +24,32 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 
     }
 
-}
+    //SQL
+    $sql = "SELECT Commodity_name FROM commodities_markets." . $commodityType;
+
+    echo $sql;
+
+    if (mysqli_query($link, $sql)) {
+
+        $result = mysqli_query($link, $sql);
+
+        echo $result;
+
+        $jsonData = array();
+
+        while ($row = mysqli_fetch_assoc($result)) {
+
+            $jsonData[] = $row;
+
+        }
+
+        echo json_encode($jsonData);
 
 
-function getCommodityByAssetClass(){
+    } else {
+
+        echo "Error";
 
 
-
-
-
+    }
 }

@@ -22,13 +22,11 @@ if (isset($_POST["getCommodityByAssetClass"])) {
         }
 
         //SQL
-        $sql = "SELECT Commodity_name FROM commodities_markets.".$commodityType;
+        $sql = "SELECT Commodity_name FROM commodities_markets."."agriculture";
 
         if (mysqli_query($link, $sql)) {
 
             $result = mysqli_query($link, $sql);
-
-            echo $result;
 
             $jsonData = array();
 

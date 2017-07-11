@@ -62,7 +62,7 @@ session_start();
                                        <div class="row">
                                             <select id="assetType" class="form-control">
                                             </select>
-                                           <button id="assetClassloader"> Go</button>
+
                                        </div>
                                        <br/>
                                        <br/>
@@ -78,6 +78,7 @@ session_start();
                                        </form>
                                    </div>
                                     <br/>
+                                    <button type="button" class="btn btn-success">Get Data</button>
                                     <br/>
                                     <div id="commoditiesGraph">
 

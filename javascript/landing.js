@@ -41,6 +41,8 @@ $('#assetClassloader').on('click',function() {
 
     var jsonDataToPost = JSON.stringify( assetClass);
 
+    alert(jsonDataToPost);
+
     $.ajax(
         {
 

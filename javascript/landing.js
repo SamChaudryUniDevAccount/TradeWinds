@@ -75,6 +75,42 @@ function loadCommodityNames(data) {
 
 }
 
+//Get Graph data by asset class
+$('#commodityData').onclick(function (e) {
+
+    getCommodityGraphData();
+
+})
+
+function getCommodityGraphData() {
+
+    $.ajax(
+        {
+
+            type:'POST',
+            url:'apipost.php',
+            data:"getCommodityByAssetClass",
+            success: function(data){
+
+                alert(data);
+
+            }
+        });
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 //Plotting
 function loadGraph() {

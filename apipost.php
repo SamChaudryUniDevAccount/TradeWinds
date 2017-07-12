@@ -2,11 +2,24 @@
 
 include("config/dbconfig.php");
 
+
 if (isset($_POST["getCommodityByAssetClass"])) {
 
-
-//End of if statement
     getCommodityByAssetClass();
+
+}else if(isset($_POST["getCommodityData"])){
+
+
+    getCommodityData();
+
+}
+
+function getCommodityData(){
+
+    $exchangeCode = "WORLDBANK";
+    $commodity = "WLD_TEA_MOMBASA";
+
+    echo $baseUrl = "https://www.quandl.com/api/v3/datasets/".$exchangeCode."/".$commodity;;
 
 }
 

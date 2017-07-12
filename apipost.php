@@ -25,9 +25,7 @@ function getCommodityData(){
 
     $json = file_get_contents($baseUrl);
 
-    $json_data = json_decode($json, true);
-
-    echo $json_data;
+    echo $json;
 
 }
 

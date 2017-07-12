@@ -24,24 +24,22 @@ function getCommodityData(){
 
 
     //Dummy End points from database
-    $exchangeCode = "WORLDBANK";
-    $commodity = "WLD_TEA_MOMBASA";
+    $exchangeCode = "CME";
+    $commodity = "WORLDBANK/WLD_SOYBEAN";
 
 
     //Date Range
     $start_date ="2017-02-10";
     $end_date = "2017-05-02";
 
-
     //Working correctly building up the url
     $baseUrl = "https://www.quandl.com/api/v3/datasets/".$exchangeCode."/".$commodity."/"."data.json"."?".$start_date."&".$end_date."&api_key=kv_y-Xcvsk1h3wQ1TNPE";
 
     $commoditydata = file_get_contents($baseUrl);
 
+    json_encode($commoditydata);
 
-    //json_encode($commoditydata)
-
-    echo $baseUrl;
+    echo json_encode($commoditydata);
 
 }
 

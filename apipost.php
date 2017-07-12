@@ -22,11 +22,10 @@ function getCommodityData(){
 
     //Working correctly building up the url
 
-     //kv_y-Xcvsk1h3wQ1TNPE
+     //APIkey = kv_y-Xcvsk1h3wQ1TNPE
     $baseUrl = "https://www.quandl.com/api/v3/datasets/WIKI/FB/data.json?api_key=kv_y-Xcvsk1h3wQ1TNPE";
 
-    //Working
-    echo json_encode($baseUrl);
+    echo json_encode($baseUrl["data"]);
 
 
 }

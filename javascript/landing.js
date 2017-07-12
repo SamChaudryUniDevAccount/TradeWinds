@@ -1,4 +1,4 @@
-//Working
+//Working refactor to typescript and add Sass
 $( document ).ready(function() {
 
     loadAssetTypes();
@@ -92,8 +92,9 @@ function getCommodityGraphData() {
             data:"getCommodityData",
             success: function(data){
 
-                alert(data);
+                var apiData = $.parseJSON(data);
 
+                alert(apiData);
             }
         });
 

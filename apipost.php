@@ -20,18 +20,14 @@ function getCommodityData(){
     $exchangeCode = "WORLDBANK";
     $commodity = "WLD_TEA_MOMBASA";
 
-    //Working correctly building up the url
-
-     //APIkey = kv_y-Xcvsk1h3wQ1TNPE
-    //$baseUrl = "https://www.quandl.com/api/v3/datasets/WIKI/FB/data.json?api_key=kv_y-Xcvsk1h3wQ1TNPE";
-
+    //URL end points are correct
     $baseUrl = "https://www.quandl.com/api/v3/datasets/".$exchangeCode."/".$commodity;
 
     $json = file_get_contents($baseUrl);
 
     $json_data = json_decode($json, true);
 
-    echo $baseUrl;
+    echo $json_data;
 
 }
 

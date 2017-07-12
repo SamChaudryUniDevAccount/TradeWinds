@@ -29,7 +29,7 @@ function getCommodityData(){
 
 
     //Date Range
-    $start_date ="2016-02-10";
+    $start_date ="2017-02-10";
     $end_date = "2017-05-02";
 
 
@@ -38,7 +38,10 @@ function getCommodityData(){
 
     $commoditydata = file_get_contents($baseUrl);
 
-    echo  json_encode($commoditydata) ;
+
+    //json_encode($commoditydata)
+
+    echo $baseUrl;
 
 }
 

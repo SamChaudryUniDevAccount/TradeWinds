@@ -31,7 +31,7 @@ function getCommodityData(){
 
     $commoditydata = $json;
 
-    echo $commoditydata ;
+    echo  json_encode($commoditydata) ;
 
 }
 

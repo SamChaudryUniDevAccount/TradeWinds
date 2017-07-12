@@ -16,18 +16,19 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 
 function getCommodityData(){
 
+    //Dummy End points from database
     $exchangeCode = "WORLDBANK";
     $commodity = "WLD_TEA_MOMBASA";
 
+    //Working correctly building up the url
+    $baseUrl = "https://www.quandl.com/api/v3/datasets/".$exchangeCode."/".$commodity;;
 
-     $baseUrl = "https://www.quandl.com/api/v3/datasets/".$exchangeCode."/".$commodity;;
+    $data = file_get_contents($baseUrl);
 
-     echo $baseUrl;
+    $commoditiesData = json_decode($data);
 
-
-
-
-
+    //Working
+    echo $commoditiesData;
 
 
 }

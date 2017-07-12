@@ -39,7 +39,7 @@ function getCommodityData(){
 
     json_encode($commoditydata);
 
-    echo json_encode($commoditydata);
+    echo $baseUrl;
 
 }
 

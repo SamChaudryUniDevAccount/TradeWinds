@@ -25,7 +25,7 @@ function getCommodityData(){
 
     //Dummy End points from database
     $exchangeCode = "WORLDBANK";
-    $commodity = "WLD_SOYBEAN";
+    $commodity = "WLD_PHOSROCK";
 
 
     //Date Range

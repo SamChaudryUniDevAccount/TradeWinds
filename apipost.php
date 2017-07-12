@@ -27,9 +27,14 @@ function getCommodityData(){
     $exchangeCode = "WORLDBANK";
     $commodity = "WLD_TEA_MOMBASA";
 
-    //Working correctly building up the url
 
-    $baseUrl = "https://www.quandl.com/api/v3/datasets/".$exchangeCode."/".$commodity."/"."data.json"."?"."start_date=2016-02-10&end_date=2017-05-02"."&api_key=kv_y-Xcvsk1h3wQ1TNPE";
+    //Date Range
+    $start_date ="2016-02-10";
+    $end_date = "2017-05-02";
+
+
+    //Working correctly building up the url
+    $baseUrl = "https://www.quandl.com/api/v3/datasets/".$exchangeCode."/".$commodity."/"."data.json"."?".$start_date."&".$end_date."&api_key=kv_y-Xcvsk1h3wQ1TNPE";
 
     $commoditydata = file_get_contents($baseUrl);
 

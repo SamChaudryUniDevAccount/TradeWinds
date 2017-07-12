@@ -26,9 +26,8 @@ function getCommodityData(){
 
     $data = json_decode($json,true);
 
-     $marketData = $data['data'][0];
+    echo $data;
 
-    echo json_encode($marketData) ;
 
 
 }

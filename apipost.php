@@ -25,10 +25,8 @@ function getCommodityData(){
 
     $data = file_get_contents($baseUrl);
 
-    $commoditiesData = json_decode($data);
-
     //Working
-    echo $commoditiesData;
+    echo $data;
 
 
 }

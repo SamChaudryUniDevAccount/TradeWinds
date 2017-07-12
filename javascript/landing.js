@@ -89,7 +89,7 @@ function getCommodityGraphData() {
 
             type:'POST',
             url:'apipost.php',
-            data:"getCommodityByAssetClass",
+            data:"getCommodityData",
             success: function(data){
 
                 alert(data);

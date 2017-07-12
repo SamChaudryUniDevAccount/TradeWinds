@@ -24,8 +24,8 @@ function getCommodityData(){
 
 
     //Dummy End points from database
-    $exchangeCode = "WORLDBANK";
-    $commodity = "WLD_PHOSROCK";
+    $exchangeCode = "CME";
+    $commodity = "CHRIS/CME_S1";
 
 
     //Date Range

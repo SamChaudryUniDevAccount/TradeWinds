@@ -76,7 +76,7 @@ function loadCommodityNames(data) {
 }
 
 //Get Graph data by asset class
-$('#commodityData').onclick(function (e) {
+$('#commodityData').click(function() {
 
     getCommodityGraphData();
 

@@ -21,12 +21,12 @@ function getCommodityData(){
     $commodity = "WLD_TEA_MOMBASA";
 
     //Working correctly building up the url
-    $baseUrl = "https://www.quandl.com/api/v3/datasets/".$exchangeCode."/".$commodity;;
 
-    $data = file_get_contents($baseUrl);
+     //kv_y-Xcvsk1h3wQ1TNPE
+    $baseUrl = "https://www.quandl.com/api/v3/datasets/WIKI/FB/data.json?api_key=kv_y-Xcvsk1h3wQ1TNPE";
 
     //Working
-    echo $data;
+    echo $baseUrl;
 
 
 }

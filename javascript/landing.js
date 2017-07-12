@@ -92,9 +92,8 @@ function getCommodityGraphData() {
             data:"getCommodityData",
             success: function(data){
 
-                var apiData = $.parseJSON(data);
 
-                alert(apiData);
+                alert(data);
             }
         });
 

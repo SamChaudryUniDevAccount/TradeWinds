@@ -19,8 +19,10 @@ function getCommodityData(){
     $exchangeCode = "WORLDBANK";
     $commodity = "WLD_TEA_MOMBASA";
 
-    echo $baseUrl = "https://www.quandl.com/api/v3/datasets/".$exchangeCode."/".$commodity;;
 
+     $baseUrl = "https://www.quandl.com/api/v3/datasets/".$exchangeCode."/".$commodity;;
+
+     echo json_encode($baseUrl);
 }
 
 

@@ -27,7 +27,7 @@ function getCommodityData(){
 
     $json_data = json_decode($json, true);
 
-    echo $json_data;
+    echo $json;
 
 }
 

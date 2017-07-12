@@ -22,7 +22,7 @@ function getCommodityData(){
 
      $baseUrl = "https://www.quandl.com/api/v3/datasets/".$exchangeCode."/".$commodity;;
 
-     echo json_encode($baseUrl);
+     echo json_encode(file_get_contents($baseUrl), true);
 }
 
 

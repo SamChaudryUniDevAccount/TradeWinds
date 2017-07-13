@@ -20,10 +20,6 @@ function getCommodityData(){
 
     $data = json_decode($_POST["getCommodityData"]);
 
-   // $commodityType= "";
-   // $commodityName = "";
-   // $commodityEndPoint = "";
-
 
     foreach ($data as $key => $value) {
 

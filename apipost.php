@@ -20,15 +20,11 @@ function getCommodityData(){
 
     $data = json_decode($_POST["getCommodityData"]);
 
-    $start_date ="2017-02-10";
-    $end_date = "2017-05-02";
     $commodityType= "";
     $commodityName = "";
     $commodityEndPoint = "";
 
 
-
-    //Refactor to helper method..
     foreach ($data as $key => $value) {
 
         if ($key=="commodityType") {

@@ -20,9 +20,9 @@ function getCommodityData(){
 
     $data = json_decode($_POST["getCommodityData"]);
 
-    $commodityType= "";
-    $commodityName = "";
-    $commodityEndPoint = "";
+   // $commodityType= "";
+   // $commodityName = "";
+   // $commodityEndPoint = "";
 
 
     foreach ($data as $key => $value) {
@@ -57,8 +57,6 @@ function getCommodityData(){
         $result = mysqli_query($link, $sql);
 
         while ($row = mysqli_fetch_assoc($result)) {
-
-            //$returnedRow = $row['End_point'];
 
             $commodityEndPoint = preg_replace( "/\r|\n/", "", $row['End_point']);
 

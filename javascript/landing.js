@@ -91,7 +91,7 @@ function getCommodityGraphData() {
 
         for (var i = 0; i < inputDataArray.length; i++) {
 
-            jsonObject[inputDataArray[i]['name']] = inputDataArray[i]['value'];
+            commoditiesParameters[inputDataArray[i]['name']] = inputDataArray[i]['value'];
 
         }
 

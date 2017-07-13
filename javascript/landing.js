@@ -98,8 +98,6 @@ function getCommodityGraphData() {
 
         var data = JSON.stringify(commoditiesParameters);
 
-        alert(data);
-
 
     $.ajax(
         {

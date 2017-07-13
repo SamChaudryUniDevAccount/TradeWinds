@@ -31,17 +31,17 @@ function getCommodityData(){
     foreach ($data as $key => $value) {
 
 
-        if ($key =="commodityType") {
+        if ($key=="commodityType") {
 
             $commodityType = $value;
 
-            echo $commodityName;
+            echo $value;
 
         } elseif($key== "commodityname") {
 
             $commodityName = $value;
 
-            echo $commodityName;
+            echo $value;
 
 
         }elseif($key == "startDate"){

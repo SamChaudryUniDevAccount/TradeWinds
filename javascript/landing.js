@@ -96,7 +96,7 @@ function getCommodityGraphData() {
         }
 
 
-        var data = JSON.stringify(commoditiesParameters);
+        var postdata = JSON.stringify(commoditiesParameters);
 
 
     $.ajax(
@@ -104,7 +104,7 @@ function getCommodityGraphData() {
 
             type:'POST',
             url:'apipost.php',
-            data:{"getCommodityData":data},
+            data:{"getCommodityData":postdata},
             success: function(data){
 
                 var apiData = $.parseJSON(data);

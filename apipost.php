@@ -53,28 +53,36 @@ function getCommodityData(){
 
     }
 
-    echo $commodityType.$commodityName.$start_date.$end_date;
-
-
-
-
 
     //Dummy End points from database
     //$commodityEndPoint = "CHRIS/CME_S1";
 
-        $commodityEndPoint = "";
+    $sql = "SELECT End_point FROM commodities_markets.".$commodityType."WHERE Commodity_name =".commodityName;
+
+    if (mysqli_query($link, $sql)) {
+
+        $result = mysqli_query($link, $sql);
+
+        echo "End point is...".mysql_result($result);
+
+    }else{
 
 
-    //Date Range test
-    $start_date ="2017-02-10";
-    $end_date = "2017-05-02";
+    }
+
+
 
     //Working correctly building up the url
-    $commidityUrl = "https://www.quandl.com/api/v3/datasets/".$commodityEndPoint."/"."data.json"."?".$start_date."&".$end_date."&api_key=kv_y-Xcvsk1h3wQ1TNPE";
+   // $commidityUrl = "https://www.quandl.com/api/v3/datasets/".$commodityEndPoint."/"."data.json"."?".$start_date."&".$end_date."&api_key=kv_y-Xcvsk1h3wQ1TNPE";
 
-    $commoditydata = file_get_contents($commidityUrl);
+    //$commoditydata = file_get_contents($commidityUrl);
 
     //echo json_encode($commoditydata);
+
+
+
+
+
 
 }
 

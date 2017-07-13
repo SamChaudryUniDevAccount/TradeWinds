@@ -58,7 +58,7 @@ function getCommodityData(){
 
         while ($row = mysqli_fetch_assoc($result)) {
 
-            $returnedRow = $row['End_point']
+            $returnedRow = $row['End_point'];
 
 
             $commodityEndPoint = str_replace("\r", '',$returnedRow);

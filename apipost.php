@@ -74,9 +74,11 @@ function getCommodityData(){
         //Working correctly building up the url
     $commidityUrl = "https://www.quandl.com/api/v3/datasets/".$commodityEndPoint."/"."data.json"."?".$start_date."&".$end_date."&api_key=kv_y-Xcvsk1h3wQ1TNPE";
 
-    $commoditydata = file_get_contents($commidityUrl);
+    echo $commidityUrl;
 
-    echo json_encode($commoditydata);
+    //$commoditydata = file_get_contents($commidityUrl);
+
+    //echo json_encode($commoditydata);
 
 
 

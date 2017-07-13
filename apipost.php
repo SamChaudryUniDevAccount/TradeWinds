@@ -66,16 +66,16 @@ function getCommodityData(){
     }
 
     //Working correctly building up the url
-    $commidityUrl = "https://www.quandl.com/api/v3/datasets/".$commodityEndPoint."/"."data.json"."?"."start_date=".$start_date."&"."end_date=".$end_date."kv_y-Xcvsk1h3wQ1TNPE";
+    $comoditydata = "https://www.quandl.com/api/v3/datasets/".$commodityEndPoint."/"."data.json"."?"."start_date=".$start_date."&"."end_date=".$end_date."kv_y-Xcvsk1h3wQ1TNPE";
 
-    echo $commidityUrl;
+    //echo $commidityUrl;
 
-    $commoditydata = file_get_contents($commidityUrl);
+   // $commoditydata = file_get_contents($commidityUrl);
 
-    $dateToReturn = json_decode($commoditydata,true);
+   // $dateToReturn = json_decode($commoditydata,true);
 
 
-    echo json_encode($dateToReturn);
+    echo $comoditydata;
 
 }
 

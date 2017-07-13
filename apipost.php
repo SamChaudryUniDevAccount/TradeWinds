@@ -18,7 +18,7 @@ function getCommodityData(){
 
     global $link;
 
-    $data = json_decode($_POST["getCommodityByAssetClass"]);
+    $data = json_decode($_POST["getCommodityData"]);
 
     $start_date ="2017-02-10";
     $end_date = "2017-05-02";
@@ -26,8 +26,6 @@ function getCommodityData(){
     $commodityName = "";
 
     //commodityType":"coal","commodityname":"U.S. Coals, 1949-2005","startDate":"2017/02/2017","endDate":"2017/02/2017
-
-    echo $data;
 
 
     //Refactor to helper method..
@@ -38,13 +36,11 @@ function getCommodityData(){
 
             $commodityType = $value;
 
-            echo $value;
 
         } elseif($key== "commodityname") {
 
             $commodityName = $value;
 
-            echo $value;
 
 
         }elseif($key == "startDate"){

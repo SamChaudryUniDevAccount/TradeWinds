@@ -64,7 +64,7 @@ function getCommodityData(){
 
         $result = mysqli_query($link, $sql);
 
-        echo "Query executed";
+        echo $sql;
 
         $jsonData = array();
 

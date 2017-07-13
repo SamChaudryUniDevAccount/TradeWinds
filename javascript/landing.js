@@ -111,8 +111,6 @@ function getCommodityGraphData() {
 
                 console.log(data);
 
-
-                alert(apiData);
             }
         });
 

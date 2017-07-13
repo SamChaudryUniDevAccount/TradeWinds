@@ -69,7 +69,7 @@ function getCommodityData(){
 
             $commodityEndPoint = $row['End_point'];
 
-            $commodityEndPoint;
+            echo "End point->  ".$commodityEndPoint;
 
         }
 

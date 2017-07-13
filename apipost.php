@@ -27,6 +27,9 @@ function getCommodityData(){
 
     //commodityType":"coal","commodityname":"U.S. Coals, 1949-2005","startDate":"2017/02/2017","endDate":"2017/02/2017
 
+    echo $data;
+
+
     //Refactor to helper method..
     foreach ($data as $key => $value) {
 

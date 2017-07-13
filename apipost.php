@@ -24,8 +24,8 @@ function getCommodityData(){
     $end_date = "2017-05-02";
     $commodityType= "";
     $commodityName = "";
+    $commodityEndPoint = "";
 
-    //commodityType":"coal","commodityname":"U.S. Coals, 1949-2005","startDate":"2017/02/2017","endDate":"2017/02/2017
 
 
     //Refactor to helper method..

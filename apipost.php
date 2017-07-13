@@ -64,13 +64,15 @@ function getCommodityData(){
 
         $result = mysqli_query($link, $sql);
 
-        while ($row = mysql_fetch_assoc($result)) {
+        $jsonData = array();
 
-            $commodityEndPoint = $row['End_point'];
+        while ($row = mysqli_fetch_assoc($result)) {
 
-            echo "End point->  ".$commodityEndPoint;
+            $jsonData[] = $row;
 
         }
+
+        echo json_encode($jsonData);
 
     }else{
 

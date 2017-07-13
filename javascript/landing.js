@@ -84,12 +84,24 @@ $('#commodityData').click(function() {
 
 function getCommodityGraphData() {
 
+    var commodityObjToPost = {
+
+       "commodityType":$('#assetClass').val(),
+        "commodity": $('#assetType').val(),
+        "startDate": $().val(),
+        "endDate": $().val()
+    }
+
+    var jsonDataToPost = JSON.stringify( assetClass);
+
+    alert(jsonDataToPost);
+
     $.ajax(
         {
 
             type:'POST',
             url:'apipost.php',
-            data:"getCommodityData",
+            data:{"getCommodityData":jsonDataToPost},
             success: function(data){
 
                 var apiData = $.parseJSON(data);

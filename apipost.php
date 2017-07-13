@@ -16,7 +16,23 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 
 function getCommodityData(){
 
+    global $link;
 
+    $data = json_decode($_POST["getCommodityByAssetClass"]);
+
+    foreach ($data as $key => $value) {
+
+        if ($key == "commodityAssetClass") {
+
+            $commodityType = $value;
+
+        } else {
+
+            echo "Sorry asset Class unknown";
+
+        }
+
+    }
 
 
 
@@ -24,10 +40,12 @@ function getCommodityData(){
 
 
     //Dummy End points from database
-    $commodityEndPoint = "CHRIS/CME_S1";
+    //$commodityEndPoint = "CHRIS/CME_S1";
+
+        $commodityEndPoint = "";
 
 
-    //Date Range
+    //Date Range test
     $start_date ="2017-02-10";
     $end_date = "2017-05-02";
 

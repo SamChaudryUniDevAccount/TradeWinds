@@ -70,7 +70,9 @@ function getCommodityData(){
 
     $commoditydata = file_get_contents($commidityUrl);
 
-    echo  json_decode($commoditydata,true);
+    $dateToReturn = json_decode($commoditydata,true);
+
+    echo json_encode($dateToReturn);
 
 }
 

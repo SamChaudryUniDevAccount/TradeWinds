@@ -64,9 +64,13 @@ function getCommodityData(){
 
         $result = mysqli_query($link, $sql);
 
+        echo "Query executed";
+
         $jsonData = array();
 
         while ($row = mysqli_fetch_assoc($result)) {
+
+            echo "In the while loop";
 
             $jsonData[] = $row;
 

@@ -109,6 +109,9 @@ function getCommodityGraphData() {
 
                 var apiData = $.parseJSON(data);
 
+                console.log(data);
+
+
                 alert(apiData);
             }
         });

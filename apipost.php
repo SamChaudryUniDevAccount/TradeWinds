@@ -72,7 +72,8 @@ function getCommodityData(){
 
     $dateToReturn = json_decode($commoditydata,true);
 
-    echo json_encode($dateToReturn);
+
+    echo $dateToReturn;
 
 }
 

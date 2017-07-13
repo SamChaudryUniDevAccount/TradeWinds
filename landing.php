@@ -55,12 +55,12 @@ session_start();
                            <div class="card-block">
                                    <div class="card-block">
                                        <p>Select Asset Class</p>
-                                       <select id="assetClass"class="form-control">
+                                       <select id="assetClass"class="form-control inputData" name="commodityType">
                                        </select>
                                        <br>
                                         <p>Select Commodity</p>
                                        <div class="row">
-                                            <select id="assetType" class="form-control">
+                                            <select id="assetType" class="form-control inputData" name="commodityname">
                                             </select>
 
                                        </div>
@@ -69,11 +69,11 @@ session_start();
                                        <p class="card-text ">Select Date range</p>
                                        <form class="row">
                                            <div class="form-group">
-                                               <input type="text" class="form-control" id="startDate" placeholder="Start Date">
+                                               <input type="text" class="form-control inputData" name = "startDate" placeholder="Start Date">
                                            </div>
                                            <br/>
                                            <div class="form-group">
-                                               <input type="text" class="form-control" id="endDate" placeholder="End Date">
+                                               <input type="text" class="form-control inputData" name ="endDate" placeholder="End Date">
                                            </div>
                                        </form>
                                    </div>

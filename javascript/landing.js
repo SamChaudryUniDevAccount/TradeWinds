@@ -84,24 +84,29 @@ $('#commodityData').click(function() {
 
 function getCommodityGraphData() {
 
-    var commodityObjToPost = {
 
-       "commodityType":$('#assetClass').val(),
-        "commodity": $('#assetType').val(),
-        "startDate": $().val(),
-        "endDate": $().val()
-    }
+        var commoditiesParameters = {};
 
-    var jsonDataToPost = JSON.stringify( assetClass);
+        var inputDataArray = ($(".inputData").serializeArray());
 
-    alert(jsonDataToPost);
+        for (var i = 0; i < inputDataArray.length; i++) {
+
+            jsonObject[inputDataArray[i]['name']] = inputDataArray[i]['value'];
+
+        }
+
+
+        var data = JSON.stringify(commoditiesParameters);
+
+        alert(data);
+
 
     $.ajax(
         {
 
             type:'POST',
             url:'apipost.php',
-            data:{"getCommodityData":jsonDataToPost},
+            data:{"getCommodityData":data},
             success: function(data){
 
                 var apiData = $.parseJSON(data);

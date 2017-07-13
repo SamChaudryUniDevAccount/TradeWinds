@@ -60,7 +60,7 @@ function getCommodityData(){
 
             $returnedRow = $row['End_point'];
 
-            $commodityEndPoint = str_replace("\\r", "", $returnedRow);
+            $commodityEndPoint = str_replace("\\\\r", "", $returnedRow);
 
         }
 

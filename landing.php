@@ -69,11 +69,11 @@ session_start();
                                        <p class="card-text ">Select Date range</p>
                                        <form class="row">
                                            <div class="form-group">
-                                               <input type="text" class="form-control inputData" name = "startDate" placeholder="Start Date" value="2017-06-10">
+                                               <input type="text" class="form-control inputData" name = "startDate" placeholder="Start Date" value="2017-02-10">
                                            </div>
                                            <br/>
                                            <div class="form-group">
-                                               <input type="text" class="form-control inputData" name ="endDate" placeholder="End Date" value="2017-02-01">
+                                               <input type="text" class="form-control inputData" name ="endDate" placeholder="End Date" value="2017-06-01">
                                            </div>
                                        </form>
                                    </div>

@@ -60,13 +60,13 @@ function getCommodityData(){
 
             $returnedRow = $row['End_point'];
 
-            $commodityEndPoint = str_replace("\\\\r", "", $returnedRow);
+            $commodityEndPoint = preg_replace( "/\r|\n/", "", $returnedRow);
 
         }
 
     }
 
-    $commidityUrl = "https://www.quandl.com/api/v3/datasets/".str_replace("\\\\r", "", $commodityEndPoint)."/"."data.json"."?"."start_date=".$start_date."&"."end_date=".$end_date."kv_y-Xcvsk1h3wQ1TNPE";
+    $commidityUrl = "https://www.quandl.com/api/v3/datasets/".$commodityEndPoint."/"."data.json"."?"."start_date=".$start_date."&"."end_date=".$end_date."kv_y-Xcvsk1h3wQ1TNPE";
 
     $commoditydata = file_get_contents($commidityUrl);
 

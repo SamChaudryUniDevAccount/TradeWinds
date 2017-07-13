@@ -54,7 +54,10 @@ function getCommodityData(){
     //Dummy End points from database
     //$commodityEndPoint = "CHRIS/CME_S1";
 
-    $sql = "SELECT End_point FROM commodities_markets.".$commodityType."WHERE Commodity_name =".$commodityName;
+
+    //SELECT End_point FROM commodities_markets.coal WHERE Commodity_name = "U.S. Coals, 1949-2005"
+
+    $sql = "SELECT End_point FROM commodities_markets.".$commodityType."WHERE Commodity_name = ".$commodityName;
 
     echo $sql;
 
@@ -62,8 +65,6 @@ function getCommodityData(){
     if (mysqli_query($link,$sql)) {
 
         $result = mysqli_query($link, $sql);
-
-        echo $sql;
 
         $jsonData = array();
 

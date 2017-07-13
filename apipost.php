@@ -65,7 +65,13 @@ function getCommodityData(){
 
         $result = mysqli_query($link, $sql);
 
-        echo "End point is...".mysql_result($result);
+        while ($row = mysql_fetch_assoc($result)) {
+
+            $commodityEndPoint = $row['End_point'];
+
+            $commodityEndPoint;
+
+        }
 
     }else{
 

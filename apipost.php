@@ -20,20 +20,41 @@ function getCommodityData(){
 
     $data = json_decode($_POST["getCommodityByAssetClass"]);
 
+    $start_date ="2017-02-10";
+    $end_date = "2017-05-02";
+    $commodityType= "";
+    $commodityName = "";
+
+    //commodityType":"coal","commodityname":"U.S. Coals, 1949-2005","startDate":"2017/02/2017","endDate":"2017/02/2017
+    //Refactor to helper method..
     foreach ($data as $key => $value) {
 
-        if ($key == "commodityAssetClass") {
+        switch($key) {
 
-            $commodityType = $value;
+            case ($key == "commodityType"):
 
-        } else {
+                $commodityType = $value;
 
-            echo "Sorry asset Class unknown";
+            case ($key == "commodityname"):
 
+                $commodityName = $value;
+
+            case ($key == "startDate"):
+
+                $start_date = $value;
+
+            case ($key == "endDate"):
+
+                $end_date = $value;
+
+            default:
+
+                echo "Value not found";
         }
 
     }
 
+     echo $commodityType.$commodityName.$start_date.$end_date;
 
 
 

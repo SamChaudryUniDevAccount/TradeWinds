@@ -53,9 +53,6 @@ function getCommodityData(){
     //End point serach
     $sql = "SELECT End_point FROM commodities_markets.".$commodityType." WHERE Commodity_name LIKE '%$commodityName%'";
 
-    //SQL  Statement is correct
-    //echo $sql;
-
     if (mysqli_query($link, $sql)) {
 
         $result = mysqli_query($link, $sql);
@@ -64,8 +61,6 @@ function getCommodityData(){
 
             $commodityEndPoint = $row['End_point'];
 
-            //Working
-            //echo $commodityEndPoint;
         }
 
     }
@@ -76,11 +71,7 @@ function getCommodityData(){
 
     $commoditydata = file_get_contents($commidityUrl);
 
-    echo $commoditydata;
-
-    //echo json_encode($commoditydata);
-
-
+    echo json_encode($commoditydata);
 
 }
 

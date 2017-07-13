@@ -50,17 +50,31 @@ function getCommodityData(){
     }
 
 
-    //End point
+    //End point serach
     $sql = "SELECT End_point FROM commodities_markets.".$commodityType." WHERE Commodity_name LIKE '%$commodityName%'";
 
-    echo $sql;
+    //SQL  Statement is correct
+    //echo $sql;
+
+    if (mysqli_query($link, $sql)) {
+
+        $result = mysqli_query($link, $sql);
+
+        while ($row = mysqli_fetch_assoc($result)) {
+
+            $commodityEndPoint = $row['End_point'];
+
+            echo $commodityEndPoint;
+        }
+
+    }
 
 
 
 
 
 
-    //Working correctly building up the url
+        //Working correctly building up the url
    // $commidityUrl = "https://www.quandl.com/api/v3/datasets/".$commodityEndPoint."/"."data.json"."?".$start_date."&".$end_date."&api_key=kv_y-Xcvsk1h3wQ1TNPE";
 
     //$commoditydata = file_get_contents($commidityUrl);

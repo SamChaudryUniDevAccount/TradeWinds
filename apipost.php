@@ -31,17 +31,13 @@ function getCommodityData(){
     //Refactor to helper method..
     foreach ($data as $key => $value) {
 
-
         if ($key=="commodityType") {
 
             $commodityType = $value;
 
-
         } elseif($key== "commodityname") {
 
             $commodityName = $value;
-
-
 
         }elseif($key == "startDate"){
 
@@ -57,7 +53,7 @@ function getCommodityData(){
 
     }
 
-  //   echo $commodityType.$commodityName.$start_date.$end_date;
+    echo $commodityType.$commodityName.$start_date.$end_date;
 
 
 

@@ -50,8 +50,8 @@ function getCommodityData(){
     }
 
 
-
-    $sql = "SELECT End_point FROM commodities_markets.".$commodityType." WHERE Commodity_name LIKE "."%".$commodityName."%";
+    //End point
+    $sql = "SELECT End_point FROM commodities_markets.".$commodityType." WHERE Commodity_name LIKE "." ". " . "%".$commodityName."%" "   ;
 
     echo $sql;
 

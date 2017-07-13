@@ -26,31 +26,30 @@ function getCommodityData(){
     $commodityName = "";
 
     //commodityType":"coal","commodityname":"U.S. Coals, 1949-2005","startDate":"2017/02/2017","endDate":"2017/02/2017
+
     //Refactor to helper method..
     foreach ($data as $key => $value) {
 
-        switch($key) {
 
-            case ($key=="commodityType"):
+        if ($key == "commodityType") {
 
-                $commodityType = $value;
+            $commodityType = $value;
 
-            case ($key == "commodityname"):
+        } elseif($key == "commodityname") {
 
-                $commodityName = $value;
+            $commodityName = $value;
 
-            case ($key=="startDate"):
+        }elseif($key == "startDate"){
 
-                $start_date = $value;
+            $start_date = $value;
 
-            case ($key=="endDate"):
 
-                $end_date = $value;
+        }elseif($key == "endDate"){
 
-            default:
+            $end_date = $value;
 
-                echo "Value not found";
         }
+
 
     }
 

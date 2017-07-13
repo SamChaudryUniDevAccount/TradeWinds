@@ -56,6 +56,8 @@ function getCommodityData(){
 
     $sql = "SELECT End_point FROM commodities_markets.".$commodityType."WHERE Commodity_name =".$commodityName;
 
+    echo $sql;
+
 
     if (mysqli_query($link,$sql)) {
 

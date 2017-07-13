@@ -31,7 +31,7 @@ function getCommodityData(){
 
         switch($key) {
 
-            case ($key == "commodityType"):
+            case ($key=="commodityType"):
 
                 $commodityType = $value;
 
@@ -39,11 +39,11 @@ function getCommodityData(){
 
                 $commodityName = $value;
 
-            case ($key == "startDate"):
+            case ($key=="startDate"):
 
                 $start_date = $value;
 
-            case ($key == "endDate"):
+            case ($key=="endDate"):
 
                 $end_date = $value;
 

@@ -50,6 +50,8 @@ function getCommodityData(){
     }
 
 
+    echo "Whats up..";
+
     //Dummy End points from database
     //$commodityEndPoint = "CHRIS/CME_S1";
 

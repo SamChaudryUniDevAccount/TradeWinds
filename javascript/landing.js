@@ -137,7 +137,16 @@ function loadGraph(graphData) {
             title: {
                 text: $('#assetType').val(),
             },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis:[{
 
+                title: {
+
+                    text: 'Pressure'
+                }
+            }],
             series: [{
                 name: $('#assetType').val(),
                 data: graphData,

@@ -183,3 +183,7 @@ function addCommodityDates(graphData) {
 
     return datesArray;
 }
+
+//Weather Charts
+
+

@@ -115,34 +115,34 @@ session_start();
                        </div>
 
                        <!-- Card 3 -->
-                       <div class="card ">
-                           <div class=" pannelHeaderTitleStyles card-header card-success">News</div>
-                           <div class="card-block">
-                               <p class="card-text ">Enter topics of interest</p>
-                               <div class="form-group">
-                                   <input type="text" class="form-control" id="to" placeholder="Enter news topics of interest">
-                               </div>
-                               <br/>
-                               <p>Select News type</p>
-                               <div class="btn-group" data-toggle="buttons">
-                                   <label class="btn btn-primary active">
-                                       <input type="radio" name="options" id="news" autocomplete="off" checked> News
-                                   </label>
-                                   <label class="btn btn-primary">
-                                       <input type="radio" name="options" id="socialMedia" autocomplete="off"> Social Media
-                                   </label>
-                               </div>
-                           </div>
 
-                           <div id="test"></div>
-
-                       </div>
 
                        <!-- End of card decks -->
                    </div>
                </div>
            </div>
+           <div class="card ">
+               <div class=" pannelHeaderTitleStyles card-header card-success">News</div>
+               <div class="card-block">
+                   <p class="card-text ">Enter topics of interest</p>
+                   <div class="form-group">
+                       <input type="text" class="form-control" id="to" placeholder="Enter news topics of interest">
+                   </div>
+                   <br/>
+                   <p>Select News type</p>
+                   <div class="btn-group" data-toggle="buttons">
+                       <label class="btn btn-primary active">
+                           <input type="radio" name="options" id="news" autocomplete="off" checked> News
+                       </label>
+                       <label class="btn btn-primary">
+                           <input type="radio" name="options" id="socialMedia" autocomplete="off"> Social Media
+                       </label>
+                   </div>
+               </div>
 
+               <div id="test"></div>
+
+           </div>
        </div>
 
 </body>

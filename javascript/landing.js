@@ -145,7 +145,7 @@ function loadGraph(graphData) {
 
                         for(j=0;j<graphData[i].length;j++)
                         {
-                            console.log(arr[i][j]);
+                            console.log(graphData[i][j]);
                         }
 
                     }

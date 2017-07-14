@@ -143,7 +143,8 @@ function loadGraph(graphData) {
 
                     for(i = 0; i < graphData.length; i++){
 
-                       var label = graphData[i][i];
+                       var tempArray = graphData[i];
+                       var label = tempArray[i];
 
                         console.log(label);
                     }

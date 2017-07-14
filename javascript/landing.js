@@ -143,10 +143,7 @@ function loadGraph(graphData) {
 
                     for(i = 0; i < graphData.length; i++){
 
-                        for(j=0;j<graphData[i].length;j++)
-                        {
-                            console.log(graphData[i][j]);
-                        }
+                        console.log(graphData[i]);
 
                     }
 

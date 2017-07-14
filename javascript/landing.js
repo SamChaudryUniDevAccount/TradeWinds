@@ -151,7 +151,7 @@ function loadGraph(graphData) {
             }
         };
 
-        var chart = $('#commoditiesGraph').highcharts(dataObject);
+        var chart = $('#commoditiesGraph').highcharts(graphObject);
 
 
 

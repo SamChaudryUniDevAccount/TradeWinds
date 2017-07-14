@@ -109,9 +109,9 @@ function getCommodityGraphData() {
 
                 var apiData = $.parseJSON(data);
 
-                console.log(apiData['dataset_data']['data']);
+                const graphData =  apiData['dataset_data']['data'];
 
-                //loadGraph(data['dataset']['data']);
+                loadGraph(graphData);
 
             }
         });
@@ -124,13 +124,10 @@ function getCommodityGraphData() {
 
 
 //Plotting
-function loadGraph(data) {
+function loadGraph(graphData) {
 
-    $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function (data)    {
 
-        // Create the chart
-
-        var dataObject = {
+        var graphObject = {
 
             rangeSelector: {
                 selected: 1,
@@ -143,7 +140,7 @@ function loadGraph(data) {
 
             series: [{
                 name: 'AAPL',
-                data: data,
+                data: graphData,
                 tooltip: {
                     valueDecimals: 2
                 }
@@ -155,7 +152,6 @@ function loadGraph(data) {
         };
 
         var chart = $('#commoditiesGraph').highcharts(dataObject);
-    });
 
 
 

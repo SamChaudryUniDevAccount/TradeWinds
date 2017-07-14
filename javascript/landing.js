@@ -174,7 +174,8 @@ function addCommodityDates(graphData) {
 
     for(i = 0; i < graphData.length; i++){
 
-        datesArray.append(graphData[i]);
+        datesArray.push(graphData[i]);
+
     }
 
     return datesArray;

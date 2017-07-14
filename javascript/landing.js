@@ -141,12 +141,14 @@ function loadGraph(graphData) {
 
                 categories:function () {
 
+                    var datesArray = [];
+
                     for(i = 0; i < graphData.length; i++){
 
-                        console.log(graphData[i]);
-
+                        datesArray.append(graphData[i]);
                     }
 
+                    return datesArray;
                 }
             },
             yAxis:[{

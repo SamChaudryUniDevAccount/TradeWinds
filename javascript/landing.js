@@ -135,13 +135,14 @@ function loadGraph(graphData) {
             },
 
             title: {
-                text: 'AAPL Stock Price'
+                text: $('#assetType').val(),
             },
 
             series: [{
-                name: 'AAPL',
+                name: $('#assetType').val(),
                 data: graphData,
                 tooltip: {
+
                     valueDecimals: 2
                 }
             }],

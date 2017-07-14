@@ -139,17 +139,7 @@ function loadGraph(graphData) {
             },
             xAxis: {
 
-                categories:function () {
-
-                    var datesArray = [];
-
-                    for(i = 0; i < graphData.length; i++){
-
-                        datesArray.append(graphData[i]);
-                    }
-
-                    return datesArray;
-                }
+                categories: addCommodityDates(graphData)
             },
             yAxis:[{
 
@@ -178,3 +168,14 @@ function loadGraph(graphData) {
 
 }
 
+function addCommodityDates(graphData) {
+
+    var datesArray = [];
+
+    for(i = 0; i < graphData.length; i++){
+
+        datesArray.append(graphData[i]);
+    }
+
+    return datesArray;
+}

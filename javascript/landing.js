@@ -109,7 +109,7 @@ function getCommodityGraphData() {
 
                 var apiData = $.parseJSON(data);
 
-                console.log(datadata['data']);
+                console.log(data['data']);
 
                 //loadGraph(data['dataset']['data']);
 

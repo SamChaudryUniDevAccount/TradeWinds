@@ -171,11 +171,13 @@ function loadGraph(graphData) {
 function addCommodityDates(graphData) {
 
     var datesArray = [];
+    var arrayExtractTemp;
 
     for(i = 0; i < graphData.length; i++){
 
+        arrayExtractTemp = graphData[i];
 
-        datesArray.push(graphData[i]);
+        datesArray.push(arrayExtractTemp[i]);
 
     }
 

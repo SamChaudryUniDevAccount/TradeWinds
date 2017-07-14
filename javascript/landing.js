@@ -138,7 +138,17 @@ function loadGraph(graphData) {
                 text: $('#assetType').val(),
             },
             xAxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+                categories:function () {
+
+                    for(i = 0; i < graphData.length; i++){
+
+                       var label = graphData[i][i];
+
+                        console.log(label);
+                    }
+
+                }
             },
             yAxis:[{
 

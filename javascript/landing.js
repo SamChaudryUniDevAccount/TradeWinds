@@ -144,7 +144,7 @@ function loadGraph(graphData) {
 
                 title: {
 
-                    text: 'Pressure'
+                    text: 'Price ($USD)'
                 }
             }],
             series: [{

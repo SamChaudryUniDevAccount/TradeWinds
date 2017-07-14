@@ -109,7 +109,9 @@ function getCommodityGraphData() {
 
                 var apiData = $.parseJSON(data);
 
-                console.log(data);
+                console.log(datadata['dataset']['data']);
+
+                //loadGraph(data['dataset']['data']);
 
             }
         });
@@ -121,16 +123,8 @@ function getCommodityGraphData() {
 
 
 
-
-
-
-
-
-
-
-
 //Plotting
-function loadGraph() {
+function loadGraph(data) {
 
     $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function (data)    {
 

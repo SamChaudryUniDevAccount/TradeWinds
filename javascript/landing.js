@@ -3,7 +3,6 @@ $( document ).ready(function() {
 
     loadAssetTypes();
 
-    $('#spinner').show()
 
 
 });
@@ -83,7 +82,6 @@ $('#commodityData').click(function() {
 
     getCommodityGraphData();
 
-    $('#spinner').show()
 
 })
 
@@ -166,8 +164,6 @@ function loadGraph(graphData) {
                 renderTo: 'commoditiesGraph'
             }
         };
-
-        $('#spinner').hide();
 
         var chart = $('#commoditiesGraph').highcharts(graphObject);
 

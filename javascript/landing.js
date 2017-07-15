@@ -111,7 +111,7 @@ function getCommodityGraphData() {
             data:{"getCommodityData":postdata},
             success: function(data){
 
-                if(data == null){
+                if(data == "null"){
 
                     $('#spin').hide();
 

@@ -3,6 +3,13 @@ $( document ).ready(function() {
 
     loadAssetTypes();
 
+    ("#spin").spinner({
+
+        background: "rgba(88, 147, 183, 1)",
+        spin: true,
+        color: "white"
+
+    });
 
 
 });

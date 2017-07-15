@@ -18,9 +18,7 @@ session_start();
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/FontAwesome.eot">
-    <link rel="stylesheet" href="css/fontawesome-webfont.ttf">
-    <link rel="stylesheet" href="css/fontawesome-webfont.wof">
-    <link rel="stylesheet" href="css/fontawesome-webfont.woff2">
+
     <title>Trade Winds Landing</title>
 </head>
 <body>

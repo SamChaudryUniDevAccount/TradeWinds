@@ -80,6 +80,8 @@ $('#commodityData').click(function() {
 
     getCommodityGraphData();
 
+    ('$#spinner').show()
+
 })
 
 function getCommodityGraphData() {
@@ -161,6 +163,8 @@ function loadGraph(graphData) {
                 renderTo: 'commoditiesGraph'
             }
         };
+
+        ('$#spinner').hide();
 
         var chart = $('#commoditiesGraph').highcharts(graphObject);
 

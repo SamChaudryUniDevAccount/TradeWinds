@@ -143,6 +143,15 @@
 
 }
 
+#commodityData{
+
+    padding : 15px 30px 14px 30px;
+    margin  : 5px auto;
+    display : block;
+    width   : 100px;
+
+}
+
 /* <-------- Spinner Styles ---> */
 
 .spinnerStyles{

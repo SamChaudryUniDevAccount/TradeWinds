@@ -111,7 +111,9 @@ function getCommodityGraphData() {
             data:{"getCommodityData":postdata},
             success: function(data){
 
-                if(data == "null"){
+                var apiData = $.parseJSON(data);
+
+                if(apiData == null){
 
                     $('#spin').hide();
 
@@ -119,7 +121,6 @@ function getCommodityGraphData() {
 
                 }else {
 
-                    var apiData = $.parseJSON(data);
 
                     var graphData =  apiData['dataset_data']['data'];
 

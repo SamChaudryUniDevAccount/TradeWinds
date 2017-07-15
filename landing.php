@@ -80,7 +80,7 @@ session_start();
                                     <br/>
                                     <button id="commodityData" type="button" class="btn btn-success">Get Data</button>
                                     <br/>
-                                 <div id="spinner"></div>
+                                     <div id="spin"></div>
                                     <div id="commoditiesGraph">
 
 

@@ -7,7 +7,8 @@ $( document ).ready(function() {
 
         background: "rgba(88, 147, 183, 1)",
         spin: true,
-        color: "white"
+        color: "white",
+        html: "<i class='fa fa-repeat' style='color: #fff;'></i>"
 
     });
 

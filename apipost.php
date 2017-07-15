@@ -74,7 +74,7 @@ function getCommodityData($dataParser){
 
     $commoditydata = file_get_contents($commidityUrl);
 
-    echo $this->$dataParser($commoditydata);
+    echo $dataParser($commoditydata);
 
 }
 

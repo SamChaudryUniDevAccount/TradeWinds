@@ -191,10 +191,11 @@ function addCommodityDates(graphData) {
 //Setup spinner object within application
 function showLoadingSpinner() {
 
-    var html = "<i class='.spinnerStyles'> Loading data...</i>"
+    var html = "<i class='.spinnerStyles'>Loading data. Please wait.</i>"
 
     $('#spin').spinner({
 
+        //Frosted glass effect added into spinner
         background: "rgba(255,255,255,0.25)",
         spin: false,
         color: "#5893B7",

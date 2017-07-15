@@ -164,8 +164,6 @@ function loadGraph(graphData) {
 
         var chart = $('#commoditiesGraph').highcharts(graphObject);
 
-
-
 }
 
 function addCommodityDates(graphData) {

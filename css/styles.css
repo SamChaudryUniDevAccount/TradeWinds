@@ -126,6 +126,7 @@
 
 }
 
+
 /* High charts plot area  */
 #commoditiesGraph {
 
@@ -136,6 +137,11 @@
     background-color: white;
 }
 
+.inputBox{
+
+    margin-left: 10px;
+
+}
 
 /* <-------- Spinner Styles ---> */
 

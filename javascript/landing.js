@@ -87,18 +87,7 @@ $('#commodityData').click(function() {
 function getCommodityGraphData() {
 
 
-    $('#spin').spinner({
-
-        background: "rgba(88, 147, 183, 1)",
-        spin: true,
-        color: "white",
-        html: "<i class='fa fa-repeat' style='color: #fff;'></i>"
-
-    });
-
-
-    $('#spin').show();
-
+   showLoadingSpinner();
 
     var commoditiesParameters = {};
 
@@ -177,7 +166,10 @@ function loadGraph(graphData) {
             }
         };
 
-        var chart = $('#commoditiesGraph').highcharts(graphObject);
+
+    $('#spin').hide();
+
+    var chart = $('#commoditiesGraph').highcharts(graphObject);
 
 }
 
@@ -197,6 +189,18 @@ function addCommodityDates(graphData) {
     return datesArray;
 }
 
-//Weather Charts
+function showLoadingSpinner() {
 
+    $('#spin').spinner({
+
+        background: "rgba(0,0,0,0.5)",
+        spin: true,
+        color: "white",
+        html: "<i class='fa fa-repeat' style='color: #fff;'></i>"
+
+    });
+
+    $('#spin').show();
+
+}
 

@@ -80,7 +80,7 @@ $('#commodityData').click(function() {
 
     getCommodityGraphData();
 
-    ('$#spinner').show()
+    $('#spinner').show()
 
 })
 
@@ -164,7 +164,7 @@ function loadGraph(graphData) {
             }
         };
 
-        ('$#spinner').hide();
+        $('#spinner').hide();
 
         var chart = $('#commoditiesGraph').highcharts(graphObject);
 

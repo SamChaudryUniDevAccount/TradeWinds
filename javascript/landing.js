@@ -97,6 +97,8 @@ function getCommodityGraphData() {
     });
 
 
+    $('#spin').show();
+
 
     var commoditiesParameters = {};
 

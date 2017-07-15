@@ -115,7 +115,17 @@ function getCommodityGraphData() {
 
                 var graphData =  apiData['dataset_data']['data'];
 
-                loadCommodityGraph(graphData);
+                if(graphData == null){
+
+                    $('#spin').hide();
+
+                    $('#commoditiesGraph').text(('Sorry data not found please check your inputted parameters').css('loginLabelText'));
+
+                }else {
+
+                    loadCommodityGraph(graphData);
+
+                }
 
             }
         });

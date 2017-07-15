@@ -10,11 +10,21 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 }else if(isset($_POST["getCommodityData"])){
 
 
-    getCommodityData();
+    getCommodityData($dataParser);
 
 }
 
-function getCommodityData(){
+//Callback
+$dataParser = function($commoditydata){
+
+    $dateToReturn = json_decode($commoditydata,true);
+
+    echo json_encode($dateToReturn);
+
+};
+
+
+function getCommodityData($dataParser){
 
     global $link;
 
@@ -64,13 +74,10 @@ function getCommodityData(){
 
     $commoditydata = file_get_contents($commidityUrl);
 
-    $dateToReturn = json_decode($commoditydata,true);
-
-    //echo $commidityUrl;
-
-    echo json_encode($dateToReturn);
+    echo $this->$dataParser($commoditydata);
 
 }
+
 
 
 //Get subclass of commodities.

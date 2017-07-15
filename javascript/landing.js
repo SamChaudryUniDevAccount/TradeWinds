@@ -197,7 +197,7 @@ function showLoadingSpinner() {
 
         background: "rgba(255,255,255,0.25)",
         spin: false,
-        color: "white",
+        color: "#5893B7",
         html: html
 
     });

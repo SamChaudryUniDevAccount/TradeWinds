@@ -81,7 +81,7 @@ session_start();
                                        </form>
                                    </div>
                                     <br/>
-                                    <button id="commodityData" type="button" class="btn btn-primary">Get Data</button>
+                                    <button id="commodityData" type="button" class="btn btn-primary btn-lg">Get Data</button>
                                     <br/>
                                     <br/>
                                     <div id="spin"></div>

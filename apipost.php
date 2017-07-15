@@ -22,7 +22,6 @@ function getCommodityData(){
 
     $data = json_decode($_POST["getCommodityData"]);
 
-
     foreach ($data as $key => $value) {
 
         if ($key=="commodityType") {
@@ -68,7 +67,9 @@ function getCommodityData(){
 
     $dateToReturn = json_decode($commoditydata,true);
 
-    echo json_encode($dateToReturn);
+    echo $dateToReturn;
+
+   // echo json_encode($dateToReturn);
 
 }
 

@@ -17,10 +17,7 @@ session_start();
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/FontAwesome.eot">
-    <link rel="stylesheet" href="css/fontawesome-webfont.ttf">
-    <link rel="stylesheet" href="css/fontawesome-webfont.wof">
-    <link rel="stylesheet" href="css/fontawesome-webfont.woff2">
+
     <title>Trade Winds Landing</title>
 </head>
 <body>
@@ -84,11 +81,9 @@ session_start();
                                     <br/>
                                     <button id="commodityData" type="button" class="btn btn-success">Get Data</button>
                                     <br/>
-                                     <div id="spin"></div>
+                                    <br/>
+                                    <div id="spin"></div>
                                     <div id="commoditiesGraph">
-
-
-
                                     </div>
                                <!-- End of card body -->
                            </div>

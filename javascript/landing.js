@@ -111,17 +111,17 @@ function getCommodityGraphData() {
             data:{"getCommodityData":postdata},
             success: function(data){
 
-                var apiData = $.parseJSON(data);
-
-                var graphData =  apiData['dataset_data']['data'];
-
-                if(graphData == null){
+                if(data == null){
 
                     $('#spin').hide();
 
-                    $('#commoditiesGraph').text(('Sorry data not found please check your inputted parameters').css('loginLabelText'));
+                    $('#commoditiesGraph').text(('Sorry data not found please check your inputted parameters').css('.loginLabelText'));
 
                 }else {
+
+                    var apiData = $.parseJSON(data);
+
+                    var graphData =  apiData['dataset_data']['data'];
 
                     loadCommodityGraph(graphData);
 

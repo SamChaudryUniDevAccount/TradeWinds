@@ -77,7 +77,7 @@ function getCommodityData($dataParser){
 
     if(is_callable($dataParser)){
 
-         echo call_user_func($dataParser);
+         echo call_user_func($dataParser,$commoditydata);
 
     }
 

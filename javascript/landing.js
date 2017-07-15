@@ -193,7 +193,7 @@ function showLoadingSpinner() {
     $('#spin').spinner({
 
         //Frosted glass effect added into spinner
-        background: "rgba(255,255,255,0.25)",
+        background: "rgba(255,255,255,0.2)",
         spin: false,
         color: "#5893B7",
         html: html

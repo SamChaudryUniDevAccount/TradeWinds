@@ -3,15 +3,6 @@ $( document ).ready(function() {
 
     loadAssetTypes();
 
-    $('#spin').spinner({
-
-        background: "rgba(88, 147, 183, 1)",
-        spin: true,
-        color: "white",
-        html: "<i class='fa fa-repeat' style='color: #fff;'></i>"
-
-    });
-
 
 });
 
@@ -96,7 +87,18 @@ $('#commodityData').click(function() {
 function getCommodityGraphData() {
 
 
-        var commoditiesParameters = {};
+    $('#spin').spinner({
+
+        background: "rgba(88, 147, 183, 1)",
+        spin: true,
+        color: "white",
+        html: "<i class='fa fa-repeat' style='color: #fff;'></i>"
+
+    });
+
+
+
+    var commoditiesParameters = {};
 
         var inputDataArray = ($(".inputData").serializeArray());
 

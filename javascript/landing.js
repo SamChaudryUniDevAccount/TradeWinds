@@ -115,7 +115,7 @@ function getCommodityGraphData() {
 
                 var graphData =  apiData['dataset_data']['data'];
 
-                loadGraph(graphData);
+                loadCommodityGraph(graphData);
 
             }
         });
@@ -124,11 +124,8 @@ function getCommodityGraphData() {
 }
 
 
-
-
-
 //Plotting
-function loadGraph(graphData) {
+function loadCommodityGraph(graphData) {
 
 
         var graphObject = {

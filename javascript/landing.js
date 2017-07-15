@@ -191,17 +191,17 @@ function addCommodityDates(graphData) {
 //Setup spinner object within application
 function showLoadingSpinner() {
 
-    var html = "<i class='fa fa-rotate-right fa-4x' style='color: #5893B7;'></i>"
+    var html = "<i class='.spinnerStyles'> Loading data...</i>"
 
     $('#spin').spinner({
 
         background: "rgba(255,255,255,0.25)",
-        spin: true,
+        spin: false,
         color: "white",
         html: html
+
     });
 
     $('#spin').show();
-
 }
 

@@ -135,3 +135,16 @@
     margin: 0 auto;
     background-color: white;
 }
+
+
+/* <-------- Spinner Styles ---------------------------------------> */
+
+.spinnerStyles{
+
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#5893B7;
+    font-weight: bold;
+    text-align: center;
+
+}

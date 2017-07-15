@@ -10,21 +10,13 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 }else if(isset($_POST["getCommodityData"])){
 
 
-    getCommodityData($dataParser);
+    getCommodityData();
 
 }
 
-//Callback
-$dataParser = function($commoditydata){
-
-    $dateToReturn = json_decode($commoditydata,true);
-
-    echo json_encode($dateToReturn);
-
-};
 
 
-function getCommodityData($dataParser){
+function getCommodityData(){
 
     global $link;
 
@@ -74,12 +66,9 @@ function getCommodityData($dataParser){
 
     $commoditydata = file_get_contents($commidityUrl);
 
+    $dateToReturn = json_decode($commoditydata,true);
 
-    if(is_callable($dataParser)){
-
-         echo call_user_func($dataParser,$commoditydata);
-
-    }
+    echo json_encode($dateToReturn);
 
 }
 

@@ -115,7 +115,7 @@ function getCommodityGraphData() {
 
                     $('#spin').hide();
 
-                    $('#commoditiesGraph').text(('Sorry data not found please check your inputted parameters').css('.loginLabelText'));
+                    $('#commoditiesGraph').text('Sorry data not found please check your inputted parameters');
 
                 }else {
 

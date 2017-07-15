@@ -193,10 +193,10 @@ function showLoadingSpinner() {
 
     $('#spin').spinner({
 
-        background: "rgba(0,0,0,0.5)",
+        background: "rgba(255,255,255,0.25)",
         spin: true,
         color: "white",
-        html: "<i class='fa fa-repeat' style='color: #fff;'></i>"
+        html: "<i class='fa fa-rotate-right fa-4x' style='color: #5893B7;'></i>"
 
     });
 

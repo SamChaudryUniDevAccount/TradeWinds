@@ -152,6 +152,6 @@ session_start();
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="javascript/landing.js"></script>
 <script src="javascript/bootstrap.js"></script>
-
+<script src="javascript/spinner.js"></script>
 
 </html>

@@ -66,9 +66,9 @@ function getCommodityData(){
 
     $dateToReturn = json_decode($commoditydata,true);
 
-    //echo $commidityUrl;
+    echo $commidityUrl;
 
-    echo json_encode($dateToReturn);
+    //echo json_encode($dateToReturn);
 
 }
 

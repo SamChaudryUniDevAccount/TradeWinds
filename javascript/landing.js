@@ -3,6 +3,9 @@ $( document ).ready(function() {
 
     loadAssetTypes();
 
+    $('#spinner').show()
+
+
 });
 
 

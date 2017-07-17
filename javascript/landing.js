@@ -162,7 +162,7 @@ function loadCommodityGraph(data) {
             }],
             series: [{
                 name: $('#assetType').val(),
-                data: graphData,
+                data: data,
                 tooltip: {
 
                     valueDecimals: 3

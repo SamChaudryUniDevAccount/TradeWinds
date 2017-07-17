@@ -219,6 +219,8 @@ function showLoadingSpinner() {
 $('#weatherData').click(function() {
 
     var geocoder;
+    var lat = 0.0;
+    var long = 0.0;
 
     geocoder = new google.maps.Geocoder();
 
@@ -229,10 +231,10 @@ $('#weatherData').click(function() {
         if (status == google.maps.GeocoderStatus.OK)
         {
 
-            var lat = results[0].geometry.location.lat();
-            var long = results[0].geometry.location.lng();
+             lat = results[0].geometry.location.lat();
+             long = results[0].geometry.location.lng();
 
-            //Working returning lat and longitude
+            //Working returning lat and longitude and accurate
             console.log(lat,long);
         }
         else

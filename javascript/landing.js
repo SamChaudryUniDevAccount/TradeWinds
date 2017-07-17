@@ -253,7 +253,7 @@ function dateTimeParser() {
 
     var dateToParse= new Date("2017-02-10");
 
-    return (dateToParse.getTime()) /1000;
+    alert (dateToParse.getTime()) /1000;
 
 }
 

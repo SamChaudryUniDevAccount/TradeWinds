@@ -155,6 +155,6 @@ session_start();
 <script src="javascript/landing.js"></script>
 <script src="javascript/bootstrap.js"></script>
 <script src="javascript/jquery.babypaunch.spinner.js"></script>
-<script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpikQ-Ge03zW56oZKIw9c4tD8thmtYrKc"></script>
 
 </html>

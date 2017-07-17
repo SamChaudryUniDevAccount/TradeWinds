@@ -147,7 +147,7 @@ function loadCommodityGraph(data) {
             },
 
             title: {
-                text: $('#assetType').val() + "\n" + data['dataset']['description'],
+                text: $('#assetType').val() + "\n" + data['data_set']['description'],
             },
             xAxis: {
 
@@ -157,7 +157,7 @@ function loadCommodityGraph(data) {
 
                 title: {
 
-                    text: data['dataset']['name']
+                    text: data['data_set']['name']
                 }
             }],
             series: [{
@@ -184,7 +184,7 @@ function loadCommodityGraph(data) {
 function addCommodityDates(data) {
 
     var datesArray = [];
-    var dataToplot = data['dataset']['data']
+    var dataToplot = data['data_set']['data']
 
 
     for(i = 0; i < dataToplot.length; i++){

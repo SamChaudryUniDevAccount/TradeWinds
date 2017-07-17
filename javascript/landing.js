@@ -199,7 +199,7 @@ function addCommodityDates(graphData) {
 //Setup spinner object within application
 function showLoadingSpinner() {
 
-    var html = "<i class='.spinnerStyles'>Loading data. Please wait.</i>"
+    var html = "<i class='.spinnerStyles'>Loading data....</i>"
 
     $('#spin').spinner({
 
@@ -214,4 +214,4 @@ function showLoadingSpinner() {
     $('#spin').show();
 }
 
-//
+//Reverse GeoCode address for inputs

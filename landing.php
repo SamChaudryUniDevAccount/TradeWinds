@@ -106,11 +106,11 @@ session_start();
                                    </div>
                                    <br/>
                                    <div class="form-group">
-                                       <input type="text" class="form-control" id="to" placeholder="End Date">
+                                       <input id="location" type="text" class="form-control" id="to" placeholder="End Date">
                                    </div>
                                </form>
                                <br/>
-                               <button type="button" class="btn btn-success">Get Data</button>
+                               <button id="weatherData" type="button" class="btn btn-success">Get Data</button>
                                <br>
                                <div id="weatherDataGraph">//Graph goes here... </div>
                            </div>
@@ -134,7 +134,7 @@ session_start();
                    <p>Select News type</p>
                    <div class="btn-group" data-toggle="buttons">
                        <label class="btn btn-primary active">
-                           <input type="radio" name="options" id="news" autocomplete="off" checked> News
+                           <input  type="radio" name="options" id="news" autocomplete="off" checked> News
                        </label>
                        <label class="btn btn-primary">
                            <input type="radio" name="options" id="socialMedia" autocomplete="off"> Social Media

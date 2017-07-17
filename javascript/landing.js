@@ -138,7 +138,6 @@ function getCommodityGraphData() {
 //Plotting
 function loadCommodityGraph(graphData) {
 
-
         var graphObject = {
 
             rangeSelector: {
@@ -214,4 +213,20 @@ function showLoadingSpinner() {
     $('#spin').show();
 }
 
-//Reverse GeoCode address for inputs
+//Weather data
+
+//weatherData location
+$('#weatherData').click(function() {
+
+    var location = $('#location').val()
+
+    alert(location);
+
+})
+
+
+
+
+
+
+

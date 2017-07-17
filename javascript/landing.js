@@ -251,14 +251,9 @@ $('#weatherData').click(function() {
 
 function dateTimeParser() {
 
-    var myDate= ("2017-02-10");
+    var dateToParse= new Date("2017-02-10");
 
-     myDate=myDate.split("-").join().reverse().join();
-
-    var newDate=myDate[1]+"/"+myDate[0]+"/"+myDate[2];
-
-    alert(new Date(newDate).getTime())
-
+    return (dateToParse.getTime()) /1000;
 
 }
 

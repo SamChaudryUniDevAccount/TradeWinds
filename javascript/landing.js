@@ -229,7 +229,7 @@ $('#weatherData').click(function() {
         if (status == google.maps.GeocoderStatus.OK)
         {
 
-            alert(results[0].geometry.location);
+            alert(results[0]);
         }
         else
         {

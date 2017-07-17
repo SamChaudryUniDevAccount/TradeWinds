@@ -165,7 +165,7 @@ function loadCommodityGraph(graphData) {
                 data: graphData,
                 tooltip: {
 
-                    valueDecimals: 3
+                    valueDecimals: 4
                 }
             }],
 

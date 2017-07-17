@@ -218,9 +218,9 @@ function showLoadingSpinner() {
 //weatherData location
 $('#weatherData').click(function() {
 
-    var location = $('#location').val()
+    var locationString = $('#location').val()
 
-    alert(location);
+    alert(locationString);
 
 })
 

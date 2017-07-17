@@ -97,7 +97,7 @@ session_start();
                            <div class=" pannelHeaderTitleStyles card-header card-warning">Weather</div>
                            <div class="card-block">
                                <label>Enter location</label>>
-                               <input type="text" class="form-control" id="to" placeholder="Enter location">
+                               <input type="text" class="form-control" id="location"  placeholder="Enter location">
                                <br/>
                                <p class="card-text ">Select Date range</p>
                                <form class="row">
@@ -106,7 +106,7 @@ session_start();
                                    </div>
                                    <br/>
                                    <div class="form-group">
-                                       <input id="location" type="text" class="form-control" id="to" placeholder="End Date">
+                                       <input type="text" class="form-control" id="to" placeholder="End Date">
                                    </div>
                                </form>
                                <br/>
@@ -155,6 +155,6 @@ session_start();
 <script src="javascript/landing.js"></script>
 <script src="javascript/bootstrap.js"></script>
 <script src="javascript/jquery.babypaunch.spinner.js"></script>
-
+<script src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
 
 </html>

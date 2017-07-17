@@ -222,9 +222,9 @@ $('#weatherData').click(function() {
 
     geocoder = new google.maps.Geocoder();
 
-    var locationString = $('#location').val()
+    var location = $('#location').val()
 
-    geocoder.geocode( { 'address': address}, function(results, status)
+    geocoder.geocode( { 'address': location}, function(results, status)
     {
         if (status == google.maps.GeocoderStatus.OK)
         {
@@ -236,6 +236,12 @@ $('#weatherData').click(function() {
             alert("Error has occured with status: " + status);
         }
     });
+
+
+
+
+
+
 
 
 

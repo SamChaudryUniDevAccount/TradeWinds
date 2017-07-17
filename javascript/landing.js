@@ -232,6 +232,7 @@ $('#weatherData').click(function() {
             var lat = results[0].geometry.location.lat();
             var long = results[0].geometry.location.lng();
 
+            //Working returning lat and longitude
             console.log(lat,long);
         }
         else

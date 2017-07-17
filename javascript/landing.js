@@ -122,9 +122,9 @@ function getCommodityGraphData() {
                 }else {
 
 
-                    //var graphData =  apiData['dataset_data']['data'];
+                    var graphData =  apiData['dataset_data']['data'];
 
-                    loadCommodityGraph(data);
+                    loadCommodityGraph(graphData);
 
                 }
 
@@ -136,7 +136,7 @@ function getCommodityGraphData() {
 
 
 //Plotting
-function loadCommodityGraph(data) {
+function loadCommodityGraph(graphData) {
 
 
         var graphObject = {
@@ -147,7 +147,7 @@ function loadCommodityGraph(data) {
             },
 
             title: {
-                text: $('#assetType').val() + "\n" + data['data_set']['description'],
+                text: $('#assetType').val(),
             },
             xAxis: {
 
@@ -157,12 +157,12 @@ function loadCommodityGraph(data) {
 
                 title: {
 
-                    text: data['data_set']['name']
+                    text: 'Price ($USD)'
                 }
             }],
             series: [{
                 name: $('#assetType').val(),
-                data: data,
+                data: graphData,
                 tooltip: {
 
                     valueDecimals: 3
@@ -181,17 +181,15 @@ function loadCommodityGraph(data) {
 
 }
 
-function addCommodityDates(data) {
+function addCommodityDates(graphData) {
 
     var datesArray = [];
-    var dataToplot = data['data_set']['data']
 
+    for(i = 0; i < graphData.length; i++){
 
-    for(i = 0; i < dataToplot.length; i++){
+        for(j = 0; j < graphData[i].length; j++ ){
 
-        for(j = 0; j < dataToplot[i].length; j++ ){
-
-            datesArray.push(dataToplot[i][0]);
+            datesArray.push(graphData[i][0]);
         }
 
     }

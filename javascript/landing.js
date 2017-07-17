@@ -251,10 +251,14 @@ $('#weatherData').click(function() {
 
 function dateTimeParser() {
 
-    var someDate = new Date('2017-02-10');
-    var theUnixTime = someDate.getUnixTime();
+    var myDate="26-02-2012";
 
-    alert(theUnixTime);
+     myDate=myDate.split("-");
+
+    var newDate=myDate[1]+"/"+myDate[0]+"/"+myDate[2];
+
+    alert(new Date(newDate).getTime())
+
 
 }
 

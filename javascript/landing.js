@@ -3,7 +3,6 @@ $( document ).ready(function() {
 
     loadAssetTypes();
 
-    dateTimeParser();
 });
 
 
@@ -247,13 +246,12 @@ $('#weatherData').click(function() {
     
 })
 
-//Date Helper method
+//Date UNIX Helper method
+function dateTimeParser(dateToParse) {
 
-function dateTimeParser() {
+    var dateToParse= new Date(dateToParse);
 
-    var dateToParse= new Date("2017-02-10");
-
-    alert (dateToParse.getTime()) /1000;
+    return (dateToParse.getTime()) /1000;
 
 }
 

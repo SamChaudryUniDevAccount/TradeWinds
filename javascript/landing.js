@@ -218,9 +218,26 @@ function showLoadingSpinner() {
 //weatherData location
 $('#weatherData').click(function() {
 
+    var geocoder;
+
+    geocoder = new google.maps.Geocoder();
+
     var locationString = $('#location').val()
 
-    alert(locationString);
+    geocoder.geocode( { 'address': address}, function(results, status)
+    {
+        if (status == google.maps.GeocoderStatus.OK)
+        {
+
+            alert(results[0].geometry.location);
+        }
+        else
+        {
+            alert("Error has occured with status: " + status);
+        }
+    });
+
+
 
 })
 

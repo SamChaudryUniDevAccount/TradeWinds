@@ -251,7 +251,7 @@ $('#weatherData').click(function() {
 
 function dateTimeParser() {
 
-    var myDate="26-02-2012";
+    var myDate="2017-02-10";
 
      myDate=myDate.split("-");
 

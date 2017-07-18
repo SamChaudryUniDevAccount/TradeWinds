@@ -242,6 +242,41 @@ $('#weatherData').click(function() {
         }
     });
 
+    weatherObj = {
+
+      startDate: this.dateTimeParser($('#from').val()),
+      endDate: this.dateTimeParser($('#to').val()),
+      lat: lat,
+      long:long
+
+    }
+
+
+        var weatherData =  JSON.stringify(weatherObj);
+
+
+    $.ajax(
+        {
+
+            type:'POST',
+            url:'apipost.php',
+            data:{"getWeatherData":weatherData},
+            success: function(data){
+
+                var apiData = $.parseJSON(data);
+
+                if(apiData != null){
+
+                    $('#spin').hide();
+
+                }else {
+
+
+                }
+
+            }
+        });
+
 
     
 })

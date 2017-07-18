@@ -12,7 +12,66 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 
     getCommodityData();
 
+}else if(isset($_POST["getWeatherData"])) {
+
+    getWeatherData();
+
 }
+
+function getWeatherData(){
+
+
+    global $link;
+
+    $startDate = "";
+    $end_date = "";
+    $lat = "";
+    $long = "";
+
+    $data = json_decode($_POST["getWeatherData"]);
+
+    foreach ($data as $key => $value) {
+
+        if ($key=="startDate") {
+
+            $startDate = $value;
+
+        } elseif($key== "endDate") {
+
+            $endDate = $value;
+
+        }elseif($key == "lat"){
+
+            $lat = $value;
+
+
+        }elseif($key == "long"){
+
+            $long = $value;
+
+        }
+
+    }
+
+    //https://www.quandl.com/api/v3/datasets/".$commodityEndPoint."/"."data.json"."?"."start_date=".$start_date."&"."end_date=".$end_date."kv_y-Xcvsk1h3wQ1TNPE
+
+    $url = "";
+
+    $weatherdata = file_get_contents($url);
+
+    $weatherdataToReturn = json_decode($weatherdata,true);
+
+
+    echo json_encode($weatherdataToReturn);
+
+
+
+}
+
+
+
+
+
 
 
 

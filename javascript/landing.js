@@ -246,16 +246,16 @@ $('#weatherData').click(function() {
             alert("Error has occured with status: " + status);
         }
 
-        weatherObj = {
-
-            startDate:startdate,
-            endDate:enddate,
-            lat: lat,
-            long:long
-
-        }
-
     });
+
+    weatherObj = {
+
+        startDate:startdate,
+        endDate:enddate,
+        lat: lat,
+        long:long
+
+    }
 
         var weatherData =  JSON.stringify(weatherObj);
 

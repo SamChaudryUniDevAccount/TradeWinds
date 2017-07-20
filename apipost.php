@@ -64,7 +64,7 @@ function getWeatherData(){
     //"http://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&APPID=8e07349ba5a0efa82c941d6b20ba1333 ";
 
 
-     echo $url = "http://history.openweathermap.org/data/2.5/history/city?lat=".$lat."&lon=".$long."&type=hour"."&start=".$startDate."&end=".$end_date."&APPID=8e07349ba5a0efa82c941d6b20ba1333";
+     echo $url = "http://history.openweathermap.org/data/2.5/history/city?lat=".$lat."&lon=".$long."&type=hour"."&start=".$startDate."&end=".$end_date."&APPID=e675bd75ba3bba20b5e9cad0cd2057cf";
 
     //$weatherdata = file_get_contents($url);
 

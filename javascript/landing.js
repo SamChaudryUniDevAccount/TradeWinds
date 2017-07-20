@@ -224,8 +224,8 @@ $('#weatherData').click(function() {
 
     var weatherObj = {}
 
-    var latitudeToPost
-    var longitutudeToPost
+    var latitudeToPost = 0.0;
+    var longitutudeToPost = 0.0;
 
     geocoder = new google.maps.Geocoder();
 

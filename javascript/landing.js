@@ -243,6 +243,9 @@ $('#weatherData').click(function() {
 
               latitudeToPost += lat;
               longitutudeToPost += long;
+
+            alert(latitudeToPost,longitutudeToPost);
+
         }
         else
         {

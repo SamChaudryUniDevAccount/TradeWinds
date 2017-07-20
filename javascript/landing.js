@@ -241,8 +241,8 @@ $('#weatherData').click(function() {
              var long = results[0].geometry.location.lng();
 
 
-              latitudeToPost += lat;
-              longitutudeToPost += long;
+              latitudeToPost = lat;
+              longitutudeToPost = long;
 
             alert(latitudeToPost,longitutudeToPost);
 

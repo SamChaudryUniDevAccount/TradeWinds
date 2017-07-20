@@ -224,6 +224,8 @@ $('#weatherData').click(function() {
     var startdate = dateTimeParser($('#from').val());
     var enddate =  dateTimeParser($('#to').val());
 
+    var weatherObj = {}
+
     geocoder = new google.maps.Geocoder();
 
     var location = $('#location').val()
@@ -243,17 +245,17 @@ $('#weatherData').click(function() {
         {
             alert("Error has occured with status: " + status);
         }
+
+        weatherObj = {
+
+            startDate:startdate,
+            endDate:enddate,
+            lat: lat,
+            long:long
+
+        }
+
     });
-
-    weatherObj = {
-
-      startDate:startdate,
-      endDate:enddate,
-      lat: lat,
-      long:long
-
-    }
-
 
         var weatherData =  JSON.stringify(weatherObj);
 

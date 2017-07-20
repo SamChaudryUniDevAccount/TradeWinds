@@ -224,8 +224,8 @@ $('#weatherData').click(function() {
 
     var weatherObj = {}
 
-    var latitudeToPost = 0.0;
-    var longitutudeToPost = 0.0;
+    var latitudeToPost = "";
+    var longitutudeToPost = "";
 
     geocoder = new google.maps.Geocoder();
 
@@ -241,18 +241,8 @@ $('#weatherData').click(function() {
              var long = results[0].geometry.location.lng();
 
 
-              latitudeToPost = lat;
-              longitutudeToPost = long;
-
-
-            weatherObj = {
-
-                startDate:startdate,
-                endDate:enddate,
-                lat: latitudeToPost,
-                long:longitutudeToPost
-
-            }
+              latitudeToPost += lat;
+              longitutudeToPost += long;
 
         }
         else
@@ -263,6 +253,17 @@ $('#weatherData').click(function() {
     });
 
 
+
+
+
+    weatherObj = {
+
+        startDate:startdate,
+        endDate:enddate,
+        lat: latitudeToPost,
+        long:longitutudeToPost
+
+    }
 
         var weatherData =  JSON.stringify(weatherObj);
 

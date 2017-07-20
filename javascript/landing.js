@@ -233,8 +233,8 @@ $('#weatherData').click(function() {
         if (status == google.maps.GeocoderStatus.OK)
         {
 
-             lat = results[0].geometry.location.lat();
-             long = results[0].geometry.location.lng();
+             lat += results[0].geometry.location.lat();
+             long += results[0].geometry.location.lng();
 
             //Working returning lat and longitude and accurate
             console.log(lat,long);

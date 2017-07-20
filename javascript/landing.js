@@ -237,7 +237,7 @@ $('#weatherData').click(function() {
         var lat  =  results[0].geometry.location.lat();
         var long = results[0].geometry.location.lng();
 
-        alert(startdate,enddate);
+        alert("start date" + startdate,"end date is:.."+enddate + "latitude is.." + "longitude is..." );
 
     });
 

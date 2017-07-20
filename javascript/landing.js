@@ -218,13 +218,14 @@ function showLoadingSpinner() {
 $('#weatherData').click(function() {
 
     var geocoder;
-    var lat;
-    var long;
 
     var startdate = dateTimeParser($('#from').val());
     var enddate =  dateTimeParser($('#to').val());
 
     var weatherObj = {}
+
+    var latitudeToPost
+    var longitutudeToPost
 
     geocoder = new google.maps.Geocoder();
 
@@ -232,12 +233,16 @@ $('#weatherData').click(function() {
 
     geocoder.geocode( { 'address': location}, function(results, status)
     {
+
         if (status == google.maps.GeocoderStatus.OK)
         {
 
-              lat  =  results[0].geometry.location.lat();
-              long = results[0].geometry.location.lng();
+             var lat  =  results[0].geometry.location.lat();
+             var long = results[0].geometry.location.lng();
 
+
+              latitudeToPost += lat;
+              longitutudeToPost += long;
         }
         else
         {
@@ -250,8 +255,8 @@ $('#weatherData').click(function() {
 
         startDate:startdate,
         endDate:enddate,
-        lat: lat,
-        long:long
+        lat: latitudeToPost,
+        long:longitutudeToPost
 
     }
 

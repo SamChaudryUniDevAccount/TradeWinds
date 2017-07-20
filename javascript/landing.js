@@ -224,8 +224,8 @@ $('#weatherData').click(function() {
 
     var weatherObj = {}
 
-    var latitudeToPost = "";
-    var longitutudeToPost = "";
+    var lat
+    var long;
 
     geocoder = new google.maps.Geocoder();
 
@@ -234,26 +234,10 @@ $('#weatherData').click(function() {
     geocoder.geocode( { 'address': location}, function(results, status)
     {
 
-        if (status == google.maps.GeocoderStatus.OK)
-        {
-
-             var lat  =  results[0].geometry.location.lat();
-             var long = results[0].geometry.location.lng();
-
-
-              latitudeToPost += lat;
-              longitutudeToPost += long;
-
-        }
-        else
-        {
-            alert("Error has occured with status: " + status);
-        }
+        var lat  =  results[0].geometry.location.lat();
+        var long = results[0].geometry.location.lng();
 
     });
-
-
-
 
 
     weatherObj = {

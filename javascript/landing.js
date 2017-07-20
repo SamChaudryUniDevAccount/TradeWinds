@@ -260,7 +260,7 @@ function getWeather(startdate,enddate,lat,long) {
 
     var weatherData =  JSON.stringify(weatherObj);
 
-    alert(weatherData);
+    //alert(weatherData);
 
     $.ajax(
         {
@@ -270,9 +270,11 @@ function getWeather(startdate,enddate,lat,long) {
             data:{"getWeatherData":weatherData},
             success: function(data){
 
-                var apiData = $.parseJSON(data);
+                alert(data)
 
-                console.log(apiData);
+                //var apiData = $.parseJSON(data);
+
+               // console.log(apiData);
 
 
                 //if(apiData != null){

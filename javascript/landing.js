@@ -271,6 +271,7 @@ $('#weatherData').click(function() {
 
                 }else {
 
+                    loadWeatherData(data);
 
                 }
 
@@ -280,6 +281,51 @@ $('#weatherData').click(function() {
 
     
 })
+
+
+//Weatherdata
+function loadWeatherData(data) {
+
+    var graphObject = {
+
+        rangeSelector: {
+            selected: 1,
+            inputEnabled: $('#weatherDataGraph').width() > 480
+        },
+
+        title: {
+            text: $('#assetType').val(),
+        },
+        xAxis: {
+
+            categories: addCommodityDates(graphData)
+        },
+        yAxis:[{
+
+            title: {
+
+                text: 'weather'
+            }
+        }],
+        series: [{
+            name: $('#assetType').val(),
+            data: graphData,
+            tooltip: {
+
+                valueDecimals: 4
+            }
+        }],
+
+        chart: {
+            renderTo: 'commoditiesGraph'
+        }
+    };
+
+
+    $('#spin').hide();
+
+    var chart = $('#weatherDataGraph').highcharts(graphObject);
+}
 
 //Date UNIX Helper method
 function dateTimeParser(dateToParse) {

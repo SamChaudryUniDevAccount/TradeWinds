@@ -14,12 +14,12 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 
 }else if(isset($_POST["getWeatherData"])) {
 
+
     getWeatherData();
 
 }
-
+//Weather
 function getWeatherData(){
-
 
     global $link;
 
@@ -51,18 +51,25 @@ function getWeatherData(){
 
         }
 
+
     }
 
-    //https://www.quandl.com/api/v3/datasets/".$commodityEndPoint."/"."data.json"."?"."start_date=".$start_date."&"."end_date=".$end_date."kv_y-Xcvsk1h3wQ1TNPE
+    //&APPID
 
-    $url = "";
+    //Api key = 8e07349ba5a0efa82c941d6b20ba1333
 
-    $weatherdata = file_get_contents($url);
+    //API key
+    //"http://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&APPID=8e07349ba5a0efa82c941d6b20ba1333 ";
 
-    $weatherdataToReturn = json_decode($weatherdata,true);
+
+     echo $url = "http://history.openweathermap.org/data/2.5/history/city?lat=".$lat."&lon=".$long."&type=hour"."&start=".$startDate."&end=".$end_date."&APPID=8e07349ba5a0efa82c941d6b20ba1333";
+
+    //$weatherdata = file_get_contents($url);
+
+    //$weatherdataToReturn = json_decode($weatherdata,true);
 
 
-    echo json_encode($weatherdataToReturn);
+   // echo json_encode($weatherdataToReturn);
 
 
 

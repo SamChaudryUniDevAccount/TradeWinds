@@ -1,9 +1,4 @@
 /*
-
-when adding to the main page add the js file as below
-
- <script src="javascript/typescript.js"></script>
-
 $( document ).ready(function() {
 
     alert("This came from typescript.js document.ready function")

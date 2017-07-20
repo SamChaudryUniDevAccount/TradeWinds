@@ -265,15 +265,18 @@ $('#weatherData').click(function() {
 
                 var apiData = $.parseJSON(data);
 
-                if(apiData != null){
+                console.log(apiData);
 
-                    $('#spin').hide();
 
-                }else {
+                //if(apiData != null){
 
-                    loadWeatherData(data);
+                 //   $('#spin').hide();
 
-                }
+               // }else {
+
+                  //  loadWeatherData(data);
+
+                //}
 
             }
         });

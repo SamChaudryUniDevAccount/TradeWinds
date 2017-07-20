@@ -221,8 +221,8 @@ $('#weatherData').click(function() {
     var lat = 0.0;
     var long = 0.0;
 
-    var startdate = this.dateTimeParser($('#from').val());
-    var enddate = this.dateTimeParser($('#to').val());
+    var startdate = dateTimeParser($('#from').val());
+    var enddate =  dateTimeParser($('#to').val());
 
     geocoder = new google.maps.Geocoder();
 

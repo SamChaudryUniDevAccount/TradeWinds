@@ -218,8 +218,8 @@ function showLoadingSpinner() {
 $('#weatherData').click(function() {
 
     var geocoder;
-    var lat = 0.0;
-    var long = 0.0;
+    var lat;
+    var long;
 
     var startdate = dateTimeParser($('#from').val());
     var enddate =  dateTimeParser($('#to').val());

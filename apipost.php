@@ -38,7 +38,7 @@ function getWeatherData(){
 
         } elseif($key== "endDate") {
 
-            $endDate = $value;
+            $end_date = $value;
 
         }elseif($key == "lat"){
 
@@ -53,6 +53,8 @@ function getWeatherData(){
 
 
     }
+
+    //echo $end_date;
 
     //&APPID
 

@@ -247,7 +247,7 @@ $('#weatherData').click(function() {
         lat: latitudeToPost,
         long:longitutudeToPost
 
-    }
+    };
 
         var weatherData =  JSON.stringify(weatherObj);
 

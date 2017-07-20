@@ -244,7 +244,15 @@ $('#weatherData').click(function() {
               latitudeToPost = lat;
               longitutudeToPost = long;
 
-            alert(latitudeToPost,longitutudeToPost);
+
+            weatherObj = {
+
+                startDate:startdate,
+                endDate:enddate,
+                lat: latitudeToPost,
+                long:longitutudeToPost
+
+            }
 
         }
         else
@@ -254,14 +262,7 @@ $('#weatherData').click(function() {
 
     });
 
-    weatherObj = {
 
-        startDate:startdate,
-        endDate:enddate,
-        lat: latitudeToPost,
-        long:longitutudeToPost
-
-    }
 
         var weatherData =  JSON.stringify(weatherObj);
 

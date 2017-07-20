@@ -249,6 +249,7 @@ $('#weatherData').click(function() {
     });
 
 
+    alert("Latitude is.." + lat + "Longitude" + long)
 
     weatherObj = {
 

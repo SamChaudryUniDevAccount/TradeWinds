@@ -254,6 +254,7 @@ $('#weatherData').click(function() {
 
         var weatherData =  JSON.stringify(weatherObj);
 
+        alert(weatherData);
 
     $.ajax(
         {

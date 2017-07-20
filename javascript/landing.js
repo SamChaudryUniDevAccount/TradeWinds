@@ -237,7 +237,17 @@ $('#weatherData').click(function() {
         var lat  =  results[0].geometry.location.lat();
         var long = results[0].geometry.location.lng();
 
+        alert(startdate,enddate);
+
     });
+
+
+
+
+    
+})
+
+function getWeather() {
 
 
     weatherObj = {
@@ -249,9 +259,9 @@ $('#weatherData').click(function() {
 
     };
 
-        var weatherData =  JSON.stringify(weatherObj);
+    var weatherData =  JSON.stringify(weatherObj);
 
-        alert(weatherData);
+    alert(weatherData);
 
     $.ajax(
         {
@@ -268,20 +278,18 @@ $('#weatherData').click(function() {
 
                 //if(apiData != null){
 
-                 //   $('#spin').hide();
+                //   $('#spin').hide();
 
-               // }else {
+                // }else {
 
-                  //  loadWeatherData(data);
+                //  loadWeatherData(data);
 
                 //}
 
             }
         });
 
-
-    
-})
+}
 
 
 //Weatherdata

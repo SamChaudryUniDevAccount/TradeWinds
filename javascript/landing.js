@@ -244,8 +244,8 @@ $('#weatherData').click(function() {
 
         startDate:startdate,
         endDate:enddate,
-        lat: latitudeToPost,
-        long:longitutudeToPost
+        lat: lat,
+        long:long
 
     };
 

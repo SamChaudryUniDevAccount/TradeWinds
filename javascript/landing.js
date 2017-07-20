@@ -218,8 +218,8 @@ function showLoadingSpinner() {
 $('#weatherData').click(function() {
 
     var geocoder;
-    var lat = 0;
-    var long = 0;
+    var lat;
+    var long;
 
     var startdate = dateTimeParser($('#from').val());
     var enddate =  dateTimeParser($('#to').val());
@@ -235,7 +235,7 @@ $('#weatherData').click(function() {
         if (status == google.maps.GeocoderStatus.OK)
         {
 
-             lat  =  results[0].geometry.location.lat();
+              lat  =  results[0].geometry.location.lat();
               long = results[0].geometry.location.lng();
 
             //Working returning lat and longitude and accurate

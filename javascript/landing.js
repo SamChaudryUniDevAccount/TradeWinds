@@ -238,8 +238,6 @@ $('#weatherData').click(function() {
               lat  =  results[0].geometry.location.lat();
               long = results[0].geometry.location.lng();
 
-            //Working returning lat and longitude and accurate
-            console.log(lat,long);
         }
         else
         {
@@ -247,9 +245,6 @@ $('#weatherData').click(function() {
         }
 
     });
-
-
-    alert("Latitude is.." + lat + "Longitude" + long)
 
     weatherObj = {
 

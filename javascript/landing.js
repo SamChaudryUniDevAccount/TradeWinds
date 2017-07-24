@@ -260,7 +260,7 @@ function getWeather(startdate,lat,long) {
 
     var weatherData =  JSON.stringify(weatherObj);
 
-    alert(weatherData);
+    //alert(weatherData);
 
     $.ajax(
         {

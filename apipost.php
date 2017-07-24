@@ -34,11 +34,8 @@ function getWeatherData(){
 
         if ($key=="startDate") {
 
+            //Selected date for API call in Dark Skies
             $startDate = $value;
-
-        } elseif($key== "endDate") {
-
-            $end_date = $value;
 
         }elseif($key == "lat"){
 
@@ -54,17 +51,10 @@ function getWeatherData(){
 
     }
 
-    //echo $end_date;
+    //https://api.darksky.net/forecast/0ea0dba452734effd416b885f0adbc3a/42.3601,-71.0589,409467600?exclude=currently,flags
 
-    //&APPID
 
-    //Api key = 8e07349ba5a0efa82c941d6b20ba1333
-
-    //API key
-    //"http://history.openweathermap.org/data/2.5/history/city?lat={lat}&lon={lon}&type=hour&start={start}&end={end}&APPID=8e07349ba5a0efa82c941d6b20ba1333 ";
-    //http://api.openweathermap.org/data/2.5/weather?q=London&appid=e675bd75ba3bba20b5e9cad0cd2057cf
-
-     echo $url = "http://api.openweathermap.org/data/2.5/history/city?lat=".$lat."&lon=".$long."&type=hour"."&start=".$startDate."&end=".$end_date."&appid=e675bd75ba3bba20b5e9cad0cd2057cf";
+    echo $url = "https://api.darksky.net/forecast/0ea0dba452734effd416b885f0adbc3a/".$lat.",".$long.",".$startDate."?"."exclude=currently,flags";
 
     //$weatherdata = file_get_contents($url);
 

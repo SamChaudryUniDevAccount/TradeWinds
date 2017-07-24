@@ -296,7 +296,7 @@ function loadWeatherData(data) {
         },
         xAxis: {
 
-            categories: addCommodityDates(data)
+            categories: loadDataAsArray(data)
         },
         yAxis:[{
 

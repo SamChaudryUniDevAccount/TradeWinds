@@ -149,7 +149,7 @@ function loadCommodityGraph(graphData) {
             },
             xAxis: {
 
-                categories: addCommodityDates(graphData)
+                categories: loadDataAsArray(graphData)
             },
             yAxis:[{
 
@@ -179,21 +179,7 @@ function loadCommodityGraph(graphData) {
 
 }
 
-function addCommodityDates(graphData) {
 
-    var datesArray = [];
-
-    for(i = 0; i < graphData.length; i++){
-
-        for(j = 0; j < graphData[i].length; j++ ){
-
-            datesArray.push(graphData[i][0]);
-        }
-
-    }
-
-    return datesArray;
-}
 //Setup spinner object within application
 function showLoadingSpinner() {
 
@@ -310,7 +296,7 @@ function loadWeatherData(data) {
         },
         xAxis: {
 
-            categories: addCommodityDates(graphData)
+            categories: addCommodityDates(data)
         },
         yAxis:[{
 
@@ -348,7 +334,21 @@ function dateTimeParser(dateToParse) {
 
 }
 
+function loadDataAsArray(graphData) {
 
+    var loadarray = [];
+
+    for(i = 0; i < graphData.length; i++){
+
+        for(j = 0; j < graphData[i].length; j++ ){
+
+            loadarray.push(graphData[i][0]);
+        }
+
+    }
+
+    return loadarray;
+}
 
 
 

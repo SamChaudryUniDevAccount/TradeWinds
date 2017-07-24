@@ -137,6 +137,15 @@
     background-color: white;
 }
 
+#weatherDataGraph {
+
+    min-width: 310px;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: white;
+}
+
 .inputBox{
 
     margin-left: 10px;

@@ -53,7 +53,6 @@ function getWeatherData(){
 
     //https://api.darksky.net/forecast/0ea0dba452734effd416b885f0adbc3a/42.3601,-71.0589,409467600?exclude=currently,flags
 
-
     $url = "https://api.darksky.net/forecast/0ea0dba452734effd416b885f0adbc3a/".$lat.",".$long.",".$startDate."?"."exclude=currently,flags";
 
     $weatherdata = file_get_contents($url);

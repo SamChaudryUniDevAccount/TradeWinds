@@ -71,12 +71,12 @@ session_start();
                                        <form class="row">
                                            <div class="form-group">
                                                <p>Start Date</p>
-                                               <input type="text" class="form-control inputData" name = "startDate" placeholder="Start Date" value="2017-02-10">
+                                               <input type="text" class="form-control inputData" name = "startDate" placeholder="Start Date" value="2017-05-01">
                                            </div>
                                            <br/>
                                            <div class="inputBox" class="form-group">
                                                <p>Enter Date</p>
-                                               <input type="text" class="form-control inputData" name ="endDate" placeholder="End Date" value="2017-03-01">
+                                               <input type="text" class="form-control inputData" name ="endDate" placeholder="End Date" value="2017-05-30">
                                            </div>
                                        </form>
                                    </div>

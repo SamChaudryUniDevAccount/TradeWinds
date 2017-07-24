@@ -220,7 +220,7 @@ $('#weatherData').click(function() {
     var geocoder;
 
     var startdate = dateTimeParser($('#from').val());
-    var enddate =  dateTimeParser($('#to').val());
+    //var enddate =  dateTimeParser($('#to').val());
 
     var weatherObj = {}
 
@@ -240,19 +240,19 @@ $('#weatherData').click(function() {
         //Alerting as needed
         //alert("start date" + startdate,"end date is:.."+enddate + "latitude is.." + lat+"longitude is..." +long );
 
-        getWeather(startdate,enddate,lat,long)
+        getWeather(startdate,lat,long)
 
     });
 
 })
 
-function getWeather(startdate,enddate,lat,long) {
+function getWeather(startdate,lat,long) {
 
+    //      endDate:enddate,
 
     weatherObj = {
 
         startDate:startdate,
-        endDate:enddate,
         lat: lat,
         long:long
 
@@ -260,7 +260,7 @@ function getWeather(startdate,enddate,lat,long) {
 
     var weatherData =  JSON.stringify(weatherObj);
 
-    //alert(weatherData);
+    alert(weatherData);
 
     $.ajax(
         {

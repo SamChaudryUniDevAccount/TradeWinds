@@ -99,15 +99,12 @@ session_start();
                                <label>Enter location</label>>
                                <input type="text" class="form-control" id="location"  placeholder="Enter location" value="Chicago">
                                <br/>
-                               <p class="card-text ">Select Date range</p>
+                               <p class="card-text ">Enter Date</p>
                                <form class="row">
                                    <div class="form-group">
                                        <input type="text" class="form-control" id="from" placeholder="Start Date" value="2017-02-10">
                                    </div>
                                    <br/>
-                                   <div class="form-group">
-                                       <input type="text" class="form-control" id="to" placeholder="End Date" value="2017-06-01">
-                                   </div>
                                </form>
                                <br/>
                                <button id="weatherData" type="button" class="btn btn-success">Get Data</button>

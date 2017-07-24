@@ -270,7 +270,9 @@ function getWeather(startdate,lat,long) {
             data:{"getWeatherData":weatherData},
             success: function(data){
 
-                alert(data)
+                console.log(data);
+
+                //alert(data)
 
                 //var apiData = $.parseJSON(data);
 

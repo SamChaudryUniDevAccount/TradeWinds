@@ -97,7 +97,7 @@ session_start();
                            <div class=" pannelHeaderTitleStyles card-header card-warning">Weather</div>
                            <div class="card-block">
                                <label>Enter location</label>>
-                               <input type="text" class="form-control" id="location"  placeholder="Enter location" value="Gulf of Mexico">
+                               <input type="text" class="form-control" id="location"  placeholder="Enter location" value="Chicago">
                                <br/>
                                <p class="card-text ">Select Date range</p>
                                <form class="row">

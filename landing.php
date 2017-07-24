@@ -76,7 +76,7 @@ session_start();
                                            <br/>
                                            <div class="inputBox" class="form-group">
                                                <p>Enter Date</p>
-                                               <input type="text" class="form-control inputData" name ="endDate" placeholder="End Date" value="2017-06-01">
+                                               <input type="text" class="form-control inputData" name ="endDate" placeholder="End Date" value="2017-03-01">
                                            </div>
                                        </form>
                                    </div>

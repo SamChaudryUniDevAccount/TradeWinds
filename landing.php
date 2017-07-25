@@ -108,7 +108,7 @@ session_start();
                                </form>
                                <br/>
                                <p>Select weather data type</p>
-                               <select id=" weatherDataTypeDrop">
+                               <select class="form-control inputData" name="weather" id=" weatherDataTypeDrop">
                                    <option>Temperature</option>
                                    <option>Rain</option>
                                </select>

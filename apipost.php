@@ -127,8 +127,8 @@ function getCommodityData(){
      //429 to many requests
     //echo var_dump($http_response_header, $dateToReturn);
 
-    echo $commidityUrl;
-    //echo json_encode($dateToReturn);
+    //echo $commidityUrl;
+    echo json_encode($dateToReturn);
 
 }
 

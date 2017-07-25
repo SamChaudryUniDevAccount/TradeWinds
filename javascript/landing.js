@@ -248,6 +248,9 @@ function getWeather(startdate,lat,long) {
 
     //alert(weatherData);
 
+    alert($('#weatherDataTypeDrop option:selected').val());
+
+
     $.ajax(
         {
 
@@ -349,7 +352,6 @@ function loadWeatherDataAsArray(graphData) {
     var WeatherDataTypeSelected;
     var weatherArraytobeparsed;
 
-        alert($('#weatherDataTypeDrop option:selected').val());
 
     //WeatherDataTypeSelected = x
     weatherArraytobeparsed = graphData;

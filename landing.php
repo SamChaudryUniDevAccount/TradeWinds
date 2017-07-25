@@ -102,7 +102,7 @@ session_start();
                                <p class="card-text ">Enter Date</p>
                                <form class="row">
                                    <div class="form-group">
-                                       <input type="text" class="form-control" id=9"from" placeholder="Start Date" value="2017-02-10">
+                                       <input type="text" class="form-control" id= "from" placeholder="Start Date" value="2017-02-10">
                                    </div>
                                    <br/>
                                </form>

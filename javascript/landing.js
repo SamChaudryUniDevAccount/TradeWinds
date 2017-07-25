@@ -352,7 +352,7 @@ function loadWeatherDataAsArray(graphData) {
 
     for(i = 0; i < graphData.length; i++){
 
-        loadarray.push(graphData[5]);
+        loadarray.push(graphData[i]['temperature']);
     }
 
     return loadarray;

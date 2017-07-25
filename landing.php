@@ -76,7 +76,7 @@ session_start();
                                            <br/>
                                            <div class="inputBox" class="form-group">
                                                <p>Enter Date</p>
-                                               <input type="text" class="form-control inputData" name ="endDate" placeholder="End Date" value="2017-05-30">
+                                               <input id ="weatherType"type="text" class="form-control inputData" name ="endDate" placeholder="End Date" value="2017-05-30">
                                            </div>
                                        </form>
                                    </div>
@@ -108,12 +108,7 @@ session_start();
                                </form>
                                <br/>
                                <p>Select weather data type</p>
-                               <select class="form-control inputData" name="weather" id=" weatherDataTypeDrop">
-                                   <option>Temperature</option>
-                                   <option>Rain</option>
-                               </select>
-
-
+                               <input type="text" class="form-control" id= "from" placeholder="Start Date" value="2017-02-10">
 
                                <button id="weatherData" type="button" class="btn btn-success">Get Data</button>
                                <br>

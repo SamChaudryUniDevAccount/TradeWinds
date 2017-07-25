@@ -248,10 +248,6 @@ function getWeather(startdate,lat,long) {
 
     //alert(weatherData);
 
-    var selectedValue=$('#mydropdownid').val();
-    var selectedText=$('#mydropdownid option:selected').text();
-
-    alert(selectedText);
 
 
     $.ajax(
@@ -355,12 +351,14 @@ function loadWeatherDataAsArray(graphData) {
     var WeatherDataTypeSelected;
     var weatherArraytobeparsed;
 
+    var selectedValue=$('#weatherType').val();
+    var selectedText=$('#weatherType option:selected').text();
 
-    //WeatherDataTypeSelected = x
-    weatherArraytobeparsed = graphData;
+    alert(selectedText);
 
 
-   if(WeatherDataTypeSelected == "Temperature"){
+
+    if(WeatherDataTypeSelected == "Temperature"){
 
        console.log("temp");
 

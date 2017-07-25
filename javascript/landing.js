@@ -350,7 +350,7 @@ function loadWeatherDataAsArray(graphData) {
     var weatherArraytobeparsed;
 
 
-    WeatherDataTypeSelected = $('#weatherDataType').text();
+    WeatherDataTypeSelected = $('#weatherDataType option:selected').text();
     weatherArraytobeparsed = graphData;
 
 

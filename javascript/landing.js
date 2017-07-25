@@ -302,10 +302,7 @@ function loadWeatherData(graphData) {
         series: [{
             name: graphData,
             data: loadWeatherDataAsArray(graphData),
-            tooltip: {
 
-                valueDecimals: 4
-            }
         }],
 
         chart: {

@@ -346,7 +346,7 @@ function loadDataAsArray(graphData) {
 
 function loadWeatherDataAsArray(graphData) {
 
-   var WeatherDataTypeSelected = $('.input:checked').val();
+   var WeatherDataTypeSelected = $('.weatherDataType').text();
    var weatherArraytobeparsed = graphData;
 
    if(WeatherDataTypeSelected == "Temperature"){
@@ -361,11 +361,11 @@ function loadWeatherDataAsArray(graphData) {
 
     var loadarray = [];
 
-    for(i = 0; i < graphData.length; i++){
+    for(i = 0; i < weatherArraytobeparsed.length; i++){
 
-        for(j = 0; j < graphData[i].length; j++ ){
+        for(j = 0; j < weatherArraytobeparsed[i].length; j++ ){
 
-            loadarray.push(graphData[i][0]);
+            loadarray.push(weatherArraytobeparsed[i][0]);
         }
 
     }

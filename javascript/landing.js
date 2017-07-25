@@ -346,12 +346,12 @@ function loadDataAsArray(graphData) {
 
 function loadWeatherDataAsArray(graphData) {
 
-   var WeatherDataTypeSelected = $('.weatherDataType:checked').val();
+   var WeatherDataTypeSelected = $('#weatherDataType').val();
    var weatherArraytobeparsed = graphData;
 
    if(WeatherDataTypeSelected == "Temperature"){
 
-       console.log(temp);
+       console.log("temp");
 
    }else if(WeatherDataTypeSelected =="Rain"){
 

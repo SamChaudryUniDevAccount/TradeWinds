@@ -352,11 +352,7 @@ function loadWeatherDataAsArray(graphData) {
 
     for(i = 0; i < graphData.length; i++){
 
-        for(j = 0; j < graphData[i].length; j++ ){
-
-            loadarray.push(graphData[i][5]);
-        }
-
+        loadarray.push(graphData[5]);
     }
 
     return loadarray;

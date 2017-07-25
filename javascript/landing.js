@@ -263,7 +263,7 @@ function getWeather(startdate,lat,long) {
 
                 console.log(apiData);
 
-                var graphData = apiData['daily']['data']
+                var graphData = apiData['hourly']['data']
 
 
                 loadWeatherData(graphData);

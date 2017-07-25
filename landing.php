@@ -102,13 +102,13 @@ session_start();
                                <p class="card-text ">Enter Date</p>
                                <form class="row">
                                    <div class="form-group">
-                                       <input type="text" class="form-control" id="from" placeholder="Start Date" value="2017-02-10">
+                                       <input type="text" class="form-control" id=9"from" placeholder="Start Date" value="2017-02-10">
                                    </div>
                                    <br/>
                                </form>
                                <br/>
                                <p>Select weather data type</p>
-                               <select id=" weatherDataType">
+                               <select id=" weatherDataTypeDrop">
                                    <option>Temperature</option>
                                    <option>Rain</option>
                                </select>

@@ -290,7 +290,7 @@ function loadWeatherData(graphData) {
         },
         xAxis: {
 
-            categories:[1,2,3,4,5]
+            categories:loadTime(graphData)
         },
         yAxis:[{
 
@@ -344,16 +344,31 @@ function loadDataAsArray(graphData) {
 }
 
 
-
+//get temprature
 function loadWeatherDataAsArray(graphData) {
 
     var loadarray = [];
 
     for(i = 0; i < graphData.length; i++){
 
-        loadarray.push(graphData[0]["temperature"])
+        loadarray.push(graphData[i]["temperature"])
 
     }
 
     return loadarray;
+}
+
+//Get Time
+function loadTime(graphData) {
+
+    var loadarray = [];
+
+    for(i = 0; i < graphData.length; i++){
+
+        loadarray.push( new Date(graphData[i]["time"]))
+
+    }
+
+    return loadarray;
+
 }

@@ -60,8 +60,8 @@ function getWeatherData(){
     $weatherdataToReturn = json_decode($weatherdata,true);
 
     json_encode($weatherdataToReturn);
-    echo $url;
-
+    //echo $url;
+    echo $startDate;
 
 
 }

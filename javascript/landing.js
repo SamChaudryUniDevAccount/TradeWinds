@@ -271,7 +271,7 @@ function getWeather(startdate,lat,long) {
 
 
 //Weatherdata
-function loadWeatherData(data) {
+function loadWeatherData(data['daily']) {
 
     var graphObject = {
 

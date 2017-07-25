@@ -350,11 +350,11 @@ function loadWeatherDataAsArray(graphData) {
 
     var loadarray = [];
 
-    for(i = 0; i < weatherArraytobeparsed.length; i++){
+    for(i = 0; i < graphData.length; i++){
 
-        for(j = 0; j < weatherArraytobeparsed[i].length; j++ ){
+        for(j = 0; j < graphData[i].length; j++ ){
 
-            loadarray.push(weatherArraytobeparsed[i][0]);
+            loadarray.push(graphData[i][0]);
         }
 
     }

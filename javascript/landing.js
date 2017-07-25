@@ -299,22 +299,13 @@ function loadWeatherData(graphData) {
                 text: 'weather'
             }
         }],
-        series: [{
-            name: $('#assetType').val(),
-            data: graphData,
-            tooltip: {
-
-                valueDecimals: 4
-            }
-        }],
+        series: graphData,
 
         chart: {
-            renderTo: 'commoditiesGraph'
+            renderTo: 'weatherDataGraph'
         }
     };
 
-
-    $('#spin').hide();
 
     var chart = $('#weatherDataGraph').highcharts(graphObject);
 }

@@ -256,24 +256,20 @@ function getWeather(startdate,lat,long) {
             data:{"getWeatherData":weatherData},
             success: function(data){
 
-                console.log(data);
 
-                //alert(data)
+                var apiData = $.parseJSON(data);
 
-                //var apiData = $.parseJSON(data);
+                console.log(apiData);
 
-               // console.log(apiData);
+                if(apiData != null){
 
+                   $('#spin').hide();
 
-                //if(apiData != null){
+                 }else {
 
-                //   $('#spin').hide();
+                  loadWeatherData(data);
 
-                // }else {
-
-                //  loadWeatherData(data);
-
-                //}
+                }
 
             }
         });

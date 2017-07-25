@@ -248,7 +248,10 @@ function getWeather(startdate,lat,long) {
 
     //alert(weatherData);
 
-    alert($('#weatherDataTypeDrop option:selected').val());
+    var selectedValue=$('#mydropdownid').val();
+    var selectedText=$('#mydropdownid option:selected').text();
+
+    alert(selectedText);
 
 
     $.ajax(

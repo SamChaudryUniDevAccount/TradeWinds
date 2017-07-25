@@ -107,6 +107,14 @@ session_start();
                                    <br/>
                                </form>
                                <br/>
+                               <div class="btn-group" data-toggle="buttons">
+                                   <label class="btn btn-primary active">
+                                       <input class="weatherDataType" type="radio" name="options" id="1" autocomplete="off" checked> Temperature
+                                   </label>
+                                   <label class="btn btn-primary">
+                                       <input class="weatherDataType" type="radio" name="options" id="2" autocomplete="off"> Rain
+                                   </label>
+                               </div>
                                <button id="weatherData" type="button" class="btn btn-success">Get Data</button>
                                <br>
                                <div id="weatherDataGraph">//Graph goes here... </div>

@@ -288,7 +288,7 @@ function loadWeatherData(graphData) {
         },
         xAxis: {
 
-            categories: loadDataAsArray(graphData)
+            categories: loadWeatherDataAsArray(graphData)
         },
         yAxis:[{
 
@@ -344,4 +344,31 @@ function loadDataAsArray(graphData) {
 
 
 
+function loadWeatherDataAsArray(graphData) {
 
+   var WeatherDataTypeSelected = $('.weatherDataType').val();
+   var weatherArraytobeparsed = graphData;
+
+   if(WeatherDataTypeSelected == "Temperature"){
+
+       console.log(temp);
+
+   }else if(WeatherDataTypeSelected =="Rain"){
+
+
+    }
+
+
+    var loadarray = [];
+
+    for(i = 0; i < graphData.length; i++){
+
+        for(j = 0; j < graphData[i].length; j++ ){
+
+            loadarray.push(graphData[i][0]);
+        }
+
+    }
+
+    return loadarray;
+}

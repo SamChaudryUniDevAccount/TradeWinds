@@ -286,7 +286,7 @@ function loadWeatherData(graphData) {
         },
 
         title: {
-            text: $('#assetType').val(),
+            text: 'Weather',
         },
         xAxis: {
 
@@ -299,12 +299,20 @@ function loadWeatherData(graphData) {
                 text: 'weather'
             }
         }],
-        series: graphData,
+        series: [{
+            name: 'temp',
+            data: graphData,
+            tooltip: {
+
+                valueDecimals: 4
+            }
+        }],
 
         chart: {
             renderTo: 'weatherDataGraph'
         }
     };
+
 
 
     var chart = $('#weatherDataGraph').highcharts(graphObject);

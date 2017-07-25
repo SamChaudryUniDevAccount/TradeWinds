@@ -261,15 +261,8 @@ function getWeather(startdate,lat,long) {
 
                 console.log(apiData);
 
-                if(apiData != null){
+                loadWeatherData(data['daily']);
 
-                   $('#spin').hide();
-
-                 }else {
-
-                  loadWeatherData(data['daily']);
-
-                }
 
             }
         });

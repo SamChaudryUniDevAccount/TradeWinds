@@ -75,6 +75,8 @@ session_start();
                                            </div>
                                            <br/>
                                            <div class="inputBox" class="form-group">
+                                               <p>Enter Date</p>
+                                               <input type="text" class="form-control inputData" name ="endDate" placeholder="End Date" value="2017-05-30">
                                            </div>
                                        </form>
                                    </div>
@@ -100,14 +102,11 @@ session_start();
                                <p class="card-text ">Enter Date</p>
                                <form class="row">
                                    <div class="form-group">
-                                       <input type="text" class="form-control" id= "from" placeholder="Start Date" value="2017-02-10">
+                                       <input type="text" class="form-control" id=9"from" placeholder="Start Date" value="2017-02-10">
                                    </div>
                                    <br/>
                                </form>
                                <br/>
-                               <p>Select weather data type</p>
-                               <input type="text" class="form-control" id= "from" placeholder="Start Date" value="2017-02-10">
-
                                <button id="weatherData" type="button" class="btn btn-success">Get Data</button>
                                <br>
                                <div id="weatherDataGraph">//Graph goes here... </div>

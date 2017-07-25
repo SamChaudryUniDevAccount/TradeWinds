@@ -267,7 +267,7 @@ function getWeather(startdate,lat,long) {
 
                  }else {
 
-                  loadWeatherData(data);
+                  loadWeatherData(data['daily']);
 
                 }
 

@@ -290,7 +290,7 @@ function loadWeatherData(graphData) {
         },
         xAxis: {
 
-            categories: loadWeatherDataAsArray(graphData)
+            categories:[1,2,3,4,5]
         },
         yAxis:[{
 
@@ -300,8 +300,8 @@ function loadWeatherData(graphData) {
             }
         }],
         series: [{
-            name: 'temp',
-            data: graphData,
+            name: graphData,
+            data: loadWeatherDataAsArray(graphData),
             tooltip: {
 
                 valueDecimals: 4

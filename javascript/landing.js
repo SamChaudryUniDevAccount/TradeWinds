@@ -348,25 +348,6 @@ function loadDataAsArray(graphData) {
 
 function loadWeatherDataAsArray(graphData) {
 
-    var WeatherDataTypeSelected;
-    var weatherArraytobeparsed;
-
-    var selectedValue=$('#weatherType').val();
-    var selectedText=$('#weatherType option:selected').val();
-
-    alert(selectedText);
-
-
-
-    if(WeatherDataTypeSelected == "Temperature"){
-
-       console.log("temp");
-
-   }else if(WeatherDataTypeSelected =="Rain"){
-
-
-    }
-
 
     var loadarray = [];
 

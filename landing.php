@@ -75,8 +75,6 @@ session_start();
                                            </div>
                                            <br/>
                                            <div class="inputBox" class="form-group">
-                                               <p>Enter Date</p>
-                                               <input id ="weatherType"type="text" class="form-control inputData" name ="endDate" placeholder="End Date" value="2017-05-30">
                                            </div>
                                        </form>
                                    </div>

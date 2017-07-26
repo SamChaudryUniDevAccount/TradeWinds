@@ -362,7 +362,9 @@ function loadTime(graphData) {
 
     for(i = 0; i < graphData.length; i++){
 
-        loadarray.push( new Date(graphData[i]["time"]))
+        //loadarray.push( new Date(graphData[i]["time"]))
+
+        console.log(new Date(graphData[i]["time"]);
 
     }
 

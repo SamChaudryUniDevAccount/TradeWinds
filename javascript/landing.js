@@ -366,9 +366,11 @@ function loadTime(graphData) {
 
         var arrayTemp = graphData[i]['time'];
 
-        console.log(arrayTemp);
+        //unix time
 
-        var timelabelFormatted = moment(arrayTemp).format('YYYY-MM-DD HH:mm');
+        var timelabelFormatted = moment.unix(arrayTemp).format('YYYY-MM-DD HH:mm');
+
+        console.log(timelabelFormatted);
 
         loadarray.push(timelabelFormatted);
 

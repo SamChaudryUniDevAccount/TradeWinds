@@ -286,7 +286,7 @@ function loadWeatherData(graphData) {
         },
 
         title: {
-            text: $('#location').val(),
+            text: "Weather for " + $('#location').val(),
         },
         xAxis: {
 

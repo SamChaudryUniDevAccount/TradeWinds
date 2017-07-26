@@ -329,12 +329,11 @@ function loadDataAsArray(graphData) {
     var loadarray = [];
 
 
-
     for(i = 0; i < graphData.length; i++){
 
         for(j = 0; j < graphData[i].length; j++ ){
 
-            loadarray.push( moment(graphData[i]['temperature']).format('yyyy-MM-dd_HH-mm'));
+            loadarray.push(graphData[i][0]);
         }
 
     }
@@ -364,11 +363,7 @@ function loadTime(graphData) {
 
     for(i = 0; i < graphData.length; i++){
 
-        //loadarray.push( new Date(graphData[i]["time"]))
-
-        var x = new Date(graphData[i]["time"]);
-
-        console.log(x)
+        loadarray.push(moment(graphData[i]['temperature']).format('yyyy-MM-dd_HH-mm'));
 
     }
 

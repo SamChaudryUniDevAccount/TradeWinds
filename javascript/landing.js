@@ -366,7 +366,7 @@ function loadTime(graphData) {
 
         var arrayTemp = graphData[i]['temperature'];
 
-        var timelabelFormatted = moment(arrayTemp).format('yyyy-MM-dd_HH-mm');
+        var timelabelFormatted = moment().unix(arrayTemp).format('YYYY-MM-DD HH:mm');
 
         loadarray.push(timelabelFormatted);
 

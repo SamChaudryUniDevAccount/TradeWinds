@@ -361,7 +361,7 @@ function loadTime(graphData) {
 
     var loadarray = [];
 
-    var timeFormatter = moment()
+    var timeFormatter = moment();
 
     for(i = 0; i < graphData.length; i++){
 

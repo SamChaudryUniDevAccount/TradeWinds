@@ -356,7 +356,7 @@ function loadWeatherDataAsArray(graphData) {
     return loadarray;
 }
 
-//Get Time
+//Get Timea
 function loadTime(graphData) {
 
     var loadarray = [];

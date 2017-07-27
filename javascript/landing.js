@@ -203,6 +203,11 @@ function showLoadingSpinner() {
 //weatherData location
 $('#weatherData').click(function() {
 
+    var weatherTypeSelected = $('[name=weatherType]:checked').val();
+
+    alert(weatherTypeSelected);
+
+
     var geocoder;
 
     var startdate = dateTimeParser($('#from').val());

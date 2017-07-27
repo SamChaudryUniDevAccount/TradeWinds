@@ -115,7 +115,7 @@ session_start();
                                <br/>
                                <button id="weatherData" type="button" class="btn btn-success">Get Data</button>
                                <br>
-                               <div id="weatherDataGraph">//Graph goes here... </div>
+                               <div id="weatherDataGraph"></div>
                            </div>
                        </div>
 

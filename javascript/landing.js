@@ -205,7 +205,7 @@ $('#weatherData').click(function() {
 
     var weatherTypeSelected = $('[name=weatherType]:checked').val();
 
-    alert(weatherTypeSelected);
+    //alert(weatherTypeSelected);
 
 
     var geocoder;
@@ -231,13 +231,13 @@ $('#weatherData').click(function() {
         //Alerting as needed
         //alert("start date" + startdate,"end date is:.."+enddate + "latitude is.." + lat+"longitude is..." +long );
 
-        getWeather(startdate,lat,long)
+        getWeather(startdate,lat,long,weatherTypeSelected);
 
     });
 
 })
 
-function getWeather(startdate,lat,long) {
+function getWeather(startdate,lat,long,weatherTypeSelected) {
 
     //      endDate:enddate,
 
@@ -271,7 +271,7 @@ function getWeather(startdate,lat,long) {
                 var graphData = apiData['hourly']['data']
 
 
-                loadWeatherData(graphData);
+                loadWeatherData(graphData,weatherTypeSelected);
 
 
             }
@@ -281,7 +281,7 @@ function getWeather(startdate,lat,long) {
 
 
 //Weatherdata
-function loadWeatherData(graphData) {
+function loadWeatherData(graphData,weatherTypeSelected) {
 
     var graphObject = {
 
@@ -291,7 +291,8 @@ function loadWeatherData(graphData) {
         },
 
         title: {
-            text: "Weather for " + $('#location').val(),
+
+            text: "Weather for " + $('#location').val() + "with type selected is" + weatherTypeSelected,
         },
         xAxis: {
 
@@ -301,12 +302,12 @@ function loadWeatherData(graphData) {
 
             title: {
 
-                text: 'weather'
+                text: weatherTypeSelected,
             }
         }],
         series: [{
 
-            data: loadWeatherDataAsArray(graphData),
+            data: loadWeatherDataAsArray(graphData,weatherTypeSelected),
 
         }],
 
@@ -348,7 +349,24 @@ function loadDataAsArray(graphData) {
 
 
 //get temprature
-function loadWeatherDataAsArray(graphData) {
+function loadWeatherDataAsArray(graphData,weatherTypeSelected) {
+
+    var weatherKey = "";
+
+    if(weatherTypeSelected == "temperature"){
+
+        weatherKey = "temperature";
+
+        console.log(weatherKey);
+
+    }else if(weatherTypeSelected =="precipitation"){
+
+        weatherKey = "precipitation";
+
+        console.log(weatherKey);
+
+    }
+
 
     var loadarray = [];
 

@@ -106,6 +106,8 @@ session_start();
                                    </div>
                                    <br/>
                                </form>
+                               <p>Select Weather data type to be returned:</p>
+                               <br/>
                                <form action="">
                                    <input class="weatherDataType" type="radio" name="weatherType" value="Temperature"> Temperature<br>
                                    <input class="weatherDataType" type="radio" name="weatherType" value="Precipitation"> Precipitation<br>

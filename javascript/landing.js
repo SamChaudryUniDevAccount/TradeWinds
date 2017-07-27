@@ -148,7 +148,7 @@ function loadCommodityGraph(graphData) {
             },
 
             title: {
-                text: assetName + "" + "average price is.." + averageAssetPrice(graphData ,assetName),
+                text: assetName + " " + "average price is.." + averageAssetPrice(graphData ,assetName),
             },
             xAxis: {
 

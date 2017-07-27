@@ -332,8 +332,12 @@ function dateTimeParser(dateToParse) {
 
     // (dateToParse.getTime()) /1000;
 
+    var dateAsUnix = moment(dateToParse).unix();
 
-    return moment(dateToParse).unix();
+
+     console.log(dateAsUnix);
+
+    return dateAsUnix;
 
 }
 

@@ -361,7 +361,7 @@ function loadWeatherDataAsArray(graphData,weatherTypeSelected) {
 
     }else if(weatherTypeSelected =="precipitation"){
 
-        weatherKey = "precipAccumulation";
+        weatherKey = "precipIntensity";
 
         console.log(weatherKey);
 

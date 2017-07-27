@@ -283,6 +283,10 @@ function getWeather(startdate,lat,long,weatherTypeSelected) {
 //Weatherdata
 function loadWeatherData(graphData,weatherTypeSelected) {
 
+
+
+
+
     var graphObject = {
 
         rangeSelector: {
@@ -324,9 +328,12 @@ function loadWeatherData(graphData,weatherTypeSelected) {
 //Date UNIX Helper method
 function dateTimeParser(dateToParse) {
 
-    var dateToParse= new Date(dateToParse);
+    //var dateToParse= new Date(dateToParse);
 
-    return (dateToParse.getTime()) /1000;
+    // (dateToParse.getTime()) /1000;
+
+
+    return moment(dateToParse).unix();
 
 }
 

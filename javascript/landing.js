@@ -292,7 +292,7 @@ function loadWeatherData(graphData,weatherTypeSelected) {
 
         title: {
 
-            text: weatherTypeSelected + " for " + $('#location').val() + " is " + weatherStatistics(graphData,weatherTypeSelected),
+            text: weatherTypeSelected + "data for "  + $('#location').val() + " is " + weatherStatistics(graphData,weatherTypeSelected),
         },
         xAxis: {
 

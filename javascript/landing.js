@@ -353,13 +353,13 @@ function loadWeatherDataAsArray(graphData,weatherTypeSelected) {
 
     var weatherKey = "";
 
-    if(weatherTypeSelected == "temperature"){
+    if(weatherTypeSelected == "Temperature"){
 
         weatherKey = "temperature";
 
         console.log(weatherKey);
 
-    }else if(weatherTypeSelected =="precipitation"){
+    }else if(weatherTypeSelected =="Precipitation"){
 
         weatherKey = "precipIntensity";
 

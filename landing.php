@@ -107,8 +107,8 @@ session_start();
                                    <br/>
                                </form>
                                <form action="">
-                                   <input class="weatherDataType" type="radio" name="weatherType" value="temperature"> Temperature<br>
-                                   <input class="weatherDataType" type="radio" name="weatherType" value="precipitation"> Precipitation<br>
+                                   <input class="weatherDataType" type="radio" name="weatherType" value="Temperature"> Temperature<br>
+                                   <input class="weatherDataType" type="radio" name="weatherType" value="Precipitation"> Precipitation<br>
                                </form>
                                <br/>
                                <button id="weatherData" type="button" class="btn btn-success">Get Data</button>

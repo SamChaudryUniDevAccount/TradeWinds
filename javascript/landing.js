@@ -254,7 +254,7 @@ function getWeather(startdate,lat,long,weatherTypeSelected) {
 
     var weatherData =  JSON.stringify(weatherObj);
 
-    //alert(weatherData);
+    alert(weatherData);
 
 
 

@@ -292,7 +292,7 @@ function loadWeatherData(graphData,weatherTypeSelected) {
 
         title: {
 
-            text: "Weather for " + $('#location').val() + "with type selected is" + weatherTypeSelected,
+            text: "Weather for " + $('#location').val() + "with type selected is" + weatherStatistics(graphData,weatherTypeSelected),
         },
         xAxis: {
 
@@ -401,4 +401,49 @@ function loadTime(graphData) {
 
     return loadarray;
 
+}
+
+function weatherStatistics(graphData,weatherTypeSelected) {
+
+    var weatherKey = "";
+    var total = 0;
+    var weatherAverages = "";
+    var unitsTemp = "°c";
+    var unitsRain = "mm/hour"
+    var returnedStat = "";
+
+    if(weatherTypeSelected == "Temperature"){
+
+        weatherKey = "temperature";
+
+        for(i = 0; i < graphData.length; i++){
+
+
+            total += graphData[i][weatherKey];
+
+        }
+
+        weatherAverages = (total / graphData.length).toFixed(2);
+
+        returnedStat = weatherAverages + " " + unitsTemp;
+
+    }else if(weatherTypeSelected =="Precipitation"){
+
+        weatherKey = "precipIntensity";
+
+        //Loop through and get data statistics
+        for(i = 0; i < graphData.length; i++){
+
+
+            total += graphData[i][weatherKey];
+
+        }
+
+        weatherAverages = (total / graphData.length).toFixed(2);
+
+        returnedStat = weatherAverages + " " + unitsRain;
+
+    }
+
+    return returnedStat;
 }

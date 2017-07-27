@@ -137,6 +137,9 @@ function getCommodityGraphData() {
 //Plotting
 function loadCommodityGraph(graphData) {
 
+
+    var assetName =  $('#assetType').val();
+
         var graphObject = {
 
             rangeSelector: {
@@ -145,11 +148,11 @@ function loadCommodityGraph(graphData) {
             },
 
             title: {
-                text: $('#assetType').val(),
+                text: assetName + "" + "average price is.." + averageAssetPrice(graphData ,assetName),
             },
             xAxis: {
 
-                categories: loadDataAsArray(graphData)
+                categories: loadAssetPriceDataAsArray(graphData)
             },
             yAxis:[{
 
@@ -341,7 +344,8 @@ function dateTimeParser(dateToParse) {
 
 }
 
-function loadDataAsArray(graphData) {
+//Asset price
+function loadAssetPriceDataAsArray(graphData) {
 
     var loadarray = [];
 
@@ -358,6 +362,30 @@ function loadDataAsArray(graphData) {
     return loadarray;
 }
 
+//Asset price name
+function averageAssetPrice(graphData, assetName) {
+
+    var total = 0;
+    var assetPriceAverage = 0;
+    var assetPriceAvgString = "";
+
+    for(i = 0; i < graphData.length; i++){
+
+        for(j = 0; j < graphData[i].length; j++ ){
+
+            total += graphData[i][1];
+
+        }
+
+    }
+
+    assetPriceAverage = (total / graphData.length).toFixed(2);
+
+    assetPriceAvgString = "Average price in USD($) for " + assetName + assetPriceAverage;
+
+    return assetPriceAvgString;
+
+}
 
 //get temprature
 function loadWeatherDataAsArray(graphData,weatherTypeSelected) {

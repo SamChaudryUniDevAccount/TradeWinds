@@ -13,8 +13,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $sql = "SELECT * FROM user WHERE username = '$myusername' and password = '$mypassword'";
 
-    //connection to database query works
-    //$sql = " SELECT * FROM users.user WHERE username = '$myusername' and password = '$mypassword'";
 
     if ($result = mysqli_query($link,$sql))
     {

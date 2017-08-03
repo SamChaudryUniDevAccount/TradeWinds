@@ -120,6 +120,8 @@ function getCommodityGraphData() {
 
                 }else {
 
+                    //Graph Data
+                    console.log(apiData);
 
                     var graphData =  apiData['dataset_data']['data'];
 

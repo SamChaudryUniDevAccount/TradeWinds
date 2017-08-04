@@ -133,6 +133,7 @@ session_start();
                    <div class="form-group">
                        <input type="text" class="form-control" id="to" placeholder="Enter news topics of interest">
                    </div>
+
                    <br/>
                    <p>Select News type</p>
                    <div class="btn-group" data-toggle="buttons">
@@ -143,6 +144,15 @@ session_start();
                            <input type="radio" name="options" id="socialMedia" autocomplete="off"> Social Media
                        </label>
                    </div>
+                   <p>Select Source</p>
+                   <select>
+                       <option value=""></option>
+                       <option value=""></option>
+                       <option value=""></option>
+                       <option value=""></option>
+                   </select>
+
+
                </div>
 
                <div id="test"></div>

@@ -27,8 +27,6 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 //Get News
 function getNewsData(){
 
-    global $link;
-
 
     $data = json_decode($_POST["getNews"]);
 

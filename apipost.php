@@ -30,7 +30,7 @@ function getNewsData(){
     global $link;
 
 
-    $data = json_decode($_POST["getNews"]);
+    $data = json_decode('{"a":1,"b":2,"c":3,"d":4,"e":5}');
 
     echo $data;
 }

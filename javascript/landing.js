@@ -521,7 +521,7 @@ $('#news').change('change',function () {
 
             type:'POST',
             url:'apipost.php',
-            data:{"getNews":NewsData},
+            data:{"news":NewsData},
             success: function(data){
 
                 console.log(data);

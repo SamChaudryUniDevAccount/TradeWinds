@@ -146,10 +146,23 @@ session_start();
                    </div>
                    <p>Select Source</p>
                    <select>
-                       <option value=""></option>
-                       <option value=""></option>
-                       <option value=""></option>
-                       <option value=""></option>
+                       <option value="bbc-news">BBC News</option>
+                       <option value="al-jazeera-english">Al Jazeera English</option>
+                       <option value="bloomberg">Bloomberg</option>
+                       <option value="business-insider">Business Insider</option>
+                       <option value="cnn">CNN</option>
+                       <option value="cnbc">CNBC</option>
+                       <option value="financial-times">Financial times</option>
+                       <option value="reuters">Financial times</option>
+                       <option value="the-economist">The Economist</option>
+                       <option value="the-hindu">The Hindu</option>
+                       <option value="the-huffington-post">The Huffington Post</option>
+                       <option value="the-telegraph">The Telegraph </option>
+                       <option value="the-wall-street-journal">The Wall Street Journal </option>
+                       <option value="the-washington-post">The Washington Post </option>
+                       <option value="the-new-york-times">The New York Times </option>
+                       <option value="usa-today">USA Today </option>
+                       <option value="time">Time </option>
                    </select>
 
 

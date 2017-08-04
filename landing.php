@@ -134,7 +134,7 @@ session_start();
                        <input type="text" class="form-control" id="to" placeholder="Enter news topic of interest">
                    </div>
                    <p>Select Source</p>
-                   <select>
+                   <select id = "news">
                        <option value="bbc-news">BBC News</option>
                        <option value="al-jazeera-english">Al Jazeera English</option>
                        <option value="bloomberg">Bloomberg</option>
@@ -152,13 +152,10 @@ session_start();
                        <option value="the-new-york-times">The New York Times </option>
                        <option value="usa-today">USA Today </option>
                        <option value="time">Time </option>
+                       <option value="tiwtter">Twtter </option>
                    </select>
                    <br/>
                    <p>Select News type</p>
-                   <div class="btn-group" data-toggle="buttons">
-                       <button id="news" type="button" class="btn btn-success">Get News</button>
-                       <button id="social" type="button" class="btn btn-success">Get Social</button>
-                   </div>
                     <br/>
                </div>
 

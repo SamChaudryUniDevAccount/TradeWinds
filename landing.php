@@ -157,6 +157,13 @@ session_start();
                    <br/>
                    <p>Select News type</p>
                     <br/>
+                    <br/>
+                   <p>Select News type.</p>
+                   <form action="">
+                       <input class="newsRanking" type="radio" name="weatherType" value="top"> Top<br>
+                       <input class="newsRanking" type="radio" name="weatherType" value="latest"> Latest<br>
+                       <input class="newsRanking" type="radio" name="weatherType" value="popular"> Popular<br>
+                   </form>
                </div>
 
                <div id="test"></div>

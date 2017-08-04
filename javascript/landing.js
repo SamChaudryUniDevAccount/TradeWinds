@@ -493,11 +493,10 @@ function weatherStatistics(graphData,weatherTypeSelected) {
 
 $('#news').change('change',function () {
 
+    //Attribute value for API
     var newsName = $('#news').val();
 
-    var value = $('#news').text();
 
-    console.log(newsName,value);
 
 
 

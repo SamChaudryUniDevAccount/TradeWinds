@@ -491,3 +491,8 @@ function weatherStatistics(graphData,weatherTypeSelected) {
 
 //Get news data
 
+$('#news').change('change',function () {
+
+    alert('called from news');
+
+});

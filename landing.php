@@ -152,7 +152,6 @@ session_start();
                        <option value="the-new-york-times">The New York Times </option>
                        <option value="usa-today">USA Today </option>
                        <option value="time">Time </option>
-                       <option value="tiwtter">Twtter </option>
                    </select>
                    <br/>
                    <p>Select News type</p>
@@ -160,9 +159,9 @@ session_start();
                     <br/>
                    <p>Select News type.</p>
                    <form action="">
-                       <input class="newsRanking" type="radio" name="weatherType" value="top"> Top<br>
-                       <input class="newsRanking" type="radio" name="weatherType" value="latest"> Latest<br>
-                       <input class="newsRanking" type="radio" name="weatherType" value="popular"> Popular<br>
+                       <input class="newsRanking" type="radio" name="newsRanking" value="top"> Top<br>
+                       <input class="newsRanking" type="radio" name="newsRanking" value="latest"> Latest<br>
+                       <input class="newsRanking" type="radio" name="newsRanking" value="popular"> Popular<br>
                    </form>
                </div>
 

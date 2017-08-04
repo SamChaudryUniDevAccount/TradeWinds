@@ -20,12 +20,12 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 }if(isset($_POST["getNews"])) {
 
 
-    getNews();
+    getNewsData();
 
 }
 
 //Get News
-function getNews(){
+function getNewsData(){
 
 
     $data = json_decode($_POST["getNews"]);

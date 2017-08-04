@@ -30,9 +30,9 @@ function getNewsData(){
     global $link;
 
 
-    $data = json_decode($_POST["getNews"]);
+    $data = json_decode($_POST["NewsData"]);
 
-    echo "Working";
+    echo $data;
 }
 
 //Weather

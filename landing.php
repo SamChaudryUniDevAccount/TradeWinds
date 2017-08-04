@@ -157,7 +157,7 @@ session_start();
                    <p>Select News type</p>
                    <div class="btn-group" data-toggle="buttons">
                        <button id="news" type="button" class="btn btn-success">Get News</button>
-                       <button id="social" type="button" class="btn btn-success">Get News</button>
+                       <button id="social" type="button" class="btn btn-success">Get Social</button>
                    </div>
                     <br/>
                </div>

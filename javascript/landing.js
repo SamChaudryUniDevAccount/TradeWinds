@@ -496,6 +496,10 @@ $('#news').change('change',function () {
     //Ranking
     var rankingSelected =  $('[name=newsRanking]:checked').val();
 
-    console.log(newsName,rankingSelected);
+    var newsTopic = $('#newsTopic').val();
+
+
+
+    console.log(newsName,rankingSelected,newsTopic);
 
 });

@@ -131,8 +131,15 @@ session_start();
                <div class="card-block">
                    <p class="card-text ">Enter topics of interest</p>
                    <div class="form-group">
-                       <input type="text" class="form-control" id="to" placeholder="Enter news topic of interest">
+                       <input type="text" class="form-control" id="newsTopic" placeholder="Enter news topic of interest">
                    </div>
+                   <p>Select News type.</p>
+                   <form action="">
+                       <input class="newsRanking" type="radio" name="newsRanking" value="top"> Top<br>
+                       <input class="newsRanking" type="radio" name="newsRanking" value="latest"> Latest<br>
+                       <input class="newsRanking" type="radio" name="newsRanking" value="popular"> Popular<br>
+                   </form>
+                   <br/>
                    <p>Select Source</p>
                    <select id = "news">
                        <option value="bbc-news">BBC News</option>
@@ -154,15 +161,8 @@ session_start();
                        <option value="time">Time </option>
                    </select>
                    <br/>
-                   <p>Select News type</p>
                     <br/>
                     <br/>
-                   <p>Select News type.</p>
-                   <form action="">
-                       <input class="newsRanking" type="radio" name="newsRanking" value="top"> Top<br>
-                       <input class="newsRanking" type="radio" name="newsRanking" value="latest"> Latest<br>
-                       <input class="newsRanking" type="radio" name="newsRanking" value="popular"> Popular<br>
-                   </form>
                </div>
 
                <div id="test"></div>

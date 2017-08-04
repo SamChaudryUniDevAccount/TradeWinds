@@ -516,6 +516,8 @@ $('#news').change('change',function () {
 
     //Ajax call for News API
 
+    console.log(NewsData);
+
     $.ajax(
         {
 

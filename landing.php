@@ -133,17 +133,6 @@ session_start();
                    <div class="form-group">
                        <input type="text" class="form-control" id="to" placeholder="Enter news topic of interest">
                    </div>
-
-                   <br/>
-                   <p>Select News type</p>
-                   <div class="btn-group" data-toggle="buttons">
-                       <label class="btn btn-primary active">
-                           <input  type="radio" name="options" id="news" autocomplete="off" checked> News
-                       </label>
-                       <label class="btn btn-primary">
-                           <input type="radio" name="options" id="socialMedia" autocomplete="off"> Social Media
-                       </label>
-                   </div>
                    <p>Select Source</p>
                    <select>
                        <option value="bbc-news">BBC News</option>
@@ -164,8 +153,13 @@ session_start();
                        <option value="usa-today">USA Today </option>
                        <option value="time">Time </option>
                    </select>
+                   <br/>
+                   <p>Select News type</p>
+                   <div class="btn-group" data-toggle="buttons">
+                       <button id="news" type="button" class="btn btn-success">Get News</button>
+                       <button id="social" type="button" class="btn btn-success">Get News</button>
+                   </div>
                     <br/>
-                   <button id="news" type="button" class="btn btn-success">Get News</button>
                </div>
 
                <div id="test"></div>

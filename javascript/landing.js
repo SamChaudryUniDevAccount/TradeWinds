@@ -488,3 +488,6 @@ function weatherStatistics(graphData,weatherTypeSelected) {
 
     return returnedStat;
 }
+
+//Get news data
+

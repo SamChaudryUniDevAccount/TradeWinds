@@ -131,7 +131,7 @@ session_start();
                <div class="card-block">
                    <p class="card-text ">Enter topics of interest</p>
                    <div class="form-group">
-                       <input type="text" class="form-control" id="to" placeholder="Enter news topics of interest">
+                       <input type="text" class="form-control" id="to" placeholder="Enter news topic of interest">
                    </div>
 
                    <br/>
@@ -164,8 +164,8 @@ session_start();
                        <option value="usa-today">USA Today </option>
                        <option value="time">Time </option>
                    </select>
-
-
+                    <br/>
+                   <button id="news" type="button" class="btn btn-success">Get News</button>
                </div>
 
                <div id="test"></div>

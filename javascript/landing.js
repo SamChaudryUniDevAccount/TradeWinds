@@ -512,7 +512,7 @@ $('#news').change('change',function () {
 
     }
 
-    var NewsData =  JSON.stringify(weatherObj);
+    var NewsData =  JSON.stringify(newsObj);
 
     //Ajax call for News API
 

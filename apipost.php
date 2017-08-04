@@ -24,6 +24,8 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 
 }
 
+
+
 //Get News
 function getNewsData(){
 

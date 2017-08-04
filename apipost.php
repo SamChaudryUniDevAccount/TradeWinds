@@ -27,13 +27,13 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 //Get News
 function getNewsData(){
 
-    global $link;
+    var $obj = "";
 
-    $json = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
+    $json = '{"foo-bar": 12345}';
 
-    $data = json_decode($json);
+    $obj = json_decode($json);
 
-    echo $data;
+    echo $obj;
 }
 
 //Weather

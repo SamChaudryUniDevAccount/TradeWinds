@@ -490,16 +490,15 @@ function weatherStatistics(graphData,weatherTypeSelected) {
 
 $('#news').change('change',function () {
 
+
+    //News topic
+    var newsTopic = $('#newsTopicSelected').val();
+
     //Attribute value for API
     var newsName = $('#news').val();
 
     //Ranking
     var rankingSelected =  $('[name=newsRanking]:checked').val();
-
-    //
-
-        var newsTopic
-     newsTopic = $('#newsTopicSelected').val();
 
 
 

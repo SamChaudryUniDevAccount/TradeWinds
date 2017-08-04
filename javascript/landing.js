@@ -244,7 +244,6 @@ $('#weatherData').click(function() {
 
 function getWeather(startdate,lat,long,weatherTypeSelected) {
 
-    //      endDate:enddate,
 
     weatherObj = {
 
@@ -255,8 +254,6 @@ function getWeather(startdate,lat,long,weatherTypeSelected) {
     };
 
     var weatherData =  JSON.stringify(weatherObj);
-
-    alert(weatherData);
 
 
 
@@ -496,8 +493,9 @@ $('#news').change('change',function () {
     //Attribute value for API
     var newsName = $('#news').val();
 
+    //Ranking
+    var rankingSelected =  $('[name=newsRanking]:checked').val();
 
-
-
+    console.log(newsName,rankingSelected);
 
 });

@@ -495,13 +495,39 @@ $('#news').change('change',function () {
     var newsTopic = $('#newsTopicSelected').val();
 
     //Attribute value for API
-    var newsName = $('#news').val();
+    var newsSource = $('#news').val();
 
     //Ranking
     var rankingSelected =  $('[name=newsRanking]:checked').val();
 
 
+    //Working
+    //console.log(newsName,rankingSelected,newsTopic);
 
-    console.log(newsName,rankingSelected,newsTopic);
+    var newsObj = {
+
+        topic:newsTopic,
+        source:newsSource,
+        ranking:rankingSelected,
+
+    }
+
+    var NewsData =  JSON.stringify(weatherObj);
+
+    //Ajax call for News API
+
+    $.ajax(
+        {
+
+            type:'POST',
+            url:'apipost.php',
+            data:{"getNews":NewsData},
+            success: function(data){
+
+                console.log(data);
+
+            }
+        });
+
 
 });

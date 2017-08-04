@@ -28,8 +28,9 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 function getNews(){
 
 
+    $data = json_decode($_POST["getNews"]);
 
-
+    echo $data;
 }
 
 //Weather

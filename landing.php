@@ -131,7 +131,7 @@ session_start();
                <div class="card-block">
                    <p class="card-text ">Enter topics of interest</p>
                    <div class="form-group">
-                       <input type="text" class="form-control" id="newsTopic" placeholder="Enter news topic of interest">
+                       <input type="text" class="form-control" id="newsTopic" placeholder="oil">
                    </div>
                    <p>Select News type.</p>
                    <form action="">

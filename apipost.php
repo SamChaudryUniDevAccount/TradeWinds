@@ -17,7 +17,21 @@ if (isset($_POST["getCommodityByAssetClass"])) {
 
     getWeatherData();
 
+}if(isset($_POST["getNews"])) {
+
+
+    getNews();
+
 }
+
+//Get News
+function getNews(){
+
+
+
+
+}
+
 //Weather
 function getWeatherData(){
 

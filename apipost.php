@@ -32,7 +32,7 @@ function getNewsData(){
 
     $data = json_decode($_POST["getNews"]);
 
-    echo "Working". $data;
+    echo "Working";
 }
 
 //Weather

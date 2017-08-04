@@ -493,6 +493,12 @@ function weatherStatistics(graphData,weatherTypeSelected) {
 
 $('#news').change('change',function () {
 
-    alert('called from news');
+    var newsName = $('#news').val();
+
+    var value = $('#news').text();
+
+    console.log(newsName,value);
+
+
 
 });

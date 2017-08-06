@@ -518,16 +518,23 @@ $('#news').change('change',function () {
             url:url,
             success: function(data){
 
-                if(data.status == "ok"){
 
+                var articles = data['articles'];
 
-                }
-
-
-                console.log(data['articles']);
+                parseNewsArticles(articles);
 
             }
         });
 
 
 });
+
+function parseNewsArticles(articles) {
+
+    //create table
+
+
+
+
+
+}

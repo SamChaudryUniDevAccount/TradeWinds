@@ -504,24 +504,17 @@ $('#news').change('change',function () {
     //Working
     //console.log(newsName,rankingSelected,newsTopic);
 
-    var newsObj = {
+    var apikey = "1f2f291aca4a4e3eb8ebbcc5156805f7";
 
-        topic:newsTopic,
-        source:newsSource,
-        ranking:rankingSelected,
+    //https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=1f2f291aca4a4e3eb8ebbcc5156805f7
 
-    }
-
-    var NewsData =  JSON.stringify(newsObj);
-
-    console.log(NewsData);
+    var url = "https://newsapi.org/v1/articles?source=" + newsSource + "&sortBy=" + rankingSelected + "&apiKey=" + apikey;
 
     $.ajax(
         {
 
-            type:'POST',
-            url:'apipost.php',
-            data:{"news":NewsData},
+            type:'GET',
+            url:url,
             success: function(data){
 
                 console.log(data);

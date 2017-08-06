@@ -137,9 +137,9 @@ session_start();
                    </div>
                    <p>Select News type.</p>
                    <form action="">
-                       <input class="newsRanking" type="radio" name="newsRanking" value="top"> Top<br>
-                       <input class="newsRanking" type="radio" name="newsRanking" value="latest"> Latest<br>
-                       <input class="newsRanking" type="radio" name="newsRanking" value="popular"> Popular<br>
+                       <input class="newsRanking" type="radio" name="newsRanking" value="top"> top<br>
+                       <input class="newsRanking" type="radio" name="newsRanking" value="latest"> latest<br>
+                       <input class="newsRanking" type="radio" name="newsRanking" value="popular"> popular<br>
                    </form>
                    <br/>
                    <p>Select Source</p>

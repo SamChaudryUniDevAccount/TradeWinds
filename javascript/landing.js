@@ -524,7 +524,7 @@ $('#news').change('change',function () {
                 }
 
 
-                console.log(data);
+                console.log(data['articles']);
 
             }
         });

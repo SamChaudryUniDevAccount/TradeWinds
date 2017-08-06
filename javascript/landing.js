@@ -508,9 +508,8 @@ $('#news').change('change',function () {
 
     //https://newsapi.org/v1/articles?source=the-next-web&sortBy=latest&apiKey=1f2f291aca4a4e3eb8ebbcc5156805f7
 
-    //"&sortBy=" + rankingSelected +
 
-    var url = "https://newsapi.org/v1/articles?source=" + newsSource +  "&apiKey=" + apikey;
+    var url = "https://newsapi.org/v1/articles?source=" + newsSource +  "&sortBy=" + rankingSelected + "&apiKey=" + apikey;
 
     $.ajax(
         {

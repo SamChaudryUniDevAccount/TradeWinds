@@ -165,10 +165,9 @@ session_start();
                    <br/>
                     <br/>
                     <br/>
+
+                   <div id="news"></div>
                </div>
-
-               <div id="test"></div>
-
            </div>
        </div>
 

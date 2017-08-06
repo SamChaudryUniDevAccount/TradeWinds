@@ -129,7 +129,6 @@ session_start();
            <div class="card ">
                <div class=" pannelHeaderTitleStyles card-header card-success">News</div>
                <div class="card-block">
-                   <p class="card-text ">Enter topics of interest</p>
                    <p>Select News type.</p>
                    <form action="">
                        <input class="newsRanking" type="radio" name="newsRanking" value="top"> top<br>

@@ -534,8 +534,15 @@ function parseNewsArticles(articles) {
 
     for(i =0; i < articles.length;i++){
 
+        tableRow = $(' <tr/>');
 
-        console.log(articles[i].author);
+        tableRow.append("<td ><span> " + articles[x].author + "</span></td>");
+
+        tableRow.append("<td ><span>   " + articles[x].publishedAt + "   </span></td>");
+
+        tableRow.append("<td ><span>   " + articles[x].title + "   </span></td>");
+
+        tableRow.append("<td ><span>   " + articles[x].description + "    </span></td>");
 
     }
 

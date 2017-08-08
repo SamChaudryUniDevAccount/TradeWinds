@@ -162,9 +162,9 @@ session_start();
                    <table class="table table-bordered">
                        <thead>
                        <th><span class="columnStyles">Author</span></th>
-                       <th><span class="columnStyles">Date</span></th>
-                       <th><span class="columnStyles">title</span></th>
-                       <th><span class="columnStyles">Description</span></th>
+                       <th><span class="columnStyles">Published</span></th>
+                       <th><span class="columnStyles">Title</span></th>
+                       <th><span class="columnStyles">Summary</span></th>
                        </thead>
                        <tbody id="issuesTable">
                        </tbody>

@@ -537,6 +537,7 @@ function parseNewsArticles(articles) {
         tableRow = $(' <tr/>');
 
         var articleLink = document.createElement('a');
+        var articleurl;
 
         tableRow.append("<td ><span> " + articles[i].author + "</span></td>");
 
@@ -544,7 +545,7 @@ function parseNewsArticles(articles) {
 
         tableRow.append("<td ><span>   " + articles[i].title + "   </span></td>");
 
-        var articleurl = articleLink.setAttribute('href', articles[i].url);
+        articleurl = articleLink.setAttribute('href', articles[i].url);
 
         tableRow.append("<td ><span>   " + articles[i].description + "   " +  "Click here for more" + articleurl + " </span></td>");
 

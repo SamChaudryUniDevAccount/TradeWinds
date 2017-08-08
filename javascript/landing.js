@@ -546,6 +546,8 @@ function parseNewsArticles(articles) {
 
         tableRow.append("<td ><span>   " + articles[i].description + "   " +  "Click here for more" + articleLink.setAttribute('href', articles[i].url) + " </span></td>");
 
+        $('#news ').append((tableRow).css({"font-family":"Arial","color" : "#0275d8"," text-align" : "justify"}));
+
     }
 
 }

@@ -166,10 +166,9 @@ session_start();
                        <th><span class="columnStyles">Title</span></th>
                        <th><span class="columnStyles">Summary</span></th>
                        </thead>
-                       <tbody id="issuesTable">
+                       <tbody id="news">
                        </tbody>
                    </table>
-                   <div id="news"></div>
                </div>
            </div>
        </div>

@@ -532,19 +532,20 @@ $('#news').change('change',function () {
 function parseNewsArticles(articles) {
 
 
+     var articleLink = document.createElement('a');
+
     for(i =0; i < articles.length;i++){
 
         tableRow = $(' <tr/>');
 
-        tableRow.append("<td ><span> " + articles[x].author + "</span></td>");
+        tableRow.append("<td ><span> " + articles[i].author + "</span></td>");
 
-        tableRow.append("<td ><span>   " + articles[x].publishedAt + "   </span></td>");
+        tableRow.append("<td ><span>   " + articles[i].publishedAt + "   </span></td>");
 
-        tableRow.append("<td ><span>   " + articles[x].title + "   </span></td>");
+        tableRow.append("<td ><span>   " + articles[i].title + "   </span></td>");
 
-        tableRow.append("<td ><span>   " + articles[x].description + "    </span></td>");
+        tableRow.append("<td ><span>   " + articles[i].description + "   " +  "Click here for more" + articleLink.setAttribute('href', articles[x].url) + " </span></td>");
 
     }
-
 
 }

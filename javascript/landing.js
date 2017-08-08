@@ -532,11 +532,11 @@ $('#news').change('change',function () {
 function parseNewsArticles(articles) {
 
 
-     var articleLink = document.createElement('a');
-
     for(i =0; i < articles.length;i++){
 
         tableRow = $(' <tr/>');
+
+        var articleLink = document.createElement('a');
 
         tableRow.append("<td ><span> " + articles[i].author + "</span></td>");
 

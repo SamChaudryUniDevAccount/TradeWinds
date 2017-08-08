@@ -531,10 +531,13 @@ $('#news').change('change',function () {
 
 function parseNewsArticles(articles) {
 
-    //create table
+
+    for(i =0; i < articles.length;i++){
 
 
+        console.log(articles[i].author);
 
+    }
 
 
 }

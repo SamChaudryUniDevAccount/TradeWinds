@@ -159,7 +159,16 @@ session_start();
                    <br/>
                     <br/>
                     <br/>
-
+                   <table class="table table-bordered">
+                       <thead>
+                       <th><span class="columnStyles">Author</span></th>
+                       <th><span class="columnStyles">Date</span></th>
+                       <th><span class="columnStyles">title</span></th>
+                       <th><span class="columnStyles">Description</span></th>
+                       </thead>
+                       <tbody id="issuesTable">
+                       </tbody>
+                   </table>
                    <div id="news"></div>
                </div>
            </div>

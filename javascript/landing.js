@@ -544,7 +544,9 @@ function parseNewsArticles(articles) {
 
         tableRow.append("<td ><span>   " + articles[i].title + "   </span></td>");
 
-        tableRow.append("<td ><span>   " + articles[i].description + "   " +  "Click here for more" + articleLink.setAttribute('href', articles[x].url) + " </span></td>");
+        var articleTag = articleLink.setAttribute('href', articles[x].url);
+
+        tableRow.append("<td ><span>   " + articles[i].description + "   " +  "Click here for more" + articleTag  + " </span></td>");
 
     }
 

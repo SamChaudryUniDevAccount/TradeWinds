@@ -545,20 +545,20 @@ function parseNewsArticles(articles) {
         tableRow.append("<td ><span>   " + articles[i].title + "   </span></td>");
 
 
-        articleLink.each(function(){
-
-            var href = $(this).attr('href');
-
-                href += (href.match(/\?/) ? '&' : '#') + articles[i].url;
-
-                $(this).attr('href', href);
-        });
-
-
-        tableRow.append("<td ><span>   " + articles[i].description + "   " +  ". Click here for more" + articleLink + " </span></td>");
+        tableRow.append("<td ><span>   " + articles[i].description + "   " +  ". Click here for more" + createArticleURL(articles[i].url) + " </span></td>");
 
         $('#news ').append((tableRow).css({"font-family":"Arial","color" : "#0275d8"," text-align" : "justify"}));
 
     }
 
 }
+
+//articles[i].url;
+
+
+function createArticleURL(url) {
+
+    return $("a").attr("href", url);
+}
+
+

@@ -547,7 +547,7 @@ function parseNewsArticles(articles) {
 
          var articlurl =  articles[i].url;
 
-        tableRow.append("<td ><span href= '' articles[i].url  + ''>   " + articles[i].description + "   " +  ". Click here for more: " + '<a href="' + articlurl + '">Link to article</a>' + " </span> </td>");
+        tableRow.append("<td ><span href= '' articles[i].url  + ''>   " + articles[i].description + "   " +  ". Click here for more: " + '<a href="' + createArticleURL(articlurl) + '">Link to article</a>' + " </span> </td>");
 
         $('#news ').append((tableRow).css({"font-family":"Arial","color" : "#0275d8"," text-align" : "justify"}));
 
@@ -558,7 +558,9 @@ function parseNewsArticles(articles) {
 
 function createArticleURL(url) {
 
-    return $("a").attr("href", url);
+    var win = window.open(url, '_blank');
+    win.focus();
+
 }
 
 

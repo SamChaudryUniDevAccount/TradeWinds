@@ -534,6 +534,8 @@ function parseNewsArticles(articles) {
 
         tableRow = $(' <tr/>');
 
+        var articlelink = $('<a>');
+
         var articleLink = $('a');
 
         tableRow.append("<td ><span> " + articles[i].author + "</span></td>");
@@ -543,7 +545,9 @@ function parseNewsArticles(articles) {
         tableRow.append("<td ><span>   " + articles[i].title + "   </span></td>");
 
 
-        tableRow.append("<td ><span href='articles[i].url'>   " + articles[i].description + "   " +  ". Click here for more"  + " </span></td>");
+        articlelink.attr("href", articles[i].url).appendTo(tableRow);
+
+        tableRow.append("<td ><span href= '' articles[i].url  + ''>   " + articles[i].description + "   " +  ". Click here for more" + articleLink   + " </span></td>");
 
         $('#news ').append((tableRow).css({"font-family":"Arial","color" : "#0275d8"," text-align" : "justify"}));
 

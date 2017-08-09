@@ -547,15 +547,13 @@ function parseNewsArticles(articles) {
 
         articlelink.attr("href", articles[i].url).appendTo(tableRow);
 
-        tableRow.append("<td ><span href= '' articles[i].url  + ''>   " + articles[i].description + "   " +  ". Click here for more" + articleLink   + " </span></td>");
+        tableRow.append("<td ><span href= '' articles[i].url  + ''>   " + articles[i].description + "   " +  ". Click here for more" + " </span> articlelink</td>");
 
         $('#news ').append((tableRow).css({"font-family":"Arial","color" : "#0275d8"," text-align" : "justify"}));
 
     }
 
 }
-
-//articles[i].url;
 
 
 function createArticleURL(url) {

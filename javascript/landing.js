@@ -287,8 +287,6 @@ function loadWeatherData(graphData,weatherTypeSelected) {
 
 
 
-
-
     var graphObject = {
 
         rangeSelector: {
@@ -545,7 +543,7 @@ function parseNewsArticles(articles) {
         tableRow.append("<td ><span>   " + articles[i].title + "   </span></td>");
 
 
-        tableRow.append("<td ><span>   " + articles[i].description + "   " +  ". Click here for more" + createArticleURL(articles[i].url) + " </span></td>");
+        tableRow.append("<td ><span href='articles[i].url'>   " + articles[i].description + "   " +  ". Click here for more"  + " </span></td>");
 
         $('#news ').append((tableRow).css({"font-family":"Arial","color" : "#0275d8"," text-align" : "justify"}));
 

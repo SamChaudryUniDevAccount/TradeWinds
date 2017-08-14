@@ -408,12 +408,25 @@ function loadWeatherDataAsArray(graphData,weatherTypeSelected) {
 
     for(i = 0; i < graphData.length; i++){
 
-        loadarray.push(graphData[i][weatherKey]);
+        var celcisusTemp = FarenheitToCelcuis(graphData[i][weatherKey]);
+
+        loadarray.push(celcisusTemp);
 
     }
 
     return loadarray;
 }
+
+//Farenheit to celius method
+function FarenheitToCelcuis(fararenheightTemp) {
+
+
+    var tempCelcius = (fararenheightTemp - 32) * 5/9;
+
+    return tempCelcius.toFixed(2);
+}
+
+
 
 //Get Timea
 function loadTime(graphData) {

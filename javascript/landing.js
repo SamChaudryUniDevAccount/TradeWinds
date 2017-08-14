@@ -309,7 +309,6 @@ function loadWeatherData(graphData,weatherTypeSelected) {
                 text: weatherTypeSelected,
             }
         }],
-
         series: [{
 
             data: loadWeatherDataAsArray(graphData,weatherTypeSelected),
@@ -409,27 +408,12 @@ function loadWeatherDataAsArray(graphData,weatherTypeSelected) {
 
     for(i = 0; i < graphData.length; i++){
 
-        var temp = graphData[i][weatherKey];
-
-        var celcisusTemp = FarenheitToCelcuis(temp);
-
-        loadarray.push(celcisusTemp);
+        loadarray.push(graphData[i][weatherKey]);
 
     }
 
     return loadarray;
 }
-
-//Farenheit to celius method
-function FarenheitToCelcuis(fararenheightTemp) {
-
-
-    var tempCelcius = (fararenheightTemp - 32) * 5/9;
-
-    return tempCelcius.toFixed(2);
-}
-
-
 
 //Get Timea
 function loadTime(graphData) {
@@ -460,7 +444,7 @@ function weatherStatistics(graphData,weatherTypeSelected) {
     var weatherKey = "";
     var total = 0;
     var weatherAverages = "";
-    var unitsTemp = "°c";
+    var unitsTemp = "°F";
     var unitsRain = "mm/hour"
     var returnedStat = "";
 

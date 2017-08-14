@@ -409,7 +409,9 @@ function loadWeatherDataAsArray(graphData,weatherTypeSelected) {
 
     for(i = 0; i < graphData.length; i++){
 
-        var celcisusTemp = FarenheitToCelcuis(graphData[i][weatherKey]);
+        var temp = graphData[i][weatherKey];
+
+        var celcisusTemp = FarenheitToCelcuis(temp);
 
         loadarray.push(celcisusTemp);
 

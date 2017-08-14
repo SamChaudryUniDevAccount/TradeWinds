@@ -309,12 +309,7 @@ function loadWeatherData(graphData,weatherTypeSelected) {
                 text: weatherTypeSelected,
             }
         }],
-        plotOptions: {
 
-            series: {
-                threshold: 100
-            }
-        },
         series: [{
 
             data: loadWeatherDataAsArray(graphData,weatherTypeSelected),

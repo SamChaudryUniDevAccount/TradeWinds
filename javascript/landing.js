@@ -438,7 +438,7 @@ function loadTime(graphData) {
     return loadarray;
 
 }
-
+//Weather stats
 function weatherStatistics(graphData,weatherTypeSelected) {
 
     var weatherKey = "";

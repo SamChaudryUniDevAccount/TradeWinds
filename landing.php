@@ -51,7 +51,7 @@ session_start();
                <div class="card-deck-wrapper">
                    <div class="card-deck">
 
-                    <div class="row col-lg-6">
+                    <div class="col-lg-6">
                        <!-- Card 1 -->
                        <div class="card ">
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>

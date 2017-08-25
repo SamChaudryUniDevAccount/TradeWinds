@@ -167,7 +167,6 @@ function loadCommodityGraph(graphData) {
                 }
             }],
             series: [{
-                type:'candlestick',
                 name: $('#assetType').val(),
                 data: graphData,
 

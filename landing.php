@@ -33,9 +33,7 @@ session_start();
                     <li class="nav-item">
                         <a class="nav-link" href="#">Financial Modelling</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Settings</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">Log out</a>
                     </li>

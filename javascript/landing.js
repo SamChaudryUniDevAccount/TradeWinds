@@ -142,9 +142,16 @@ function loadCommodityGraph(graphData) {
 
     var assetName =  $('#assetType').val();
 
+
         var graphObject = {
 
             tooltip: { enabled: false },
+
+            candlestick: {
+                lineColor: '#2f7ed8',
+                upLineColor: 'silver', // docs
+                upColor: 'silver'
+            },
 
             rangeSelector: {
                 selected: 1,
@@ -166,6 +173,7 @@ function loadCommodityGraph(graphData) {
                 }
             }],
             series: [{
+                type:'candlestick',
                 name: $('#assetType').val(),
                 data: graphData,
 

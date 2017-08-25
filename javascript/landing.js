@@ -144,6 +144,14 @@ function loadCommodityGraph(graphData) {
 
         var graphObject = {
 
+            candlestick: {
+
+                lineColor: '#2f7ed8',
+                upLineColor: 'silver', // docs
+                upColor: 'silver'
+
+            },
+
             rangeSelector: {
                 selected: 1,
                 inputEnabled: $('#commoditiesGraph').width() > 480

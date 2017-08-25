@@ -356,7 +356,9 @@ function loadAssetPriceDataAsArray(graphData) {
 
     }
 
-    return loadarray;
+
+    return loadarray.sort();
+
 }
 
 //Asset price name

@@ -351,7 +351,7 @@ function loadAssetPriceDataAsArray(graphData) {
 
         for(j = 0; j < graphData[i].length; j++ ){
 
-            loadarray.push(graphData[i][0]);
+            loadarray.push(graphData[i][j]);
         }
 
     }
@@ -415,7 +415,7 @@ function loadWeatherDataAsArray(graphData,weatherTypeSelected) {
     return loadarray;
 }
 
-//Get Timea
+//Get Time
 function loadTime(graphData) {
 
     var loadarray = [];

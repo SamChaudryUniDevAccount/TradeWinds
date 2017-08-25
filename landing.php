@@ -122,7 +122,6 @@ session_start();
                        <!-- Card 3 -->
 
 
-                       <!-- End of card decks -->
                    </div>
                </div>
            </div>

@@ -93,8 +93,9 @@ session_start();
                            </div>
 
                        </div>
-
-                       <!-- Card 2 -->
+                        <br/>
+                        <br/>
+                        <!-- Card 2 -->
                        <div class="card ">
                            <div class=" pannelHeaderTitleStyles card-header card-warning">Weather</div>
                            <div class="card-block">

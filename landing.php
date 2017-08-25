@@ -52,7 +52,7 @@ session_start();
                    <div class="card-deck">
 
                     <div class="row">
-                    <div class="col-lg-6">
+                    <div class="">
                        <!-- Card 1 -->
                        <div class="card ">
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
@@ -123,54 +123,53 @@ session_start();
                            </div>
                        </div>
                        <!-- Card 3 -->
+                   </div>
 
-                        <div class="card col-lg-4">
-                            <div class=" pannelHeaderTitleStyles card-header card-success">News</div>
-                            <div class="card-block">
-                                <p>Select News type.</p>
-                                <form action="">
-                                    <input class="newsRanking" type="radio" name="newsRanking" value="top"> top<br>
-                                    <input class="newsRanking" type="radio" name="newsRanking" value="latest"> latest<br>
-                                    <input class="newsRanking" type="radio" name="newsRanking" value="popular"> popular<br>
-                                </form>
-                                <br/>
-                                <p>Select Source</p>
-                                <select id = "news">
-                                    <option value="bbc-news">BBC News</option>
-                                    <option value="al-jazeera-english">Al Jazeera English</option>
-                                    <option value="bloomberg">Bloomberg</option>
-                                    <option value="business-insider">Business Insider</option>
-                                    <option value="cnn">CNN</option>
-                                    <option value="cnbc">CNBC</option>
-                                    <option value="financial-times">Financial times</option>
-                                    <option value="reuters">Financial times</option>
-                                    <option value="the-economist">The Economist</option>
-                                    <option value="the-hindu">The Hindu</option>
-                                    <option value="the-huffington-post">The Huffington Post</option>
-                                    <option value="the-telegraph">The Telegraph </option>
-                                    <option value="the-wall-street-journal">The Wall Street Journal </option>
-                                    <option value="the-washington-post">The Washington Post </option>
-                                    <option value="the-new-york-times">The New York Times </option>
-                                    <option value="usa-today">USA Today </option>
-                                    <option value="time">Time </option>
-                                </select>
-                                <br/>
-                                <br/>
-                                <br/>
-                                <table class="table table-bordered">
-                                    <thead>
-                                    <th><span class="columnStyles">Author</span></th>
-                                    <th><span class="columnStyles">Published</span></th>
-                                    <th><span class="columnStyles">Title</span></th>
-                                    <th><span class="columnStyles">Summary</span></th>
-                                    </thead>
-                                    <tbody id="news">
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                    </div>
+                       <div class="card col-lg-4">
+                           <div class=" pannelHeaderTitleStyles card-header card-success">News</div>
+                           <div class="card-block">
+                               <p>Select News type.</p>
+                               <form action="">
+                                   <input class="newsRanking" type="radio" name="newsRanking" value="top"> top<br>
+                                   <input class="newsRanking" type="radio" name="newsRanking" value="latest"> latest<br>
+                                   <input class="newsRanking" type="radio" name="newsRanking" value="popular"> popular<br>
+                               </form>
+                               <br/>
+                               <p>Select Source</p>
+                               <select id = "news">
+                                   <option value="bbc-news">BBC News</option>
+                                   <option value="al-jazeera-english">Al Jazeera English</option>
+                                   <option value="bloomberg">Bloomberg</option>
+                                   <option value="business-insider">Business Insider</option>
+                                   <option value="cnn">CNN</option>
+                                   <option value="cnbc">CNBC</option>
+                                   <option value="financial-times">Financial times</option>
+                                   <option value="reuters">Financial times</option>
+                                   <option value="the-economist">The Economist</option>
+                                   <option value="the-hindu">The Hindu</option>
+                                   <option value="the-huffington-post">The Huffington Post</option>
+                                   <option value="the-telegraph">The Telegraph </option>
+                                   <option value="the-wall-street-journal">The Wall Street Journal </option>
+                                   <option value="the-washington-post">The Washington Post </option>
+                                   <option value="the-new-york-times">The New York Times </option>
+                                   <option value="usa-today">USA Today </option>
+                                   <option value="time">Time </option>
+                               </select>
+                               <br/>
+                               <br/>
+                               <br/>
+                               <table class="table table-bordered">
+                                   <thead>
+                                   <th><span class="columnStyles">Author</span></th>
+                                   <th><span class="columnStyles">Published</span></th>
+                                   <th><span class="columnStyles">Title</span></th>
+                                   <th><span class="columnStyles">Summary</span></th>
+                                   </thead>
+                                   <tbody id="news">
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
 
                     </div>
 

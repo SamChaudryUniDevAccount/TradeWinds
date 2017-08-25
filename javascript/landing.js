@@ -147,12 +147,6 @@ function loadCommodityGraph(graphData) {
 
             tooltip: { enabled: false },
 
-            candlestick: {
-                lineColor: '#2f7ed8',
-                upLineColor: 'silver', // docs
-                upColor: 'silver'
-            },
-
             rangeSelector: {
                 selected: 1,
                 inputEnabled: $('#commoditiesGraph').width() > 480
@@ -163,7 +157,7 @@ function loadCommodityGraph(graphData) {
             },
             xAxis: {
 
-                categories: graphData   //loadAssetPriceDataAsArray(graphData)
+                categories: loadAssetPriceDataAsArray(graphData)
             },
             yAxis:[{
 

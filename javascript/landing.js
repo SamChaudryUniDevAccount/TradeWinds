@@ -163,7 +163,7 @@ function loadCommodityGraph(graphData) {
             },
             xAxis: {
 
-                categories: loadAssetPriceDataAsArray(graphData)
+                categories: graphData   //loadAssetPriceDataAsArray(graphData)
             },
             yAxis:[{
 

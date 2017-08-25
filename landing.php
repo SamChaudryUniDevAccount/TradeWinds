@@ -50,6 +50,8 @@ session_start();
                <!-- Card Deck-->
                <div class="card-deck-wrapper">
                    <div class="card-deck">
+
+                    <div class="row col-lg-6">
                        <!-- Card 1 -->
                        <div class="card ">
                            <div class=" pannelHeaderTitleStyles card-header card-primary">Commodity</div>
@@ -120,7 +122,7 @@ session_start();
                        </div>
 
                        <!-- Card 3 -->
-
+                   </div>
 
                        <!-- End of card decks -->
                    </div>

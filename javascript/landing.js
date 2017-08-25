@@ -144,13 +144,7 @@ function loadCommodityGraph(graphData) {
 
         var graphObject = {
 
-            candlestick: {
-
-                lineColor: '#2f7ed8',
-                upLineColor: 'silver', // docs
-                upColor: 'silver'
-
-            },
+            tooltip: { enabled: false },
 
             rangeSelector: {
                 selected: 1,

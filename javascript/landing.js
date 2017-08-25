@@ -166,10 +166,7 @@ function loadCommodityGraph(graphData) {
             series: [{
                 name: $('#assetType').val(),
                 data: graphData,
-                tooltip: {
 
-                    valueDecimals: 4
-                }
             }],
 
             chart: {

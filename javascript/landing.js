@@ -145,7 +145,7 @@ function loadCommodityGraph(graphData) {
 
         var graphObject = {
 
-
+                //changes
             tooltip: { enabled: false },
 
             rangeSelector: {

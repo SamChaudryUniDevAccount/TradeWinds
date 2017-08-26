@@ -353,7 +353,7 @@ function loadAssetPriceDataAsArray(graphData) {
 
         for(j = 0; j < graphData[i].length; j++ ){
 
-            loadarray.push(graphData[j][0]);
+            loadarray.push(graphData[j][i]);
         }
 
     }

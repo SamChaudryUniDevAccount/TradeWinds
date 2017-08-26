@@ -130,8 +130,8 @@
 /* High charts plot area  */
 #commoditiesGraph {
 
-    min-width: 310px;
-    max-width: 800px;
+    min-width: 600px;
+    max-width: 1000px;
     height: 400px;
     margin: 0 auto;
     background-color: white;

@@ -359,7 +359,7 @@ function loadAssetPriceDataAsArray(graphData) {
     }
 
 
-    return loadarray.sort();
+    return loadarray;
 
 }
 

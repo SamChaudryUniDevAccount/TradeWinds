@@ -359,7 +359,7 @@ function loadAssetPriceDataAsArray(graphData) {
     }
 
 
-    return loadarray.sort;
+    return loadarray;
 
 }
 
@@ -374,7 +374,7 @@ function averageAssetPrice(graphData, assetName) {
 
         for(j = 0; j < graphData[i].length; j++ ){
 
-            total += graphData[i][1];
+            total += graphData[i][0];
 
         }
 
@@ -439,7 +439,7 @@ function loadTime(graphData) {
 
     }
 
-    return loadarray;
+    return loadarray.sort();
 
 }
 //Weather stats
